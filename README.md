@@ -46,7 +46,7 @@ Edit `.env` with:
 - `APP_SECRET`: Your generated secret key 🔑
 - `PW_SALT`: Your generated salt 🧂
 - `GROQ_API_KEY`: Optional, get from https://console.groq.com 🤖
-- `MAIL_USERNAME`: babinbid05@gmail.com 📧
+- `MAIL_USERNAME`: your_mail@email.com 📧
 - `MAIL_PASSWORD`: Optional, for Gmail password reset 💬
 ## 📁 Project Structure 🗂️
 
