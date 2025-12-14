@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Career Go{% endblock %}
+
+{% block content %}
+<section class="profile-section">
+    <div class="profile-container">
+        <div class="section-header">
+            <span class="section-icon">👤</span>
+            <h1>My Profile</h1>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-avatar">
+                {% set gender = user.get('gender', 'unspecified') %}
+                {% if gender == 'male' %}👨{% elif gender == 'female' %}👩{% elif gender == 'nonbinary' %}🧑{% elif
+                gender == 'other' %}🏳️‍🌈{% else %}👤{% endif %}
+            </div>
+            <div class="profile-info">
+                <div class="profile-field">
+                    <label>Name</label>
+                    <p>{{ user.name }}</p>
+                </div>
+                <div class="profile-field">
+                    <label>Email</label>
+                    <p>{{ user.email }}</p>
+                </div>
+                <div class="profile-field">
+                    <label>Member Since</label>
+                    <p>{{ user.created_at[:10] }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-actions">
+            <button class="cta-button" onclick="window.location.href='/chat'">💬 Go to Chat</button>
+            <button class="cta-button secondary" onclick="logout()">🚪 Logout</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
