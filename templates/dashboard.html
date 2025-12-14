@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Career Go{% endblock %}
+
+{% block content %}
+<section class="dashboard">
+    <div class="section-header">
+        <span class="section-icon">📊</span>
+        <h1>Your Career Dashboard</h1>
+    </div>
+    <div class="skill-input">
+        <div class="section-header">
+            <span class="section-icon">✏️</span>
+            <h2>Enter Your Skills</h2>
+        </div>
+        <form id="skill-form">
+            <input type="text" id="skills-input" placeholder="e.g., Python, Data Analysis, Communication" required>
+            <button type="submit" class="cta-button">Get Recommendations</button>
+        </form>
+    </div>
+    <div id="recommendations" class="recommendations">
+        <!-- Recommendations will be loaded here -->
+    </div>
+    <div class="suggested-careers">
+        <div class="section-header">
+            <span class="section-icon">💡</span>
+            <h2>Suggested Career Paths</h2>
+        </div>
+        <div class="career-cards">
+            {% for suggestion in suggestions %}
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>{{ suggestion.career }}</h3>
+                        <p>Click to see skills</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>{{ suggestion.career }}</h3>
+                        <ul>
+                            {% for skill in suggestion.skills %}
+                            <li>{{ skill }}</li>
+                            {% endfor %}
+                        </ul>
+                        <a href="{{ suggestion.learn_link }}" target="_blank" class="learn-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
