@@ -179,7 +179,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
-- 📧 **Email**: support@careersagepro.com
+- 📧 **Email**: babinbid05@gmail.com
 - 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/career-sage-pro/issues)
 - 📖 **Documentation**: [Wiki](https://github.com/yourusername/career-sage-pro/wiki)
 
