@@ -482,6 +482,14 @@ def load_data():
 
 ## Deployment Checklist ✅
 
+**Vercel Deployment Notes (Quick)**
+- Add `vercel.json` and `api/index.py` (project includes example files) to serve the Flask app on Vercel. 
+- Set required environment variables in the Vercel dashboard: `APP_SECRET`, `PW_SALT`, `GROQ_API_KEY`, `MAIL_USERNAME`, `MAIL_PASSWORD`.
+- Note: SQLite (`career.db`) is ephemeral on serverless platforms — use a managed DB for production or persist elsewhere.
+- Build: Vercel will install packages from `requirements.txt` automatically.
+
+
+
 - [ ] Set strong `APP_SECRET` and `PW_SALT`
 - [ ] Configure `GROQ_API_KEY` for AI features
 - [ ] Setup `MAIL_USERNAME` and `MAIL_PASSWORD` for emails
