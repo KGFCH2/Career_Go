@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Career Go{% endblock %}
+
+{% block content %}
+<section class="chat-section">
+    <div class="chat-container">
+        {% if session.user_id %}
+        <div class="section-header">
+            <span class="section-icon">🤖</span>
+            <h1>AI Career Advisor</h1>
+        </div>
+
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot-message">
+                <p>Hello! I'm your AI career advisor. Tell me about your skills, interests, or career goals, and I'll
+                    help you find the right path.</p>
+            </div>
+            <div class="suggestions-container">
+                <div class="suggestions-header">Quick suggestions:</div>
+                <div class="suggestions-grid">
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('I know Python and JavaScript, what careers suit me?')">
+                        💻 Skills to Career
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Tell me about Data Science career paths')">
+                        📊 Data Science
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('How do I transition from Web Development to Cloud Engineering?')">
+                        ☁️ Career Change
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('What skills do I need to become a Product Manager?')">
+                        🎯 Skill Roadmap
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Best certifications for DevOps roles?')">
+                        📜 Certifications
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('Salary insights for Full Stack Developers?')">
+                        💰 Salaries
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('I am a beginner with no experience, what careers should I consider?')">
+                        🆕 Entry Level Jobs
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('What are the highest paying careers in tech?')">
+                        📈 High-Paying Careers
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('What remote work opportunities are available in software development?')">
+                        🏠 Remote Work
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('How can I advance from junior to senior developer?')">
+                        ⬆️ Career Advancement
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('What skills are in high demand in 2025?')">
+                        🔥 Trending Skills
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('How do I prepare for technical interviews?')">
+                        🎤 Interview Prep
+                    </button>
+                    <button class="suggestion-btn"
+                        onclick="sendSuggestion('What are good side hustles for developers?')">
+                        💼 Freelance & Side Jobs
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('How do I start my own tech business?')">
+                        🚀 Entrepreneurship
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Show me job listings for data science near me')">
+                        🔍 Find Jobs
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('I want internships or apprenticeships in tech')">
+                        🧑‍🎓 Internships
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Help me write a resume for software engineering roles')">
+                        📄 Resume Help
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Assess my skills and suggest gaps to learn')">
+                        🧩 Skill Assessment
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('How do I create job alerts and track openings?')">
+                        🔔 Job Alerts
+                    </button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('How do I negotiate salary and benefits?')">
+                        🤝 Salary Negotiation
+                    </button>
+                </div>
+            </div>
+        </div>
+        <form id="chat-form" class="chat-form">
+            <input type="text" id="message-input" placeholder="Ask me anything about careers..." required>
+            <button type="submit" class="cta-button">Send</button>
+        </form>
+        {% else %}
+        <div class="auth-floating-modal" id="auth-floating-modal">
+            <div class="auth-floating-content">
+                <div class="auth-floating-icon">🔐</div>
+                <h3>Access Full Chat Features</h3>
+                <p>Log in to your account to start a personalized conversation with the AI Career Advisor and get
+                    tailored career guidance.</p>
+                <div class="auth-floating-buttons">
+                    <a href="/login" class="cta-button">🔑 Login</a>
+                    <a href="/signup" class="cta-button secondary">✍️ Sign Up</a>
+                </div>
+                <p class="auth-floating-footer">Don't have an account? <a href="/signup">Create one now</a> to get
+                    started with your career journey!</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
