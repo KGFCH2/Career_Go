@@ -1,53 +1,537 @@
-# Career Go - Technical Instructions
+# Career Go - Technical Documentation 📚
 
-## Overview
+## Overview 🎯
 
-Career Go is a Flask-based web application that provides personalized career recommendations based on user skills. This document explains the technical implementation, particularly the scoring system and recommendation algorithm.
+Career Go is a Flask-based web application providing **AI-powered personalized career recommendations** based on user skills. This document covers technical implementation, setup, and configuration.
 
-## Environment Setup
+## Environment Setup ⚙️
 
-### Prerequisites
+### Prerequisites 📋
 - Python 3.8 or higher
 - pip (Python package manager)
+- Optional: Gmail account for password reset emails 📧
 
-### Installation
-1. Clone or download the repository
-2. Install dependencies: `pip install -r requirements.txt`
+### Installation 📦
 
-### Configuration
-1. Copy `.env.example` to `.env`
-2. Generate secure values for the following environment variables:
-
-#### APP_SECRET (Flask Secret Key)
-Used for session management and security. Generate a random secret key:
 ```bash
-python -c "import secrets; print(secrets.token_hex(16))"
+# Clone or navigate to repository
+cd Career_Go
+
+# Create virtual environment 🐍
+python -m venv venv
+
+# Activate virtual environment ✅
+source venv/bin/activate     # Linux/Mac
+venv\Scripts\activate        # Windows
+
+# Install dependencies ⬇️
+pip install -r requirements.txt
 ```
-Example output: `fe4579532a4b41ad595cbc1d0cd23b95`
 
-#### PW_SALT (Password Salt)
-Used for password hashing. Generate a random salt:
+### Dependency Management
+
 ```bash
-python -c "import secrets; print(secrets.token_hex(8))"
+# View installed packages
+pip list
+
+# Update a package
+pip install --upgrade flask
+
+# Export current environment
+pip freeze > requirements.txt
 ```
-Example output: `0ac95f445a1bc137`
 
-**Important**: Never commit your `.env` file to version control. Keep these values secret and unique for your application.
+## Configuration
 
-### Running the Application
+### Environment Variables (`.env`)
+
+Copy `.env.example` to `.env` and set required values:
+
+```env
+# Flask Secret Key (REQUIRED)
+# Generate: python -c "import secrets; print(secrets.token_hex(16))"
+APP_SECRET=fe4579532a4b41ad595cbc1d0cd23b95
+
+# Password Salt (REQUIRED)
+# Generate: python -c "import secrets; print(secrets.token_hex(8))"
+PW_SALT=0ac95f445a1bc137
+
+# Groq API Key (OPTIONAL - for AI features)
+# Get from: https://console.groq.com/keys
+GROQ_API_KEY=gsk_xxxxxxxxxxxxx
+
+# Email Configuration (OPTIONAL - for password reset emails)
+# 1️⃣ Go to https://myaccount.google.com/apppasswords
+# 2️⃣ Select Mail and Windows (or your device)
+# 3️⃣ Copy 16-character app password (remove spaces)
+MAIL_USERNAME=babinbid05@gmail.com
+MAIL_PASSWORD=xxxx xxxx xxxx xxxx  # Remove spaces: xxxxxxxxxxxxxxxx
+```
+
+**Important**: Never commit `.env` to version control.
+
+## Running the Application
+
+### Development Mode
+
 ```bash
+# With debug mode (auto-reload, detailed errors)
 python app.py
+
+# Visit: http://localhost:5000
 ```
-The application will run on `http://localhost:5000`
 
-## Dataset Structure
+### Production Mode
 
-### Skills and Careers CSV (`data/skills_careers.csv`)
+```bash
+# Using Gunicorn
+pip install gunicorn
+gunicorn -w 4 -b 0.0.0.0:5000 app:app
+```
 
-The core dataset uses the following CSV structure:
+## Database
 
+### Schema
+
+**Users Table**
+```sql
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    email TEXT UNIQUE,
+    pw_hash TEXT,
+    gender TEXT,
+    created_at TEXT
+)
+```
+
+**Password Resets Table**
+```sql
+CREATE TABLE IF NOT EXISTS resets (
+    email TEXT,
+    code TEXT,
+    created_at TEXT
+)
+```
+
+### Managing the Database
+
+```bash
+# Reset database (delete and recreate)
+rm career.db
+python app.py
+
+# Connect to database with sqlite3
+sqlite3 career.db
+
+# Common queries
+sqlite> SELECT * FROM users;
+sqlite> SELECT * FROM resets;
+sqlite> DELETE FROM users WHERE id=1;
+```
+
+## API Endpoints
+
+### Authentication
+
+#### Signup
+```
+POST /api/signup
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "babinbid05@gmail.com",
+    "password": "secure_password",
+    "gender": "male"  # Options: male, female, nonbinary, other, unspecified
+}
+
+Response: 200 OK
+{
+    "message": "Account created",
+    "user_id": 1
+}
+```
+
+#### Login
+```
+POST /api/login
+Content-Type: application/json
+
+{
+    "email": "babinbid05@gmail.com",
+    "password": "secure_password",
+    "gender": "male"  # Optional
+}
+
+Response: 200 OK
+{
+    "message": "Login successful",
+    "user_id": 1
+}
+```
+
+#### Forgot Password
+```
+POST /api/forgot-email
+Content-Type: application/json
+
+{
+    "email": "babinbid05@gmail.com"
+}
+
+Response: 200 OK
+{
+    "message": "Reset code generated",
+    "reset_code": "123456"  # If email not configured
+}
+```
+
+#### Reset Password
+```
+POST /api/reset
+Content-Type: application/json
+
+{
+    "email": "babinbid05@gmail.com",
+    "code": "123456",
+    "new_password": "new_secure_password"
+}
+
+Response: 200 OK
+{
+    "message": "Password updated"
+}
+```
+
+### Career Features
+
+#### Get Career Suggestions
+```
+POST /api/suggest_careers
+Content-Type: application/json
+
+{
+    "skills": ["Python", "Data Analysis", "SQL"]
+}
+
+Response: 200 OK
+{
+    "recommendations": [
+        {
+            "career": "Data Scientist",
+            "score": 45,
+            "top_skills": ["Data Analysis", "Python", "SQL"],
+            "learn_link": "https://www.coursera.org"
+        },
+        ...
+    ]
+}
+```
+
+#### Chat with AI
+```
+POST /api/chat
+Content-Type: application/json
+
+{
+    "message": "What skills do I need for machine learning?"
+}
+
+Response: 200 OK
+{
+    "reply": "For machine learning, you'll need...",
+    "source": "ai"  # or "dataset"
+}
+```
+
+### Session Management
+
+#### Logout
+```
+POST /api/logout
+
+Response: 200 OK
+{
+    "message": "ok"
+}
+```
+
+## Data Files
+
+### Skills & Careers Dataset (`data/skills_careers.csv`)
+
+Structure:
 ```csv
 career,skill_1,skill_2,skill_3,skill_4,skill_5,skill_6,skill_7,skill_8,score
+Data Scientist,Python,SQL,Statistics,Machine Learning,Data Visualization,Pandas,NumPy,Scikit-learn,95
+...
+```
+
+**Format**:
+- `career`: Job title
+- `skill_1` through `skill_8`: Required/relevant skills
+- `score`: Relevance score (1-100)
+
+### Learning Resources (`data/learning_links.json`)
+
+Structure:
+```json
+[
+    {
+        "name": "Coursera",
+        "url": "https://www.coursera.org"
+    },
+    {
+        "name": "edX",
+        "url": "https://www.edx.org"
+    },
+    ...
+]
+```
+
+## Authentication & Security
+
+### Password Hashing
+
+Uses **SHA256 with salt**:
+
+```python
+import hashlib
+import os
+
+PW_SALT = os.environ.get('PW_SALT', 'salty')
+
+def hash_pw(pw: str) -> str:
+    return hashlib.sha256((PW_SALT + pw).encode()).hexdigest()
+
+def verify_pw(pw: str, pw_hash: str) -> bool:
+    import hmac
+    return hmac.compare_digest(hash_pw(pw), pw_hash)
+```
+
+**Security Notes**:
+- Salt is stored in `.env`, not hardcoded
+- HMAC is used for timing-safe comparison
+- Passwords never stored in plain text
+
+### Session Management
+
+```python
+from flask import session
+
+# Set session
+session['user_id'] = 1
+session['email'] = 'user@example.com'
+
+# Check if user is authenticated
+if 'user_id' not in session:
+    redirect('/login')
+
+# Clear session
+session.clear()
+```
+
+### Email Configuration
+
+Uses Flask-Mail with Gmail SMTP:
+
+```python
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+```
+
+## AI Integration
+
+### Groq API (Llama Model)
+
+```python
+from groq import Groq
+
+client = Groq(api_key=GROQ_API_KEY)
+response = client.chat.completions.create(
+    messages=[
+        {"role": "system", "content": "You are a career advisor..."},
+        {"role": "user", "content": "Tell me about data science"}
+    ],
+    model="llama-3.3-70b-versatile",
+    temperature=0.7,
+    max_tokens=512
+)
+```
+
+### Fallback System
+
+If AI is unavailable:
+1. Groq API not configured (no GROQ_API_KEY)
+2. API rate limited or down
+3. Network error
+
+Falls back to CSV dataset matching:
+
+```python
+def dataset_answer(prompt: str) -> str:
+    # Keyword-based skill matching against CSV data
+    # Returns top 5 matching careers
+```
+
+## Frontend Architecture
+
+### Template Inheritance
+
+All templates extend `base.html`:
+
+```html
+{% extends "base.html" %}
+
+{% block title %}Page Title - Career Go{% endblock %}
+
+{% block content %}
+<!-- Page content -->
+{% endblock %}
+```
+
+### Static Files
+
+- `css/styles.css`: Main stylesheet (glassmorphism, themes, animations)
+- `js/theme.js`: Dark/light mode toggle
+- `js/main.js`: Form handlers, API calls, interactivity
+
+### Form Validation
+
+Client-side (JavaScript):
+```javascript
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+```
+
+Server-side (Python):
+```python
+import email_validator
+email_validator.validate_email(email)
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**Port Already in Use**
+```bash
+# Find process on port 5000
+netstat -ano | findstr :5000
+
+# Kill process
+taskkill /PID <PID> /F
+```
+
+**Database Locked**
+```bash
+# Close all connections, then delete
+rm career.db
+python app.py
+```
+
+**Email Not Sending**
+- Verify MAIL_USERNAME and MAIL_PASSWORD in `.env`
+- Remove spaces from app password
+- Check Gmail account has SMTP enabled
+- Use Flask-Mail debug: `app.config['MAIL_DEBUG'] = True`
+
+**AI Not Responding**
+- Check GROQ_API_KEY is valid
+- Verify Groq API status at https://console.groq.com
+- Check internet connection
+- App will use CSV fallback automatically
+
+**404 Errors**
+- Verify template file exists in `templates/` directory
+- Check route is defined in `app.py`
+- Verify URL path matches route decorator
+
+## Performance Optimization
+
+### Database Queries
+```python
+# Indexed lookups
+conn.execute('SELECT * FROM users WHERE email=?', (email,)).fetchone()
+
+# Avoid N+1 queries
+users = conn.execute('SELECT * FROM users').fetchall()
+```
+
+### Caching
+```python
+from functools import lru_cache
+
+@lru_cache(maxsize=100)
+def load_data():
+    # Load CSV/JSON once, cache in memory
+    pass
+```
+
+### Frontend Optimization
+- CSS minification
+- JavaScript lazy-loading
+- Image optimization
+- Browser caching headers
+
+## Deployment Checklist
+
+- [ ] Set strong `APP_SECRET` and `PW_SALT`
+- [ ] Configure `GROQ_API_KEY` for AI features
+- [ ] Setup `MAIL_USERNAME` and `MAIL_PASSWORD` for emails
+- [ ] Use production WSGI server (Gunicorn, uWSGI)
+- [ ] Enable HTTPS/SSL certificates
+- [ ] Setup database backups
+- [ ] Configure error logging
+- [ ] Set `DEBUG=False`
+- [ ] Use environment-specific configuration
+- [ ] Monitor application health
+
+## Development Workflow
+
+### Testing Changes
+
+```bash
+# 1. Make code changes
+# 2. Flask auto-reloads (debug mode)
+# 3. Test in browser at http://localhost:5000
+
+# Or manual testing:
+python -m py_compile app.py  # Check syntax
+pytest tests/              # Run tests (if available)
+```
+
+### Git Workflow
+
+```bash
+git add -A
+git commit -m "Feature: Add career suggestions API"
+git push origin main
+```
+
+### Code Style
+
+- PEP 8 for Python
+- Consistent indentation (4 spaces)
+- Descriptive variable names
+- Comments for complex logic
+
+## Support & Resources
+
+- **Flask Documentation**: https://flask.palletsprojects.com/
+- **Groq API Docs**: https://console.groq.com/docs
+- **SQLite Guide**: https://www.sqlite.org/docs.html
+- **Python Docs**: https://docs.python.org/3/
+
+---
+
+**For issues or questions, check README.md or review application logs.**
 Data Analyst,Tableau,Terraform,Presentation,Agile,Scala,Communication,Scikit‑learn,Cryptography,67
 ```
 
