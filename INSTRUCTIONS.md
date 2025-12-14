@@ -28,39 +28,39 @@ venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 ```
 
-### Dependency Management
+### Dependency Management 🔧
 
 ```bash
-# View installed packages
+# 📦 View installed packages
 pip list
 
-# Update a package
+# ⬆️ Update a package
 pip install --upgrade flask
 
-# Export current environment
+# 💾 Export current environment
 pip freeze > requirements.txt
 ```
 
-## Configuration
+## Configuration ⚙️
 
-### Environment Variables (`.env`)
+### Environment Variables (`.env`) 🔐
 
 Copy `.env.example` to `.env` and set required values:
 
 ```env
-# Flask Secret Key (REQUIRED)
+# 🔑 Flask Secret Key (REQUIRED)
 # Generate: python -c "import secrets; print(secrets.token_hex(16))"
 APP_SECRET=fe4579532a4b41ad595cbc1d0cd23b95
 
-# Password Salt (REQUIRED)
+# 🧂 Password Salt (REQUIRED)
 # Generate: python -c "import secrets; print(secrets.token_hex(8))"
 PW_SALT=0ac95f445a1bc137
 
-# Groq API Key (OPTIONAL - for AI features)
+# 🤖 Groq API Key (OPTIONAL - for AI features)
 # Get from: https://console.groq.com/keys
 GROQ_API_KEY=gsk_xxxxxxxxxxxxx
 
-# Email Configuration (OPTIONAL - for password reset emails)
+# 📧 Email Configuration (OPTIONAL - for password reset emails)
 # 1️⃣ Go to https://myaccount.google.com/apppasswords
 # 2️⃣ Select Mail and Windows (or your device)
 # 3️⃣ Copy 16-character app password (remove spaces)
@@ -68,32 +68,32 @@ MAIL_USERNAME=babinbid05@gmail.com
 MAIL_PASSWORD=xxxx xxxx xxxx xxxx  # Remove spaces: xxxxxxxxxxxxxxxx
 ```
 
-**Important**: Never commit `.env` to version control.
+**⚠️ Important**: Never commit `.env` to version control.
 
-## Running the Application
+## Running the Application 🚀
 
-### Development Mode
+### Development Mode 🛠️
 
 ```bash
-# With debug mode (auto-reload, detailed errors)
+# 🐛 With debug mode (auto-reload, detailed errors)
 python app.py
 
-# Visit: http://localhost:5000
+# 🌐 Visit: http://localhost:5000
 ```
 
-### Production Mode
+### Production Mode 🏭
 
 ```bash
-# Using Gunicorn
+# 🐍 Using Gunicorn
 pip install gunicorn
 gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ```
 
-## Database
+## Database 💾
 
-### Schema
+### Schema 🗂️
 
-**Users Table**
+**👥 Users Table**
 ```sql
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS users (
 )
 ```
 
-**Password Resets Table**
+**🔄 Password Resets Table**
 ```sql
 CREATE TABLE IF NOT EXISTS resets (
     email TEXT,
@@ -114,27 +114,27 @@ CREATE TABLE IF NOT EXISTS resets (
 )
 ```
 
-### Managing the Database
+### Managing the Database 🛠️
 
 ```bash
-# Reset database (delete and recreate)
+# 🔄 Reset database (delete and recreate)
 rm career.db
 python app.py
 
-# Connect to database with sqlite3
+# 💻 Connect to database with sqlite3
 sqlite3 career.db
 
-# Common queries
+# 🔍 Common queries
 sqlite> SELECT * FROM users;
 sqlite> SELECT * FROM resets;
 sqlite> DELETE FROM users WHERE id=1;
 ```
 
-## API Endpoints
+## API Endpoints 🔌
 
-### Authentication
+### Authentication 🔐
 
-#### Signup
+#### Signup 📝
 ```
 POST /api/signup
 Content-Type: application/json
@@ -153,7 +153,7 @@ Response: 200 OK
 }
 ```
 
-#### Login
+#### Login 🔑
 ```
 POST /api/login
 Content-Type: application/json
@@ -171,7 +171,7 @@ Response: 200 OK
 }
 ```
 
-#### Forgot Password
+#### Forgot Password ❓
 ```
 POST /api/forgot-email
 Content-Type: application/json
@@ -187,7 +187,7 @@ Response: 200 OK
 }
 ```
 
-#### Reset Password
+#### Reset Password 🔄
 ```
 POST /api/reset
 Content-Type: application/json
@@ -204,9 +204,9 @@ Response: 200 OK
 }
 ```
 
-### Career Features
+### Career Features 🎯
 
-#### Get Career Suggestions
+#### Get Career Suggestions 💼
 ```
 POST /api/suggest_careers
 Content-Type: application/json
@@ -229,7 +229,7 @@ Response: 200 OK
 }
 ```
 
-#### Chat with AI
+#### Chat with AI 🤖
 ```
 POST /api/chat
 Content-Type: application/json
@@ -245,9 +245,9 @@ Response: 200 OK
 }
 ```
 
-### Session Management
+### Session Management 🔐
 
-#### Logout
+#### Logout 🚪
 ```
 POST /api/logout
 
@@ -257,9 +257,9 @@ Response: 200 OK
 }
 ```
 
-## Data Files
+## Data Files 📁
 
-### Skills & Careers Dataset (`data/skills_careers.csv`)
+### Skills & Careers Dataset (`data/skills_careers.csv`) 📊
 
 Structure:
 ```csv
@@ -273,7 +273,7 @@ Data Scientist,Python,SQL,Statistics,Machine Learning,Data Visualization,Pandas,
 - `skill_1` through `skill_8`: Required/relevant skills
 - `score`: Relevance score (1-100)
 
-### Learning Resources (`data/learning_links.json`)
+### Learning Resources (`data/learning_links.json`) 📚
 
 Structure:
 ```json
@@ -290,9 +290,9 @@ Structure:
 ]
 ```
 
-## Authentication & Security
+## Authentication & Security 🔐
 
-### Password Hashing
+### Password Hashing 🔒
 
 Uses **SHA256 with salt**:
 
@@ -315,7 +315,7 @@ def verify_pw(pw: str, pw_hash: str) -> bool:
 - HMAC is used for timing-safe comparison
 - Passwords never stored in plain text
 
-### Session Management
+### Session Usage 💻
 
 ```python
 from flask import session
@@ -332,7 +332,7 @@ if 'user_id' not in session:
 session.clear()
 ```
 
-### Email Configuration
+### Email Configuration 📧
 
 Uses Flask-Mail with Gmail SMTP:
 
@@ -344,9 +344,9 @@ MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 ```
 
-## AI Integration
+## AI Integration 🤖
 
-### Groq API (Llama Model)
+### Groq API (Llama Model) 🧠
 
 ```python
 from groq import Groq
@@ -363,7 +363,7 @@ response = client.chat.completions.create(
 )
 ```
 
-### Fallback System
+### Fallback System 🔄
 
 If AI is unavailable:
 1. Groq API not configured (no GROQ_API_KEY)
@@ -378,9 +378,9 @@ def dataset_answer(prompt: str) -> str:
     # Returns top 5 matching careers
 ```
 
-## Frontend Architecture
+## Frontend Architecture 🎨
 
-### Template Inheritance
+### Template Inheritance 📄 📄
 
 All templates extend `base.html`:
 
@@ -394,13 +394,13 @@ All templates extend `base.html`:
 {% endblock %}
 ```
 
-### Static Files
+### Static Files 📁
 
 - `css/styles.css`: Main stylesheet (glassmorphism, themes, animations)
 - `js/theme.js`: Dark/light mode toggle
 - `js/main.js`: Form handlers, API calls, interactivity
 
-### Form Validation
+### Form Validation ✅
 
 Client-side (JavaScript):
 ```javascript
@@ -416,9 +416,9 @@ import email_validator
 email_validator.validate_email(email)
 ```
 
-## Troubleshooting
+## Troubleshooting 🔧
 
-### Common Issues
+### Common Issues ⚠️
 
 **Port Already in Use**
 ```bash
@@ -453,9 +453,9 @@ python app.py
 - Check route is defined in `app.py`
 - Verify URL path matches route decorator
 
-## Performance Optimization
+## Performance Optimization ⚡
 
-### Database Queries
+### Database Queries 💾
 ```python
 # Indexed lookups
 conn.execute('SELECT * FROM users WHERE email=?', (email,)).fetchone()
@@ -464,7 +464,7 @@ conn.execute('SELECT * FROM users WHERE email=?', (email,)).fetchone()
 users = conn.execute('SELECT * FROM users').fetchall()
 ```
 
-### Caching
+### Caching 🧠
 ```python
 from functools import lru_cache
 
@@ -474,13 +474,13 @@ def load_data():
     pass
 ```
 
-### Frontend Optimization
+### Frontend Optimization 🎨
 - CSS minification
 - JavaScript lazy-loading
 - Image optimization
 - Browser caching headers
 
-## Deployment Checklist
+## Deployment Checklist ✅
 
 - [ ] Set strong `APP_SECRET` and `PW_SALT`
 - [ ] Configure `GROQ_API_KEY` for AI features
@@ -493,9 +493,9 @@ def load_data():
 - [ ] Use environment-specific configuration
 - [ ] Monitor application health
 
-## Development Workflow
+## Development Workflow 🔄
 
-### Testing Changes
+### Testing Changes 🧪
 
 ```bash
 # 1. Make code changes
@@ -507,7 +507,7 @@ python -m py_compile app.py  # Check syntax
 pytest tests/              # Run tests (if available)
 ```
 
-### Git Workflow
+### Git Workflow 📚
 
 ```bash
 git add -A
@@ -515,14 +515,14 @@ git commit -m "Feature: Add career suggestions API"
 git push origin main
 ```
 
-### Code Style
+### Code Style 🎨
 
 - PEP 8 for Python
 - Consistent indentation (4 spaces)
 - Descriptive variable names
 - Comments for complex logic
 
-## Support & Resources
+## Support & Resources 📖
 
 - **Flask Documentation**: https://flask.palletsprojects.com/
 - **Groq API Docs**: https://console.groq.com/docs
@@ -546,42 +546,42 @@ Data Analyst,Tableau,Terraform,Presentation,Agile,Scala,Communication,Scikit‑l
 - **Score range**: 50-99
 - **Average score**: ~75
 
-## Scoring System Explained
+## Scoring System Explained 📊
 
-### What is the "Score" Field?
+### What is the "Score" Field? 📊
 
 The **Score** field (50-99) represents the **relevance/importance** of a specific skill combination for a career. Higher scores indicate more essential or common skill combinations for that career.
 
-### Score Interpretation:
+### Score Interpretation 📈
 - **90-99**: Core/essential skill combinations
 - **80-89**: Very relevant combinations
 - **70-79**: Moderately relevant combinations
 - **60-69**: Somewhat relevant combinations
 - **50-59**: Specialized/niche combinations
 
-## Recommendation Algorithm
+## Recommendation Algorithm 🧠
 
-### How Career Recommendations Work
+### How Career Recommendations Work ⚙️
 
 The system uses a **two-phase scoring algorithm**:
 
-#### Phase 1: Skill Matching
+#### Phase 1: Skill Matching 🔍
 For each user-inputted skill, the system:
 1. Converts all skills to lowercase for case-insensitive matching
 2. Finds career entries where user skills intersect with entry skills
 3. Counts the number of matching skills (overlap)
 
-#### Phase 2: Score Calculation
+#### Phase 2: Score Calculation 🧮
 ```
 Final Score = (Number of Skill Matches) × (Base Score from CSV)
 ```
 
-#### Phase 3: Aggregation
+#### Phase 3: Aggregation 📊
 - Multiple entries for the same career are **summed together**
 - Careers are ranked by total final score (highest first)
 - Top 10 careers are returned to the user
 
-### Algorithm Pseudocode
+### Algorithm Pseudocode 💻
 
 ```python
 def get_career_recommendations(user_skills):
@@ -604,7 +604,7 @@ def get_career_recommendations(user_skills):
     return sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)[:10]
 ```
 
-## Scoring Examples
+## Scoring Examples 📈
 
 ### Example 1: Single Skill Match
 **User Skills**: `["python"]`
@@ -620,16 +620,16 @@ def get_career_recommendations(user_skills):
 - **Overlap**: 2 (Python + Machine Learning)
 - **Final Score**: 2 × 92 = **184**
 
-### Example 3: Multiple Entries Aggregation
+### Example 3: Multiple Entries Aggregation ➕
 **Career**: Backend Developer
 - **Entry 1**: 3 skill matches × score 78 = 234
 - **Entry 2**: 2 skill matches × score 82 = 164
 - **Entry 3**: 1 skill match × score 85 = 85
 - **Total Final Score**: 234 + 164 + 85 = **483**
 
-## Adding New Careers
+## Adding New Careers ➕
 
-### Step 1: Choose a Career
+### Step 1: Choose a Career 🎯
 Select a career that's not already in the dataset. Check existing careers:
 
 ```bash
@@ -644,7 +644,7 @@ print('Existing careers:', sorted(list(careers)))
 "
 ```
 
-### Step 2: Define Skill Combinations
+### Step 2: Define Skill Combinations 🛠️
 Create 2-4 entries per career with different skill combinations:
 
 ```csv
@@ -653,12 +653,12 @@ AI Ethics Consultant,Machine Learning,Ethics,Python,Policy Analysis,Bias Mitigat
 AI Ethics Consultant,AI Governance,Ethics Frameworks,Risk Assessment,Regulatory Compliance,Bias Auditing,Transparency,Accountability,Communication,82
 ```
 
-### Step 3: Assign Appropriate Scores
+### Step 3: Assign Appropriate Scores 📊
 - **High scores (85-95)**: Core skills for the career
 - **Medium scores (70-84)**: Important but not essential skills
 - **Lower scores (50-69)**: Specialized or emerging skill combinations
 
-### Step 4: Add Learning Resources
+### Step 4: Add Learning Resources 📚
 Update `data/learning_links.json` with relevant learning platforms:
 
 ```json
@@ -669,9 +669,9 @@ Update `data/learning_links.json` with relevant learning platforms:
 }
 ```
 
-## Technical Implementation Details
+## Technical Implementation Details ⚙️
 
-### File Structure
+### File Structure 📁
 ```
 career-sage-pro_consider/
 ├── app.py                    # Flask backend with recommendation logic
@@ -683,19 +683,19 @@ career-sage-pro_consider/
 └── requirements.txt         # Python dependencies
 ```
 
-### Key Functions
+### Key Functions 🔧
 
-#### `load_data()`
+#### `load_data()` 📥
 - Loads CSV data into `DATA_ITEMS` list
 - Loads learning links into `LEARN_LINKS` list
 - Called once at application startup
 
-#### `api_suggest()`
+#### `api_suggest()` 🎯
 - POST endpoint: `/api/suggest`
 - Accepts JSON: `{"skills": ["python", "javascript"]}`
 - Returns top 10 career recommendations with scores
 
-#### `dataset_answer()`
+#### `dataset_answer()` 🔄
 - Fallback function when Gemini API is unavailable
 - Uses keyword matching on career names and skills
 - Returns basic text recommendations
@@ -708,7 +708,7 @@ career-sage-pro_consider/
 - **POST** `/api/signup` - User registration
 - **POST** `/api/login` - User authentication
 
-## Testing the Scoring System
+## Testing the Scoring System 🧪
 
 ### Manual Testing
 ```python
@@ -721,7 +721,7 @@ user_skills = ["python", "machine learning", "data analysis"]
 # [Run the algorithm manually as shown in examples above]
 ```
 
-### Automated Testing
+### Automated Testing 🧪
 ```bash
 # Run the Flask app
 python app.py
@@ -732,9 +732,9 @@ curl -X POST http://localhost:5000/api/suggest \
   -d '{"skills": ["python", "javascript"]}'
 ```
 
-## Modifying the Algorithm
+## Modifying the Algorithm ⚙️
 
-### Changing Score Weights
+### Changing Score Weights ⚖️
 To modify how scores are calculated, edit the `api_suggest()` function in `app.py`:
 
 ```python
@@ -750,36 +750,36 @@ weighted_overlap = sum(skill_weights.get(skill, 1.0) for skill in matching_skill
 scores[career]["score"] += weighted_overlap * int(r["score"])
 ```
 
-### Adding New Scoring Factors
+### Adding New Scoring Factors ➕
 Consider adding:
 - **Experience level weighting**
 - **Skill rarity scoring**
 - **Industry demand factors**
 - **Geographic relevance**
 
-## Data Quality Guidelines
+## Data Quality Guidelines ✅
 
-### Skill Naming Conventions
+### Skill Naming Conventions 📝
 - Use consistent capitalization (e.g., "Machine Learning" not "machine learning")
 - Prefer specific technologies over general terms
 - Include both technical and soft skills
 - Use industry-standard terminology
 
-### Career Naming
+### Career Naming 🏷️
 - Use standard job titles
 - Include seniority levels when relevant (e.g., "Senior Data Scientist")
 - Keep names concise but descriptive
 - Consider emerging roles for future-proofing
 
-### Score Assignment Best Practices
+### Score Assignment Best Practices 📊
 - **Research salary data** and job posting frequency
 - **Consider skill combinations** that actually appear in job descriptions
 - **Balance the dataset** so no career dominates recommendations
 - **Regularly review and update** scores based on industry trends
 
-## Troubleshooting
+## Troubleshooting 🔧
 
-### Common Issues
+### Common Issues ⚠️
 
 1. **Career not appearing in recommendations**
    - Check if skills exactly match (case-sensitive comparison)
@@ -796,7 +796,7 @@ Consider adding:
    - Consider indexing if dataset grows significantly
    - Profile the recommendation algorithm for bottlenecks
 
-### Debugging Commands
+### Debugging Commands 🐛
 
 ```bash
 # Check dataset loading
@@ -824,16 +824,16 @@ for i, match in enumerate(matches[:2]):
 "
 ```
 
-## Future Enhancements
+## Future Enhancements 🚀
 
-### Potential Improvements
+### Potential Improvements 💡
 1. **Machine Learning-based scoring** using embeddings
 2. **User feedback integration** to improve recommendations
 3. **Dynamic score adjustment** based on job market data
 4. **Personalized recommendations** using user profiles
 5. **A/B testing framework** for scoring algorithm variants
 
-### Dataset Expansion Ideas
+### Dataset Expansion Ideas 📈
 - Add more granular skill levels (beginner, intermediate, expert)
 - Include salary data and growth projections
 - Add geographic location factors
