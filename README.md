@@ -158,7 +158,7 @@ gunicorn app:app
 
 **🔴 Port in use**: Kill process on port 5000
 **🗄️ Database errors**: Delete `career.db` and restart
-**📧 Email not sending**: Verify MAIL_USERNAME (babinbid05@gmail.com) and MAIL_PASSWORD in `.env`
+**📧 Email not sending**: Verify MAIL_USERNAME (your_mail@email.com) and MAIL_PASSWORD in `.env`
 **🤖 AI not working**: Check GROQ_API_KEY; app will use CSV fallback
 
 ## 📄 License ⚖️
