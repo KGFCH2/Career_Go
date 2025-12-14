@@ -115,7 +115,13 @@ def load_data():
     return items, links
 
 
-DATA_ITEMS, LEARN_LINKS = load_data()  # 📈 Load data on startup
+try:
+    DATA_ITEMS, LEARN_LINKS = load_data()  # 📈 Load data on startup
+except Exception as e:
+    import traceback, sys
+    traceback.print_exc(file=sys.stderr)
+    DATA_ITEMS, LEARN_LINKS = [], []
+
 
 
 def top_link():
