@@ -1,0 +1,122 @@
+[
+  {
+    "provider": "Coursera",
+    "url": "https://www.coursera.org",
+    "specialties": ["Data Science", "AI/ML", "Business", "Technology"]
+  },
+  {
+    "provider": "edX",
+    "url": "https://www.edx.org",
+    "specialties": ["Computer Science", "Data Science", "Engineering", "Business"]
+  },
+  {
+    "provider": "Udemy",
+    "url": "https://www.udemy.com",
+    "specialties": ["Programming", "Design", "Marketing", "Business"]
+  },
+  {
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org",
+    "specialties": ["Mathematics", "Science", "Computer Programming"]
+  },
+  {
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org",
+    "specialties": ["Web Development", "JavaScript", "Python", "Open Source"]
+  },
+  {
+    "provider": "Google Cloud Skills",
+    "url": "https://cloudskillsboost.google",
+    "specialties": ["Cloud Computing", "AI/ML", "Data Engineering", "DevOps"]
+  },
+  {
+    "provider": "AWS Skill Builder",
+    "url": "https://skillbuilder.aws",
+    "specialties": ["Cloud Computing", "DevOps", "Security", "Data Analytics"]
+  },
+  {
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com",
+    "specialties": ["Azure", "AI", "Development", "Security"]
+  },
+  {
+    "provider": "DataCamp",
+    "url": "https://www.datacamp.com",
+    "specialties": ["Data Science", "Python", "R", "SQL", "Machine Learning"]
+  },
+  {
+    "provider": "Pluralsight",
+    "url": "https://www.pluralsight.com",
+    "specialties": ["Software Development", "IT Ops", "Security", "Data"]
+  },
+  {
+    "provider": "LinkedIn Learning",
+    "url": "https://www.linkedin.com/learning",
+    "specialties": ["Professional Development", "Technology", "Business", "Creative"]
+  },
+  {
+    "provider": "Codecademy",
+    "url": "https://www.codecademy.com",
+    "specialties": ["Programming", "Web Development", "Data Science", "Mobile Development"]
+  },
+  {
+    "provider": "IBM Skills Network",
+    "url": "https://www.ibm.com/training",
+    "specialties": ["AI", "Cloud", "Data Science", "Cybersecurity", "Blockchain"]
+  },
+  {
+    "provider": "DeepLearning.AI",
+    "url": "https://www.deeplearning.ai",
+    "specialties": ["Machine Learning", "AI", "Neural Networks", "Deep Learning"]
+  },
+  {
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu",
+    "specialties": ["Engineering", "Computer Science", "Mathematics", "Science"]
+  },
+  {
+    "provider": "Stanford Online",
+    "url": "https://online.stanford.edu",
+    "specialties": ["Business", "Engineering", "Humanities", "Medicine"]
+  },
+  {
+    "provider": "Harvard Online",
+    "url": "https://online-learning.harvard.edu",
+    "specialties": ["Business", "Law", "Medicine", "Liberal Arts"]
+  },
+  {
+    "provider": "Blockchain Council",
+    "url": "https://www.blockchain-council.org",
+    "specialties": ["Blockchain", "Cryptocurrency", "Web3", "Smart Contracts"]
+  },
+  {
+    "provider": "Unity Learn",
+    "url": "https://learn.unity.com",
+    "specialties": ["Game Development", "VR/AR", "3D Modeling", "C#"]
+  },
+  {
+    "provider": "Unreal Online Learning",
+    "url": "https://www.unrealengine.com/en-US/onlinelearning",
+    "specialties": ["Game Development", "VR/AR", "3D Graphics", "C++"]
+  },
+  {
+    "provider": "ROS Education",
+    "url": "https://education.robotics.ubuntu.com",
+    "specialties": ["Robotics", "ROS", "Autonomous Systems", "Embedded Systems"]
+  },
+  {
+    "provider": "Qiskit",
+    "url": "https://qiskit.org/learn",
+    "specialties": ["Quantum Computing", "Quantum Algorithms", "Qubit Programming"]
+  },
+  {
+    "provider": "BioStars",
+    "url": "https://www.biostars.org",
+    "specialties": ["Bioinformatics", "Genomics", "Computational Biology"]
+  },
+  {
+    "provider": "Space Foundation",
+    "url": "https://www.spacefoundation.org/education",
+    "specialties": ["Space Technology", "Aerospace Engineering", "Satellite Systems"]
+  }
+]

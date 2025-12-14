@@ -1,0 +1,697 @@
+career,skill_1,skill_2,skill_3,skill_4,skill_5,skill_6,skill_7,skill_8,score
+Data Analyst,Tableau,Terraform,Presentation,Agile,Scala,Communication,Scikit‑learn,Cryptography,67
+Data Analyst,Terraform,Prototyping,Scala,Kotlin,NLP,A/B Testing,Communication,Statistics,71
+Data Analyst,Communication,A/B Testing,Statistics,SwiftUI,Excel,Scala,Prototyping,Cryptography,66
+Data Analyst,SQL,C++,Presentation,Communication,Statistics,SwiftUI,NLP,TensorFlow,90
+Data Analyst,SwiftUI,Excel,Agile,A/B Testing,SQL,Kotlin,Communication,Statistics,68
+Data Analyst,A/B Testing,Scikit‑learn,Communication,Statistics,NLP,PyTorch,Kotlin,Prototyping,60
+Data Analyst,Excel,SwiftUI,Agile,NLP,A/B Testing,Cryptography,Kotlin,C#,84
+Data Analyst,Scikit‑learn,Prototyping,C++,Statistics,NLP,Presentation,Kotlin,Excel,85
+Data Analyst,Scikit‑learn,Kotlin,SQL,SwiftUI,Presentation,Statistics,Prototyping,Agile,67
+Data Analyst,A/B Testing,Agile,Kotlin,PyTorch,C#,Tableau,Presentation,Scikit‑learn,59
+Data Analyst,NLP,TensorFlow,Scikit‑learn,SwiftUI,Scala,C++,Cryptography,Agile,73
+Data Analyst,Scikit‑learn,TensorFlow,Tableau,C#,A/B Testing,Statistics,Terraform,SQL,59
+Data Scientist,Leadership,PHP,AWS,Scrum,JavaScript,Scikit‑learn,React Native,Python,79
+Data Scientist,Terraform,AWS,Zapier,Vulnerability Scanning,Leadership,Computer Vision,Scrum,Scikit‑learn,90
+Data Scientist,Zapier,React Native,Scikit‑learn,Statistics,Vulnerability Scanning,AWS,Serverless,Tableau,50
+Data Scientist,JavaScript,Scrum,Next.js,Terraform,Leadership,Tableau,Vulnerability Scanning,Serverless,69
+Data Scientist,Design Systems,ML,JavaScript,Python,Zapier,Statistics,PHP,Information Architecture,98
+Data Scientist,PHP,Scikit‑learn,Information Architecture,Next.js,Vulnerability Scanning,JavaScript,AWS,Zero Trust,77
+Data Scientist,React Native,PHP,JavaScript,Zero Trust,Serverless,Scrum,Tableau,Vulnerability Scanning,78
+Data Scientist,Zapier,Tableau,Leadership,Design Systems,JavaScript,ML,Vulnerability Scanning,Terraform,87
+Data Scientist,PHP,Design Systems,Information Architecture,Terraform,Python,Statistics,Scrum,Zapier,64
+Data Scientist,Python,ML,Scrum,JavaScript,Design Systems,Scikit‑learn,PHP,Next.js,63
+Data Scientist,PHP,Scikit‑learn,Next.js,Design Systems,JavaScript,Serverless,React Native,Leadership,56
+Data Scientist,Leadership,Computer Vision,Statistics,Information Architecture,Zapier,Design Systems,Next.js,PHP,53
+ML Engineer,Bash,Airtable,NLP,Flutter,BigQuery,Teamwork,Ruby,PyTorch,85
+ML Engineer,Swift,Ruby,Penetration Testing,Python,TensorFlow,Flutter,Statistics,Teamwork,60
+ML Engineer,Bash,PyTorch,MLOps,Agile,Statistics,Flutter,Python,TensorFlow,74
+ML Engineer,Python,Statistics,NLP,Flutter,Django,Agile,Problem Solving,Bash,85
+ML Engineer,PyTorch,Leadership,Agile,Django,Penetration Testing,Python,GCP,Problem Solving,84
+ML Engineer,Ruby,Kotlin,Teamwork,Penetration Testing,PyTorch,NLP,Bash,Flutter,60
+ML Engineer,Ruby,GCP,TensorFlow,Airtable,Penetration Testing,Django,Teamwork,Kotlin,65
+ML Engineer,Statistics,Swift,BigQuery,Ruby,TensorFlow,Agile,Kotlin,Django,86
+ML Engineer,GCP,Kotlin,NLP,Agile,MLOps,Swift,Leadership,Teamwork,58
+ML Engineer,Django,Flutter,Kotlin,TensorFlow,Python,BigQuery,Teamwork,Bash,56
+ML Engineer,TensorFlow,Penetration Testing,Agile,GCP,NLP,Teamwork,Airtable,Ruby,65
+ML Engineer,Problem Solving,Django,Airtable,Flutter,MLOps,PyTorch,Statistics,Kotlin,83
+AI Researcher,Recommendation Systems,NLP,Scrum,Time Management,Jetpack Compose,Arduino,Kotlin,Python,53
+AI Researcher,Power BI,PyTorch,Jetpack Compose,SQL,Critical Thinking,Leadership,React,Recommendation Systems,90
+AI Researcher,Jetpack Compose,Leadership,Time Series,PyTorch,Critical Thinking,SQL,JavaScript,Statistics,59
+AI Researcher,JavaScript,SQL,Statistics,Python,PyTorch,Power BI,Critical Thinking,HTML,73
+AI Researcher,SQL,Statistics,NLP,Kotlin,CV,Leadership,React,Jetpack Compose,76
+AI Researcher,Recommendation Systems,Python,Kotlin,Leadership,HTML,Time Series,NLP,Critical Thinking,61
+AI Researcher,Scrum,PyTorch,Kotlin,Jetpack Compose,Leadership,React,Statistics,SQL,74
+AI Researcher,SQL,Arduino,Kotlin,NLP,Time Series,Leadership,Python,React,64
+AI Researcher,Kotlin,Critical Thinking,NLP,React,Scrum,Python,PyTorch,SQL,99
+AI Researcher,Jetpack Compose,Statistics,HTML,React,Scrum,Critical Thinking,SQL,Python,61
+AI Researcher,Time Management,Jetpack Compose,SQL,CV,PyTorch,Leadership,Statistics,React,70
+AI Researcher,PyTorch,HTML,CV,React,NLP,Python,Critical Thinking,Statistics,77
+Backend Developer,Python,React Native,PHP,IDS/IPS,Express,PostgreSQL,Robotics,Problem Solving,68
+Backend Developer,Penetration Testing,Leadership,Robotics,Express,REST API,Scrum,Problem Solving,Node.js,89
+Backend Developer,IDS/IPS,React Native,REST API,Critical Thinking,Angular,Leadership,Python,Robotics,87
+Backend Developer,Angular,Scrum,SwiftUI,Penetration Testing,PHP,IDS/IPS,Python,CI/CD,80
+Backend Developer,PostgreSQL,Node.js,React Native,PHP,Scrum,UX Writing,Express,REST API,65
+Backend Developer,React Native,Django,Robotics,Leadership,Critical Thinking,Spark,Python,IDS/IPS,89
+Backend Developer,Node.js,SwiftUI,Express,Robotics,REST API,Django,PHP,Python,59
+Backend Developer,Critical Thinking,Python,Express,Django,PostgreSQL,REST API,Problem Solving,CI/CD,79
+Backend Developer,UX Writing,Penetration Testing,Django,Python,SwiftUI,Node.js,REST API,IDS/IPS,92
+Backend Developer,PHP,Penetration Testing,Scrum,SwiftUI,Express,Spark,CI/CD,Django,60
+Backend Developer,Spark,SwiftUI,CI/CD,Django,Penetration Testing,REST API,IDS/IPS,Angular,81
+Backend Developer,Django,CI/CD,SwiftUI,Node.js,React Native,Python,Leadership,PostgreSQL,70
+Frontend Developer,AWS,CSS,PyTorch,R,HTML,Statistics,Docker,Cryptography,69
+Frontend Developer,PyTorch,CSS,HTML,Statistics,PHP,Ruby,Scikit‑learn,AWS,81
+Frontend Developer,R,PyTorch,React,Accessibility,Cryptography,CSS,Statistics,Kubernetes,89
+Frontend Developer,HTML,R,PyTorch,Accessibility,Kubernetes,React,AWS,PHP,79
+Frontend Developer,Cryptography,Power BI,Serverless,PyTorch,React,Ruby,Statistics,Time Management,71
+Frontend Developer,PyTorch,Serverless,CSS,Accessibility,Kubernetes,Statistics,R,Express,84
+Frontend Developer,Power BI,Express,Statistics,Kubernetes,Time Management,PyTorch,R,Ruby,62
+Frontend Developer,R,Scikit‑learn,Statistics,Accessibility,PHP,React,Power BI,Presentation,63
+Frontend Developer,Android,Serverless,Express,Cryptography,Ruby,PyTorch,CSS,Kubernetes,69
+Frontend Developer,Ruby,Accessibility,R,Presentation,PyTorch,AWS,Express,Time Management,54
+Frontend Developer,Accessibility,Statistics,Ruby,Presentation,HTML,PyTorch,Docker,Android,52
+Frontend Developer,Express,HTML,CSS,Time Management,Kubernetes,Serverless,React,Cryptography,50
+Full‑Stack Developer,Time Series,REST API,React,Presentation,Raspberry Pi,PostgreSQL,Flutter,Power BI,55
+Full‑Stack Developer,Raspberry Pi,React,Kotlin,Android,Git,PostgreSQL,SQL,Time Series,70
+Full‑Stack Developer,PostgreSQL,REST API,CI/CD,Problem Solving,Raspberry Pi,IDS/IPS,Kubernetes,User Research,94
+Full‑Stack Developer,Raspberry Pi,Time Series,SQL,Flutter,CI/CD,Node.js,Power BI,Problem Solving,76
+Full‑Stack Developer,REST API,Time Series,Kotlin,IDS/IPS,Flutter,Android,Git,SQL,55
+Full‑Stack Developer,User Research,Kotlin,Git,Android,IDS/IPS,Data Cleaning,REST API,PostgreSQL,80
+Full‑Stack Developer,Time Series,Flutter,Problem Solving,Presentation,Data Cleaning,PostgreSQL,IDS/IPS,Kotlin,67
+Full‑Stack Developer,User Research,Raspberry Pi,Kotlin,Power BI,CI/CD,PostgreSQL,Node.js,Problem Solving,84
+Full‑Stack Developer,PostgreSQL,CI/CD,Android,REST API,Raspberry Pi,Problem Solving,User Research,Git,83
+Full‑Stack Developer,IDS/IPS,User Research,Power BI,CI/CD,Android,Time Series,PostgreSQL,Communication,69
+Full‑Stack Developer,SQL,Time Series,Kubernetes,Raspberry Pi,Node.js,IDS/IPS,Flutter,Android,94
+Full‑Stack Developer,Kubernetes,REST API,Power BI,SQL,User Research,Kotlin,React,Presentation,71
+Mobile Developer,GCP,Scrum,Power BI,Rust,Redis,Raspberry Pi,iOS,Robotics,88
+Mobile Developer,Information Architecture,Rust,Android,iOS,Flutter,APIs,GCP,Leadership,87
+Mobile Developer,Computer Vision,Scrum,Figma,Redis,Robotics,TypeScript,Android,Leadership,92
+Mobile Developer,Power BI,PostgreSQL,Rust,GCP,Information Architecture,APIs,SQL,Robotics,78
+Mobile Developer,Information Architecture,APIs,Scrum,Figma,Rust,Leadership,ETL,Flutter,94
+Mobile Developer,Flutter,Power BI,Rust,Raspberry Pi,Robotics,APIs,Figma,Android,64
+Mobile Developer,Leadership,Raspberry Pi,Information Architecture,Power BI,Figma,Android,iOS,PHP,88
+Mobile Developer,GCP,Scrum,Flutter,Redis,PHP,ETL,Leadership,APIs,75
+Mobile Developer,Raspberry Pi,Android,PHP,APIs,Flutter,Figma,Scrum,SQL,77
+Mobile Developer,TypeScript,Raspberry Pi,SQL,Power BI,Rust,Information Architecture,Computer Vision,Scrum,87
+Mobile Developer,SQL,Raspberry Pi,Figma,PostgreSQL,APIs,GCP,TypeScript,Rust,67
+Mobile Developer,PostgreSQL,GCP,Computer Vision,APIs,Power BI,Rust,Information Architecture,Robotics,71
+DevOps Engineer,C#,Zero Trust,Time Management,Kubernetes,Git,Tableau,Arduino,Critical Thinking,92
+DevOps Engineer,GCP,Express,Tableau,MongoDB,CI/CD,Zero Trust,Linux,Scala,98
+DevOps Engineer,Docker,Express,MongoDB,CI/CD,Zero Trust,Time Management,Node.js,Leadership,78
+DevOps Engineer,Docker,Kubernetes,Critical Thinking,Kotlin,Linux,Leadership,Zero Trust,GCP,85
+DevOps Engineer,Tableau,Node.js,Kotlin,Kubernetes,Express,MongoDB,C#,Arduino,81
+DevOps Engineer,Scala,HTML,Zero Trust,Tableau,Docker,Kotlin,Kubernetes,Express,85
+DevOps Engineer,Leadership,Git,CI/CD,HTML,Time Management,Tableau,MongoDB,Docker,99
+DevOps Engineer,Tableau,C#,HTML,Zero Trust,Critical Thinking,Leadership,Copywriting,Express,87
+DevOps Engineer,Arduino,Docker,Leadership,Express,Time Management,Linux,HTML,Zero Trust,98
+DevOps Engineer,GCP,Git,Express,C#,CI/CD,Copywriting,Kubernetes,Scala,74
+DevOps Engineer,Kotlin,Tableau,MongoDB,C#,Docker,Copywriting,Git,CI/CD,74
+DevOps Engineer,Leadership,Docker,MongoDB,Time Management,C#,Tableau,GCP,Kotlin,56
+Cloud Engineer,Networking,Power BI,TypeScript,Recommendation Systems,JavaScript,Kafka,Excel,Docker,81
+Cloud Engineer,JavaScript,UX Writing,Power BI,Django,AWS,No‑Code,Excel,Time Management,77
+Cloud Engineer,No‑Code,Recommendation Systems,Git,Linux,AWS,JavaScript,Terraform,Problem Solving,70
+Cloud Engineer,UX Writing,AWS,Excel,JavaScript,Problem Solving,Power BI,No‑Code,React Native,76
+Cloud Engineer,Time Management,Linux,Recommendation Systems,JavaScript,Power BI,AWS,Problem Solving,Vulnerability Scanning,89
+Cloud Engineer,Django,Kafka,Agile,Recommendation Systems,Git,TypeScript,JavaScript,Docker,66
+Cloud Engineer,Terraform,Git,AWS,Linux,Power BI,Django,Docker,JavaScript,69
+Cloud Engineer,Problem Solving,React Native,Git,AWS,Vulnerability Scanning,Kafka,Recommendation Systems,Django,56
+Cloud Engineer,Django,Networking,Excel,AWS,Docker,Terraform,Problem Solving,TypeScript,75
+Cloud Engineer,React Native,Terraform,UX Writing,Kafka,AWS,Networking,Git,No‑Code,88
+Cloud Engineer,Excel,Django,Vulnerability Scanning,React Native,Agile,TypeScript,UX Writing,Git,91
+Cloud Engineer,UX Writing,AWS,Git,Recommendation Systems,Excel,Kafka,Power BI,Docker,68
+Cybersecurity Analyst,REST API,SIEM,Jetpack Compose,Kubernetes,Computer Vision,Threat Modeling,Communication,Scrum,64
+Cybersecurity Analyst,Scrum,Matplotlib,Raspberry Pi,Communication,IDS/IPS,Node.js,No‑Code,NumPy,57
+Cybersecurity Analyst,Computer Vision,Raspberry Pi,NumPy,Scrum,Spark,Threat Modeling,Jetpack Compose,Kubernetes,80
+Cybersecurity Analyst,Node.js,Matplotlib,Jetpack Compose,Vulnerability Scanning,Communication,Spark,Data Cleaning,Time Series,94
+Cybersecurity Analyst,SIEM,Data Cleaning,Kubernetes,No‑Code,Threat Modeling,Node.js,Time Series,Vulnerability Scanning,57
+Cybersecurity Analyst,Kubernetes,Vulnerability Scanning,Matplotlib,No‑Code,Scrum,Spark,Linux,Jetpack Compose,97
+Cybersecurity Analyst,Matplotlib,Data Cleaning,No‑Code,Spark,Kubernetes,Time Series,Vulnerability Scanning,SIEM,76
+Cybersecurity Analyst,NumPy,Threat Modeling,Raspberry Pi,Cryptography,Computer Vision,Vulnerability Scanning,Kubernetes,Linux,56
+Cybersecurity Analyst,Raspberry Pi,Matplotlib,IDS/IPS,Threat Modeling,Scrum,No‑Code,Kubernetes,Time Series,79
+Cybersecurity Analyst,Communication,Cryptography,Node.js,Threat Modeling,Jetpack Compose,Kubernetes,IDS/IPS,Scrum,86
+Cybersecurity Analyst,Cryptography,Communication,Matplotlib,IDS/IPS,Time Series,Data Cleaning,Computer Vision,Kubernetes,71
+Cybersecurity Analyst,No‑Code,Node.js,NumPy,IDS/IPS,Time Series,Matplotlib,REST API,Scrum,61
+Security Engineer,Java,NumPy,Zapier,Node.js,SQL,Leadership,Data Cleaning,Vulnerability Scanning,73
+Security Engineer,Zapier,JavaScript,Node.js,Data Cleaning,Leadership,IAM,Critical Thinking,Cryptography,92
+Security Engineer,Zapier,IAM,Data Cleaning,Critical Thinking,XGBoost,Leadership,NumPy,No‑Code,77
+Security Engineer,Node.js,C++,Data Cleaning,SQL,Zapier,FastAPI,IAM,JavaScript,54
+Security Engineer,Java,Prototyping,Penetration Testing,Rust,Vulnerability Scanning,IAM,JavaScript,Recommendation Systems,79
+Security Engineer,Zapier,NumPy,Node.js,Penetration Testing,No‑Code,C++,Leadership,Recommendation Systems,76
+Security Engineer,Rust,Data Cleaning,Vulnerability Scanning,NumPy,Node.js,FastAPI,No‑Code,JavaScript,92
+Security Engineer,Prototyping,Cryptography,Java,C++,SQL,XGBoost,NumPy,Data Cleaning,55
+Security Engineer,NumPy,Node.js,Cryptography,Java,XGBoost,IAM,Prototyping,Recommendation Systems,71
+Security Engineer,Node.js,NumPy,Cryptography,JavaScript,XGBoost,Java,IAM,Data Cleaning,72
+Security Engineer,Node.js,JavaScript,Zapier,No‑Code,Java,Rust,Leadership,Recommendation Systems,56
+Security Engineer,Cryptography,Penetration Testing,Recommendation Systems,Node.js,Prototyping,IAM,Zapier,Vulnerability Scanning,77
+Network Engineer,User Research,Networking,Problem Solving,Critical Thinking,IAM,C++,Communication,Time Management,92
+Network Engineer,Bash,Communication,Agile,Critical Thinking,Teamwork,Problem Solving,ETL,Security,74
+Network Engineer,C++,Presentation,Networking,IAM,Problem Solving,Agile,Time Series,Arduino,99
+Network Engineer,Teamwork,Communication,UX Writing,Agile,IAM,Bash,User Research,Critical Thinking,93
+Network Engineer,Communication,ETL,Presentation,C++,Time Series,User Research,Marketing Analytics,Linux,67
+Network Engineer,Linux,Arduino,Security,Problem Solving,C++,UX Writing,Agile,Networking,93
+Network Engineer,Teamwork,Time Series,Arduino,User Research,UX Writing,Security,Linux,Accessibility,53
+Network Engineer,Critical Thinking,Linux,User Research,Teamwork,Agile,Bash,Time Series,C++,70
+Network Engineer,Security,Critical Thinking,Time Series,C++,IAM,Communication,Linux,ETL,95
+Network Engineer,Marketing Analytics,Arduino,Accessibility,Problem Solving,Communication,Linux,C++,Teamwork,52
+Network Engineer,C++,Critical Thinking,Presentation,Communication,Networking,User Research,Linux,Accessibility,75
+Network Engineer,C++,User Research,Security,Bash,Critical Thinking,IAM,Communication,Arduino,89
+Site Reliability Engineer,CI/CD,NLP,Time Management,Prototyping,Scripting,Linux,Vue,Communication,83
+Site Reliability Engineer,REST API,Agile,Kotlin,Vue,Azure,Kubernetes,Communication,Scripting,66
+Site Reliability Engineer,Agile,Prototyping,Azure,Scripting,GCP,Observability,CI/CD,NLP,79
+Site Reliability Engineer,GCP,Time Management,Scala,CI/CD,REST API,Scripting,NLP,Communication,80
+Site Reliability Engineer,Scala,Vulnerability Scanning,Linux,Communication,Kotlin,Vue,REST API,Azure,79
+Site Reliability Engineer,Scala,Communication,GCP,Kotlin,Vulnerability Scanning,Vue,CI/CD,Time Management,89
+Site Reliability Engineer,Time Management,REST API,Observability,Scala,Communication,NLP,Vue,Vulnerability Scanning,91
+Site Reliability Engineer,Agile,CI/CD,Git,REST API,Azure,R,NLP,Communication,71
+Site Reliability Engineer,Scripting,REST API,Prototyping,Communication,NLP,Kotlin,Git,Problem Solving,83
+Site Reliability Engineer,REST API,Prototyping,Kotlin,Vue,Vulnerability Scanning,Agile,Scala,Observability,71
+Site Reliability Engineer,Time Management,Communication,CI/CD,Scripting,Vue,GCP,Linux,Git,74
+Site Reliability Engineer,Vulnerability Scanning,Linux,Azure,CI/CD,Scripting,Time Management,REST API,Git,72
+QA Engineer,Zapier,Azure,Vue,Teamwork,Presentation,Critical Thinking,IAM,Automation,61
+QA Engineer,Selenium,Problem Solving,Next.js,Teamwork,CI/CD,Azure,Test Design,R,68
+QA Engineer,Leadership,Zapier,Android,Arduino,R,Problem Solving,IAM,Express,89
+QA Engineer,Automation,Express,Teamwork,IAM,Zapier,Vue,Presentation,Arduino,89
+QA Engineer,IAM,Test Design,R,Vue,Presentation,Problem Solving,Next.js,Leadership,78
+QA Engineer,Teamwork,Design Systems,Test Design,CI/CD,Zapier,Automation,Express,Vue,80
+QA Engineer,Selenium,Presentation,Test Design,Android,Design Systems,Express,Teamwork,NumPy,83
+QA Engineer,Vue,IAM,Selenium,Automation,NumPy,Critical Thinking,Problem Solving,CI/CD,73
+QA Engineer,Android,Leadership,Zapier,Arduino,Design Systems,R,Express,Azure,67
+QA Engineer,Test Design,Zapier,Automation,Vue,Azure,Teamwork,Leadership,CI/CD,72
+QA Engineer,Critical Thinking,Vue,R,Express,Presentation,Leadership,Selenium,Android,73
+QA Engineer,CI/CD,Critical Thinking,Problem Solving,Leadership,Android,Express,Azure,Vue,52
+Automation Engineer,HTML,Flutter,Computer Vision,Power BI,User Research,Android,Python,Communication,53
+Automation Engineer,CI/CD,Computer Vision,Kafka,Java,Power BI,Android,HTML,User Research,84
+Automation Engineer,R,Flutter,CI/CD,Python,User Research,Selenium,HTML,Presentation,72
+Automation Engineer,CI/CD,Android,Computer Vision,Scikit‑learn,Java,Zero Trust,Flutter,Communication,83
+Automation Engineer,APIs,Flutter,Android,R,Copywriting,Computer Vision,CI/CD,HTML,90
+Automation Engineer,Copywriting,Bash,Zero Trust,R,Android,HTML,Communication,Scikit‑learn,65
+Automation Engineer,Power BI,Android,Statistics,Python,Communication,Scikit‑learn,Zero Trust,Kafka,91
+Automation Engineer,Scikit‑learn,Kafka,Presentation,HTML,Python,Communication,Bash,Copywriting,79
+Automation Engineer,Communication,User Research,Selenium,HTML,APIs,Kafka,R,Scikit‑learn,69
+Automation Engineer,Flutter,Copywriting,APIs,Presentation,Zero Trust,R,Android,Statistics,62
+Automation Engineer,User Research,Bash,Communication,Statistics,Zero Trust,APIs,Copywriting,Scikit‑learn,77
+Automation Engineer,Copywriting,Kafka,HTML,Statistics,Scikit‑learn,CI/CD,Bash,Android,73
+Embedded Engineer,Time Series,Vue,Cryptography,IDS/IPS,C++,Kotlin,R,CSS,72
+Embedded Engineer,IDS/IPS,Vue,C,Critical Thinking,Terraform,ETL,Time Series,CI/CD,73
+Embedded Engineer,RTOS,Cryptography,R,Airtable,Time Series,Arduino,Terraform,Critical Thinking,65
+Embedded Engineer,C++,IDS/IPS,Flutter,Critical Thinking,Airtable,ETL,Kotlin,Cryptography,73
+Embedded Engineer,Time Series,Terraform,Airtable,RTOS,C++,CI/CD,Cryptography,ETL,67
+Embedded Engineer,Kotlin,Node.js,R,Cryptography,CSS,C,CI/CD,Time Series,57
+Embedded Engineer,C,IDS/IPS,Time Series,CI/CD,Raspberry Pi,C++,Kotlin,Node.js,57
+Embedded Engineer,Airtable,Terraform,Time Series,Cryptography,Arduino,Critical Thinking,Flutter,ETL,70
+Embedded Engineer,C++,Terraform,Arduino,Raspberry Pi,RTOS,Vue,Accessibility,IDS/IPS,95
+Embedded Engineer,Cryptography,C++,RTOS,Kotlin,Node.js,CSS,Flutter,Terraform,65
+Embedded Engineer,CSS,R,C++,Arduino,Time Series,Flutter,C,Terraform,89
+Embedded Engineer,Terraform,IDS/IPS,Raspberry Pi,Flutter,CSS,C,CI/CD,RTOS,76
+Game Developer,IDS/IPS,ETL,Serverless,Flask,Figma,Raspberry Pi,Communication,Angular,60
+Game Developer,Prototyping,Scrum,Unity,3D Math,Zero Trust,ETL,Flask,IDS/IPS,62
+Game Developer,Teamwork,Raspberry Pi,IDS/IPS,Zero Trust,Communication,Salesforce,Scrum,C#,87
+Game Developer,Salesforce,IDS/IPS,Prototyping,Scrum,Flask,ETL,Bash,Graphics,55
+Game Developer,Flask,Salesforce,Raspberry Pi,NumPy,ETL,Zero Trust,Scrum,Graphics,81
+Game Developer,Teamwork,Zero Trust,Salesforce,C#,Unity,TypeScript,Bash,Scrum,75
+Game Developer,Zero Trust,Bash,Communication,Flask,Prototyping,Unity,NumPy,Salesforce,79
+Game Developer,NumPy,Scrum,IDS/IPS,Salesforce,Serverless,3D Math,ETL,Prototyping,75
+Game Developer,IDS/IPS,3D Math,Serverless,Figma,Scrum,Teamwork,Unity,Flask,67
+Game Developer,Bash,Unity,IDS/IPS,Figma,Flask,Teamwork,NumPy,Zero Trust,76
+Game Developer,Unity,Prototyping,Scrum,Teamwork,NumPy,TypeScript,Communication,Angular,82
+Game Developer,Bash,C#,Zero Trust,Salesforce,Graphics,Flask,NumPy,Raspberry Pi,79
+AR/VR Developer,Kafka,Scikit‑learn,Design Systems,Problem Solving,C#,Rust,XGBoost,Kotlin,53
+AR/VR Developer,Teamwork,Penetration Testing,Kotlin,Problem Solving,Wireframing,MongoDB,JavaScript,Design Systems,78
+AR/VR Developer,Penetration Testing,Design Systems,Agile,Scikit‑learn,JavaScript,Kotlin,Rust,C#,71
+AR/VR Developer,Penetration Testing,Problem Solving,Scikit‑learn,Kotlin,C#,Design Systems,XGBoost,Kafka,52
+AR/VR Developer,Scikit‑learn,Scrum,3D,HTML,Shaders,FastAPI,Wireframing,Design Systems,58
+AR/VR Developer,Scrum,JavaScript,Rust,C#,Wireframing,3D,Penetration Testing,Design Systems,82
+AR/VR Developer,Penetration Testing,3D,Wireframing,Teamwork,XGBoost,Rust,Shaders,Scrum,57
+AR/VR Developer,Kafka,Teamwork,Wireframing,XGBoost,3D,Scikit‑learn,Scrum,C#,99
+AR/VR Developer,Teamwork,JavaScript,Unity,MongoDB,3D,FastAPI,Design Systems,Scrum,96
+AR/VR Developer,JavaScript,C#,Scikit‑learn,Unity,MongoDB,Wireframing,Problem Solving,3D,62
+AR/VR Developer,XGBoost,Shaders,Scrum,Kafka,Scikit‑learn,Kotlin,Problem Solving,Agile,76
+AR/VR Developer,HTML,3D,MongoDB,Scikit‑learn,Kotlin,Design Systems,Rust,Scrum,80
+UI/UX Designer,Marketing Analytics,Accessibility,Vulnerability Scanning,Django,Angular,Time Management,Prototyping,Agile,69
+UI/UX Designer,React Native,Vulnerability Scanning,Accessibility,Scrum,Teamwork,Cryptography,Marketing Analytics,Data Cleaning,96
+UI/UX Designer,Marketing Analytics,React Native,Agile,Data Cleaning,Penetration Testing,Git,Cryptography,Accessibility,59
+UI/UX Designer,React Native,FastAPI,Angular,Airtable,User Research,Next.js,Django,Scrum,66
+UI/UX Designer,Accessibility,Vulnerability Scanning,Time Management,Marketing Analytics,Penetration Testing,Airtable,FastAPI,React Native,97
+UI/UX Designer,Time Management,Django,Angular,FastAPI,Teamwork,Scrum,Agile,Figma,56
+UI/UX Designer,Git,Scrum,Accessibility,Agile,Prototyping,Figma,Marketing Analytics,Airtable,76
+UI/UX Designer,Accessibility,Angular,Vulnerability Scanning,React Native,Scrum,Prototyping,Time Management,Figma,99
+UI/UX Designer,Airtable,Time Management,Django,FastAPI,Cryptography,Vulnerability Scanning,Git,Angular,52
+UI/UX Designer,Data Cleaning,Accessibility,Cryptography,React Native,FastAPI,Figma,Prototyping,Penetration Testing,88
+UI/UX Designer,Agile,Scrum,React Native,Next.js,Accessibility,Penetration Testing,Airtable,Marketing Analytics,79
+UI/UX Designer,Marketing Analytics,Vulnerability Scanning,Agile,Scrum,Cryptography,User Research,Django,Penetration Testing,66
+Product Designer,Data Cleaning,iOS,CSS,ETL,Communication,Agile,SwiftUI,UX Writing,61
+Product Designer,SOC,IA,ETL,BigQuery,Critical Thinking,JavaScript,Agile,Figma,78
+Product Designer,Django,ETL,Design Systems,Critical Thinking,JavaScript,Zapier,SEO,User Research,65
+Product Designer,UX Writing,Figma,Presentation,Design Systems,SEO,Agile,ETL,Django,95
+Product Designer,Design Systems,Figma,JavaScript,User Research,BigQuery,Zapier,Communication,IA,59
+Product Designer,Presentation,User Research,iOS,IA,Agile,Data Cleaning,Figma,ETL,98
+Product Designer,JavaScript,Communication,CSS,Presentation,User Research,UX Writing,Design Systems,SwiftUI,53
+Product Designer,SwiftUI,CSS,Agile,SOC,SEO,IA,iOS,Django,78
+Product Designer,Figma,Agile,IA,Communication,Presentation,Data Cleaning,Critical Thinking,BigQuery,58
+Product Designer,CSS,iOS,Presentation,UX Writing,SwiftUI,ETL,Data Cleaning,SOC,96
+Product Designer,Critical Thinking,Data Cleaning,Django,JavaScript,Agile,Design Systems,UX Writing,CSS,77
+Product Designer,User Research,Communication,SwiftUI,UX Writing,Zapier,Presentation,BigQuery,Critical Thinking,68
+Graphic Designer,Illustrator,Statistics,Kubernetes,Agile,Branding,Photoshop,Layout,Teamwork,64
+Graphic Designer,R,GraphQL,Scrum,Presentation,Bash,Photoshop,Cryptography,Kubernetes,65
+Graphic Designer,Presentation,Statistics,Illustrator,Photoshop,Cryptography,GraphQL,Teamwork,Branding,57
+Graphic Designer,Critical Thinking,Bash,R,Marketing Analytics,Cryptography,GraphQL,Presentation,Scrum,52
+Graphic Designer,Presentation,Critical Thinking,Marketing Analytics,Teamwork,Branding,Docker,Kubernetes,Photoshop,63
+Graphic Designer,Critical Thinking,Illustrator,Next.js,Scrum,Marketing Analytics,Bash,Statistics,Docker,70
+Graphic Designer,Teamwork,ETL,Marketing Analytics,Scrum,Illustrator,GraphQL,Photoshop,Kubernetes,76
+Graphic Designer,Scrum,Photoshop,Critical Thinking,Agile,Bash,Teamwork,Marketing Analytics,R,72
+Graphic Designer,Branding,Next.js,ETL,Bash,Teamwork,Layout,Illustrator,Cryptography,61
+Graphic Designer,Docker,Flutter,Marketing Analytics,GraphQL,Scrum,Bash,Statistics,Layout,79
+Graphic Designer,Critical Thinking,Docker,Bash,Teamwork,Illustrator,Cryptography,Kubernetes,Flutter,63
+Graphic Designer,ETL,Layout,Presentation,Statistics,Teamwork,Photoshop,Next.js,Kubernetes,53
+Product Manager,IAM,BigQuery,Prioritization,Airtable,Time Series,React Native,Communication,Go,98
+Product Manager,Copywriting,Agile,Airtable,TypeScript,Analytics,Scikit‑learn,Leadership,Time Series,68
+Product Manager,TypeScript,Go,Next.js,React Native,BigQuery,Prototyping,Leadership,Scikit‑learn,81
+Product Manager,Go,Hadoop,Copywriting,IAM,Airtable,Leadership,Accessibility,Next.js,52
+Product Manager,Analytics,Agile,Prototyping,Prioritization,Scikit‑learn,Copywriting,BigQuery,Roadmapping,96
+Product Manager,Roadmapping,BigQuery,Prototyping,Airtable,IAM,Hadoop,Time Series,Analytics,65
+Product Manager,Copywriting,Next.js,IAM,Scikit‑learn,Accessibility,React Native,Analytics,Go,81
+Product Manager,Go,Leadership,React Native,Analytics,Prototyping,Next.js,Scikit‑learn,Agile,61
+Product Manager,Next.js,Communication,Time Series,Analytics,Redis,Roadmapping,IAM,Prioritization,98
+Product Manager,Prioritization,Roadmapping,Prototyping,Agile,Redis,React Native,Copywriting,Accessibility,63
+Product Manager,Time Series,Go,React Native,Communication,Copywriting,IAM,Agile,Prioritization,50
+Product Manager,Next.js,Accessibility,Roadmapping,Prioritization,Time Series,Scikit‑learn,React Native,Prototyping,84
+Business Analyst,Diagrams,BigQuery,Vulnerability Scanning,HTML,CI/CD,UX Writing,Power BI,Swift,79
+Business Analyst,HTML,Agile,Arduino,Robotics,SQL,Requirements,Kotlin,Excel,98
+Business Analyst,UX Writing,SQL,CI/CD,Presentation,Diagrams,BigQuery,Agile,XGBoost,90
+Business Analyst,XGBoost,Power BI,SQL,Data Cleaning,Kotlin,Requirements,CI/CD,HTML,86
+Business Analyst,Threat Modeling,Diagrams,UX Writing,Agile,Swift,Excel,Kotlin,Vulnerability Scanning,86
+Business Analyst,Data Cleaning,BigQuery,UX Writing,SQL,HTML,Excel,Arduino,Robotics,92
+Business Analyst,UX Writing,Power BI,Requirements,XGBoost,Swift,Robotics,SQL,CI/CD,95
+Business Analyst,CI/CD,SQL,Robotics,Power BI,Agile,Presentation,Kotlin,Swift,93
+Business Analyst,Presentation,Requirements,CI/CD,Java,SQL,BigQuery,Vulnerability Scanning,Power BI,53
+Business Analyst,Threat Modeling,Kotlin,Agile,SQL,Requirements,Robotics,CI/CD,Excel,88
+Business Analyst,CI/CD,Requirements,XGBoost,BigQuery,Excel,Agile,Threat Modeling,Power BI,85
+Business Analyst,CI/CD,Kotlin,Power BI,Arduino,SQL,Diagrams,Robotics,Java,65
+Systems Analyst,APIs,Scala,AWS,Power BI,Python,Communication,Security,No‑Code,78
+Systems Analyst,UML,Angular,Next.js,Vue,Power BI,R,Communication,Sys Design,85
+Systems Analyst,Security,iOS,REST API,R,TypeScript,No‑Code,APIs,UML,55
+Systems Analyst,UML,Kotlin,Next.js,Sys Design,REST API,Security,APIs,Python,69
+Systems Analyst,AWS,Time Series,Python,Security,Sys Design,No‑Code,UML,APIs,69
+Systems Analyst,Time Series,Security,Scala,AWS,Kotlin,UML,iOS,Angular,88
+Systems Analyst,Angular,No‑Code,APIs,Power BI,Python,Time Series,R,SwiftUI,71
+Systems Analyst,Angular,REST API,iOS,APIs,UML,No‑Code,Vue,Time Series,88
+Systems Analyst,Python,TypeScript,iOS,No‑Code,Time Series,Sys Design,Security,Next.js,70
+Systems Analyst,TypeScript,Time Series,Kotlin,iOS,REST API,Python,Vue,SwiftUI,75
+Systems Analyst,Scala,Power BI,No‑Code,Sys Design,R,Angular,Kotlin,APIs,63
+Systems Analyst,APIs,TypeScript,Security,Vue,Time Series,UML,iOS,Python,65
+Database Administrator,Bash,Zapier,Critical Thinking,Performance,Terraform,GCP,iOS,Threat Modeling,92
+Database Administrator,Performance,Redis,Critical Thinking,iOS,TypeScript,Next.js,Agile,Zapier,50
+Database Administrator,Threat Modeling,Design Systems,PostgreSQL,Next.js,Zapier,Computer Vision,Redis,Agile,79
+Database Administrator,GCP,Next.js,Power BI,Performance,MongoDB,PostgreSQL,Critical Thinking,Zapier,76
+Database Administrator,Terraform,Threat Modeling,Power BI,Performance,Wireframing,Redis,PostgreSQL,iOS,63
+Database Administrator,Next.js,Computer Vision,Performance,GCP,Threat Modeling,PostgreSQL,Zapier,Bash,78
+Database Administrator,TypeScript,Terraform,Wireframing,Critical Thinking,Threat Modeling,MongoDB,Bash,Redis,91
+Database Administrator,Threat Modeling,Redis,PostgreSQL,Next.js,GCP,Design Systems,Terraform,Computer Vision,85
+Database Administrator,Bash,Backups,PostgreSQL,iOS,Redis,Terraform,TypeScript,Penetration Testing,77
+Database Administrator,iOS,MongoDB,Agile,Backups,Bash,Zapier,GCP,Performance,63
+Database Administrator,Agile,Design Systems,Terraform,Threat Modeling,Redis,Computer Vision,Backups,Next.js,79
+Database Administrator,Threat Modeling,Design Systems,Computer Vision,Next.js,TypeScript,Wireframing,Agile,Backups,75
+Data Engineer,Data Cleaning,Flask,Agile,User Research,Arduino,SQL,Airtable,Problem Solving,59
+Data Engineer,Spark,Statistics,Data Modeling,FastAPI,Arduino,Prototyping,SQL,Agile,90
+Data Engineer,Android,Airtable,Airflow,Arduino,React,FastAPI,SQL,Data Modeling,70
+Data Engineer,Git,UX Writing,Problem Solving,R,React,SQL,Flask,Prototyping,85
+Data Engineer,Spark,React,Data Modeling,Arduino,Android,Problem Solving,Airflow,Agile,81
+Data Engineer,Airtable,SQL,R,Agile,User Research,Android,FastAPI,Flask,84
+Data Engineer,User Research,Airtable,Git,React,Flask,Airflow,UX Writing,FastAPI,99
+Data Engineer,Android,Problem Solving,Airflow,UX Writing,Git,ETL,Flask,Prototyping,56
+Data Engineer,Agile,User Research,UX Writing,Git,ETL,Airtable,Data Modeling,Android,78
+Data Engineer,Flask,Agile,Prototyping,Problem Solving,Data Modeling,SQL,User Research,Git,63
+Data Engineer,Prototyping,UX Writing,Problem Solving,ETL,Airtable,React,Android,FastAPI,68
+Data Engineer,Arduino,ETL,Spark,Flask,FastAPI,Statistics,Git,Prototyping,53
+BI Developer,Agile,Problem Solving,Excel,iOS,Node.js,NLP,Presentation,DAX,55
+BI Developer,Excel,Copywriting,Agile,NumPy,iOS,Leadership,Power BI,PostgreSQL,50
+BI Developer,Node.js,iOS,NumPy,Teamwork,Excel,Communication,Azure,DAX,81
+BI Developer,Agile,NLP,PostgreSQL,DAX,Figma,Presentation,Problem Solving,Leadership,71
+BI Developer,A/B Testing,Teamwork,Communication,iOS,SQL,DAX,Problem Solving,Node.js,78
+BI Developer,iOS,SQL,Problem Solving,Azure,Figma,Teamwork,NLP,Data Modeling,60
+BI Developer,Agile,Node.js,NumPy,Teamwork,DAX,Power BI,NLP,Problem Solving,60
+BI Developer,A/B Testing,Excel,PostgreSQL,Leadership,Problem Solving,NLP,Teamwork,NumPy,56
+BI Developer,SQL,Azure,Data Modeling,Node.js,Figma,PostgreSQL,Communication,Agile,93
+BI Developer,iOS,SQL,DAX,NLP,Communication,Problem Solving,Azure,NumPy,58
+BI Developer,Data Modeling,Node.js,Leadership,Excel,DAX,NumPy,Copywriting,A/B Testing,56
+BI Developer,NLP,NumPy,PostgreSQL,Figma,Excel,Data Modeling,Problem Solving,iOS,58
+SEO Specialist,Scikit‑learn,Matplotlib,Analytics,Vulnerability Scanning,SEO,Information Architecture,SOC,PHP,98
+SEO Specialist,Agile,Teamwork,Copywriting,Problem Solving,Matplotlib,Linux,Information Architecture,SEO,65
+SEO Specialist,Jetpack Compose,SEO,React Native,Excel,Flask,Matplotlib,Analytics,User Research,69
+SEO Specialist,Vulnerability Scanning,HTML,Teamwork,JavaScript,Copywriting,Scikit‑learn,User Research,Flask,65
+SEO Specialist,PHP,Copywriting,Agile,React Native,JavaScript,User Research,Excel,SOC,83
+SEO Specialist,Flask,Problem Solving,User Research,Scikit‑learn,Copywriting,Matplotlib,Analytics,Excel,76
+SEO Specialist,Problem Solving,Information Architecture,Linux,PHP,SEO,Flask,Excel,SOC,50
+SEO Specialist,Jetpack Compose,Vulnerability Scanning,SOC,Information Architecture,Copywriting,JavaScript,Scikit‑learn,User Research,95
+SEO Specialist,HTML,Matplotlib,Teamwork,Copywriting,SEO,User Research,Jetpack Compose,Information Architecture,89
+SEO Specialist,Scikit‑learn,Jetpack Compose,SEO,Excel,Information Architecture,Teamwork,Agile,Copywriting,59
+SEO Specialist,Information Architecture,User Research,Copywriting,SEO,Excel,Problem Solving,Vulnerability Scanning,Analytics,65
+SEO Specialist,SOC,React Native,SEO,Matplotlib,Agile,Teamwork,Excel,HTML,53
+Digital Marketer,Pandas,Leadership,Data Cleaning,SEO,JavaScript,Android,MongoDB,Statistics,51
+Digital Marketer,Raspberry Pi,Presentation,Pandas,SwiftUI,Flask,SEO,Data Cleaning,Marketing Analytics,90
+Digital Marketer,Flask,Vue,Tableau,SwiftUI,Data Cleaning,Critical Thinking,Ads,Marketing Analytics,60
+Digital Marketer,Data Cleaning,Leadership,Pandas,No‑Code,SwiftUI,Vue,JavaScript,Android,50
+Digital Marketer,MongoDB,Critical Thinking,Ads,JavaScript,Vue,Leadership,Content,Flask,61
+Digital Marketer,MongoDB,Android,Presentation,Ads,Raspberry Pi,No‑Code,Content,Data Cleaning,70
+Digital Marketer,Pandas,Flask,Data Cleaning,No‑Code,MongoDB,IDS/IPS,SwiftUI,Statistics,83
+Digital Marketer,MongoDB,Statistics,Flask,Tableau,Marketing Analytics,IDS/IPS,Presentation,SEO,70
+Digital Marketer,Flask,Android,Tableau,Critical Thinking,Data Cleaning,No‑Code,SEO,Marketing Analytics,69
+Digital Marketer,JavaScript,Ads,Tableau,Data Cleaning,Vue,Statistics,Android,No‑Code,96
+Digital Marketer,Android,Ads,SEO,Critical Thinking,Presentation,SwiftUI,No‑Code,Pandas,72
+Digital Marketer,Critical Thinking,Raspberry Pi,JavaScript,Statistics,Marketing Analytics,MongoDB,No‑Code,Pandas,65
+Content Strategist,Kubernetes,GraphQL,Ruby,PyTorch,SEO,iOS,Research,Content,54
+Content Strategist,GraphQL,IDS/IPS,Editing,Research,SEO,Ruby,Presentation,PyTorch,70
+Content Strategist,Go,iOS,GraphQL,Git,Excel,Ruby,Editing,PyTorch,58
+Content Strategist,GraphQL,Ruby,SEO,IDS/IPS,PostgreSQL,Jetpack Compose,Git,Presentation,76
+Content Strategist,Ruby,Docker,Scala,Content,Git,SEO,Jetpack Compose,Presentation,57
+Content Strategist,Kubernetes,PostgreSQL,Problem Solving,Editing,Content,Research,Git,GraphQL,59
+Content Strategist,Kubernetes,Jetpack Compose,Scala,Go,Editing,iOS,SEO,Research,61
+Content Strategist,A/B Testing,Go,Git,Jetpack Compose,Ruby,PyTorch,Editing,GraphQL,58
+Content Strategist,Ruby,A/B Testing,Editing,Jetpack Compose,SEO,IDS/IPS,Research,Content,73
+Content Strategist,Kubernetes,GraphQL,Excel,IDS/IPS,A/B Testing,Editing,Ruby,iOS,78
+Content Strategist,SEO,Kubernetes,iOS,Ruby,Editing,Jetpack Compose,A/B Testing,GraphQL,86
+Content Strategist,Research,Go,Presentation,A/B Testing,GraphQL,iOS,Content,Kubernetes,72
+Technical Writer,CSS,UX Writing,A/B Testing,Zero Trust,Bash,Docker,NLP,Clarity,91
+Technical Writer,Docs,Scrum,Docker,MongoDB,Bash,CSS,User Research,Scikit‑learn,80
+Technical Writer,Docker,CSS,User Research,Docs,Audience,NLP,Power BI,A/B Testing,51
+Technical Writer,Audience,Scrum,MongoDB,Zero Trust,UX Writing,Bash,Teamwork,Docs,72
+Technical Writer,Teamwork,Scrum,Scikit‑learn,Clarity,Time Management,Audience,Docs,Power BI,84
+Technical Writer,UX Writing,Scrum,Bash,User Research,Scikit‑learn,A/B Testing,Clarity,ETL,70
+Technical Writer,User Research,Teamwork,MongoDB,Time Management,Power BI,ETL,Clarity,Bash,81
+Technical Writer,Docker,ETL,Scikit‑learn,CSS,UX Writing,Docs,MongoDB,Clarity,88
+Technical Writer,Scrum,MongoDB,Docs,CSS,Teamwork,Scikit‑learn,ETL,Clarity,58
+Technical Writer,Audience,Scikit‑learn,Time Management,UX Writing,MongoDB,A/B Testing,ETL,User Research,59
+Technical Writer,Clarity,Docs,User Research,A/B Testing,Docker,CSS,Audience,NLP,87
+Technical Writer,Clarity,Audience,ETL,Teamwork,Power BI,A/B Testing,User Research,NLP,90
+IT Support Specialist,IAM,No‑Code,Leadership,Windows,Data Cleaning,Problem Solving,Next.js,Angular,52
+IT Support Specialist,Leadership,macOS,PostgreSQL,Troubleshooting,Next.js,TensorFlow,Angular,User Research,54
+IT Support Specialist,PostgreSQL,User Research,macOS,Leadership,TensorFlow,Problem Solving,Time Management,Arduino,90
+IT Support Specialist,macOS,Vue,Windows,Networks,Prototyping,Troubleshooting,User Research,FastAPI,72
+IT Support Specialist,Networks,Troubleshooting,Windows,FastAPI,Data Cleaning,PostgreSQL,User Research,Prototyping,60
+IT Support Specialist,Problem Solving,Next.js,Data Cleaning,User Research,Arduino,FastAPI,Angular,PostgreSQL,86
+IT Support Specialist,PostgreSQL,Leadership,Vue,TensorFlow,FastAPI,No‑Code,Windows,Time Management,66
+IT Support Specialist,Troubleshooting,TensorFlow,macOS,Leadership,Data Cleaning,Time Management,User Research,FastAPI,85
+IT Support Specialist,TensorFlow,macOS,Next.js,Windows,Problem Solving,Time Management,Angular,IAM,77
+IT Support Specialist,Leadership,FastAPI,Troubleshooting,macOS,Prototyping,Arduino,Next.js,User Research,85
+IT Support Specialist,Arduino,Networks,IAM,Angular,PostgreSQL,FastAPI,Windows,Prototyping,86
+IT Support Specialist,Arduino,Next.js,No‑Code,FastAPI,User Research,Windows,Prototyping,Android,68
+IT Project Manager,Design Systems,Problem Solving,Matplotlib,Spark,Agile,R,Raspberry Pi,CSS,74
+IT Project Manager,Swift,Scrum,Problem Solving,Information Architecture,Risk,Hadoop,Critical Thinking,Communication,78
+IT Project Manager,Kafka,Agile,Hadoop,Information Architecture,R,Stakeholders,Problem Solving,Scrum,92
+IT Project Manager,SQL,Stakeholders,Scrum,C++,Hadoop,Agile,Critical Thinking,Redis,83
+IT Project Manager,C++,Spark,Matplotlib,Hadoop,Information Architecture,Communication,R,Redis,95
+IT Project Manager,R,CSS,Information Architecture,Communication,SQL,Problem Solving,Hadoop,Stakeholders,60
+IT Project Manager,Redis,Risk,Communication,R,C++,CSS,Raspberry Pi,Information Architecture,62
+IT Project Manager,Communication,Agile,Raspberry Pi,Stakeholders,CSS,Redis,Information Architecture,Kafka,85
+IT Project Manager,Raspberry Pi,Agile,CSS,Kafka,Critical Thinking,Problem Solving,Scrum,Design Systems,87
+IT Project Manager,CSS,C++,SQL,Information Architecture,Communication,Stakeholders,Design Systems,Risk,87
+IT Project Manager,SQL,Risk,Information Architecture,Design Systems,Scrum,Kafka,Redis,Communication,74
+IT Project Manager,Matplotlib,Information Architecture,Risk,R,Swift,Communication,Redis,Stakeholders,89
+Blockchain Developer,Smart Contracts,Time Management,Scrum,Time Series,Azure,Presentation,GCP,Security,69
+Blockchain Developer,Express,C#,Scrum,Presentation,Security,Azure,Jetpack Compose,Time Management,76
+Blockchain Developer,Time Series,GCP,Ethereum,Java,Django,GraphQL,Rust,Accessibility,82
+Blockchain Developer,Kafka,Rust,GCP,XGBoost,Django,Azure,Presentation,Express,53
+Blockchain Developer,Jetpack Compose,Java,Express,GraphQL,Ethereum,Time Series,Azure,Rust,73
+Blockchain Developer,Express,GCP,Kafka,Azure,XGBoost,GraphQL,Django,Jetpack Compose,88
+Blockchain Developer,Express,Django,Time Series,Ethereum,GCP,Security,Presentation,Rust,97
+Blockchain Developer,Security,Smart Contracts,XGBoost,Kafka,Java,Time Management,Presentation,GraphQL,99
+Blockchain Developer,Solidity,Jetpack Compose,GraphQL,Time Management,Scrum,C#,GCP,Time Series,51
+Blockchain Developer,XGBoost,Time Series,Rust,Django,Time Management,Azure,Accessibility,Smart Contracts,69
+Blockchain Developer,Scrum,Presentation,Kafka,Ethereum,Express,Rust,Azure,Jetpack Compose,69
+Blockchain Developer,GCP,Kafka,Azure,XGBoost,Ethereum,Scrum,C#,Smart Contracts,88
+Smart Contract Engineer,Redis,Auditing,Django,Node.js,Problem Solving,Scrum,Leadership,Presentation,58
+Smart Contract Engineer,A/B Testing,React,Solidity,Kotlin,iOS,BigQuery,Presentation,Gas,52
+Smart Contract Engineer,HTML,Recommendation Systems,BigQuery,Scrum,Django,Auditing,Kotlin,Presentation,80
+Smart Contract Engineer,Gas,Auditing,Solidity,Leadership,HTML,Redis,Node.js,Django,58
+Smart Contract Engineer,Kotlin,PHP,Leadership,Scrum,Communication,Tooling,HTML,Presentation,97
+Smart Contract Engineer,Solidity,iOS,Scrum,Gas,Kotlin,Recommendation Systems,Redis,Django,57
+Smart Contract Engineer,React,Node.js,Communication,Recommendation Systems,BigQuery,Kotlin,HTML,Scrum,74
+Smart Contract Engineer,Auditing,Solidity,iOS,Node.js,Redis,Communication,Tooling,Leadership,76
+Smart Contract Engineer,HTML,Presentation,Redis,Scrum,Leadership,Problem Solving,Node.js,Django,71
+Smart Contract Engineer,Leadership,Scrum,Node.js,A/B Testing,Presentation,Redis,Tooling,Problem Solving,99
+Smart Contract Engineer,Leadership,HTML,Recommendation Systems,React,Communication,Auditing,Solidity,BigQuery,90
+Smart Contract Engineer,iOS,Problem Solving,Recommendation Systems,React,HTML,A/B Testing,Presentation,Kotlin,62
+Computer Vision Engineer,Vulnerability Scanning,BigQuery,CV,Java,Scrum,Agile,JavaScript,GraphQL,60
+Computer Vision Engineer,Communication,Node.js,BigQuery,GraphQL,Flutter,Vulnerability Scanning,Agile,Information Architecture,83
+Computer Vision Engineer,NLP,Presentation,CV,Time Management,PyTorch,Python,Scrum,Java,60
+Computer Vision Engineer,Scrum,CUDA,SEO,GraphQL,CV,Java,Vulnerability Scanning,JavaScript,87
+Computer Vision Engineer,Information Architecture,Python,Java,Vulnerability Scanning,Node.js,TensorFlow,NLP,CV,99
+Computer Vision Engineer,GraphQL,Node.js,JavaScript,Java,CUDA,PyTorch,Vulnerability Scanning,Time Management,76
+Computer Vision Engineer,Flutter,Scrum,Java,Agile,PyTorch,Vulnerability Scanning,Communication,GraphQL,94
+Computer Vision Engineer,CUDA,BigQuery,Presentation,Java,Agile,JavaScript,Flutter,Vulnerability Scanning,58
+Computer Vision Engineer,Presentation,Java,Information Architecture,JavaScript,BigQuery,Node.js,Scrum,Flutter,81
+Computer Vision Engineer,TensorFlow,Time Management,Agile,Information Architecture,JavaScript,Python,Vulnerability Scanning,PyTorch,68
+Computer Vision Engineer,Python,Node.js,GraphQL,PyTorch,TensorFlow,Vulnerability Scanning,SEO,Time Management,65
+Computer Vision Engineer,CUDA,Time Management,Communication,Java,PyTorch,GraphQL,Node.js,Scrum,82
+NLP Engineer,Transformers,Evaluation,Go,Computer Vision,Agile,Python,CSS,Serverless,52
+NLP Engineer,Critical Thinking,NLP,Rust,Go,Evaluation,Git,TypeScript,Transformers,67
+NLP Engineer,Swift,Evaluation,Go,Rust,Agile,React Native,Git,TypeScript,67
+NLP Engineer,Serverless,PyTorch,Computer Vision,Rust,Agile,Swift,Evaluation,Arduino,53
+NLP Engineer,Rust,Agile,Computer Vision,PyTorch,Git,Swift,Transformers,React Native,99
+NLP Engineer,Evaluation,Critical Thinking,NLP,PyTorch,CSS,Python,React Native,TypeScript,52
+NLP Engineer,Swift,Data Cleaning,Go,Critical Thinking,TypeScript,Arduino,Computer Vision,Rust,83
+NLP Engineer,CSS,Agile,Computer Vision,TypeScript,PyTorch,Rust,Go,Arduino,91
+NLP Engineer,Serverless,NLP,Arduino,Python,Critical Thinking,Go,Swift,Data Cleaning,80
+NLP Engineer,PyTorch,Rust,Swift,Recommendation Systems,Go,Agile,Teamwork,NLP,53
+NLP Engineer,CSS,TypeScript,Arduino,Serverless,Recommendation Systems,Computer Vision,Agile,Python,79
+NLP Engineer,Git,Teamwork,Recommendation Systems,Swift,PyTorch,TypeScript,Rust,Python,81
+Robotics Engineer,Zapier,Docker,IAM,C#,Zero Trust,ROS,C++,UX Writing,64
+Robotics Engineer,C#,Zero Trust,Docker,React,Problem Solving,Zapier,Kotlin,Sensors,56
+Robotics Engineer,Kotlin,UX Writing,Zero Trust,Problem Solving,Raspberry Pi,Jetpack Compose,C#,ROS,94
+Robotics Engineer,Java,Sensors,ROS,React,Python,C++,Problem Solving,C#,96
+Robotics Engineer,C++,Java,Jetpack Compose,IAM,Zapier,Sensors,Accessibility,React,63
+Robotics Engineer,C#,IAM,Zero Trust,Java,C++,UX Writing,Docker,React,87
+Robotics Engineer,Java,C#,GCP,Zapier,Python,Kotlin,UX Writing,Jetpack Compose,97
+Robotics Engineer,Sensors,Docker,C++,React,ROS,Problem Solving,Raspberry Pi,Communication,96
+Robotics Engineer,Python,Java,Scala,Zero Trust,Docker,IAM,Raspberry Pi,Problem Solving,98
+Robotics Engineer,Kotlin,Jetpack Compose,Scala,Zero Trust,Raspberry Pi,Accessibility,Docker,Communication,58
+Robotics Engineer,C++,Zapier,Raspberry Pi,Zero Trust,IAM,Java,C#,Docker,95
+Robotics Engineer,Raspberry Pi,Problem Solving,Python,ROS,Zero Trust,GCP,Sensors,Scala,72
+IoT Engineer,Cloud,Penetration Testing,Figma,MQTT,Problem Solving,Security,Teamwork,Wireframing,53
+IoT Engineer,Leadership,IAM,Redis,Jetpack Compose,Teamwork,Security,Presentation,Cloud,94
+IoT Engineer,Jetpack Compose,Leadership,HTML,Terraform,Scrum,Presentation,Agile,Penetration Testing,89
+IoT Engineer,HTML,Agile,MQTT,Problem Solving,Teamwork,IAM,Penetration Testing,Presentation,94
+IoT Engineer,Jetpack Compose,Terraform,Problem Solving,HTML,Presentation,Penetration Testing,Wireframing,Redis,85
+IoT Engineer,Terraform,Cloud,IAM,Leadership,Android,Presentation,Figma,Wireframing,95
+IoT Engineer,Scrum,Teamwork,HTML,Leadership,Penetration Testing,Kubernetes,Agile,Security,93
+IoT Engineer,Security,Redis,Teamwork,Penetration Testing,Figma,Leadership,Cloud,Android,67
+IoT Engineer,HTML,IAM,Kubernetes,Redis,Teamwork,Cloud,Penetration Testing,Agile,95
+IoT Engineer,Kubernetes,Terraform,MQTT,Wireframing,Teamwork,Problem Solving,Penetration Testing,Jetpack Compose,92
+IoT Engineer,Jetpack Compose,Arduino,HTML,Scrum,Security,Problem Solving,Penetration Testing,Redis,83
+IoT Engineer,Agile,Redis,Penetration Testing,Security,Teamwork,Leadership,IAM,Presentation,75
+Solutions Architect,Critical Thinking,UX Writing,Raspberry Pi,Kafka,SEO,Express,Vulnerability Scanning,IAM,89
+Solutions Architect,SEO,Cost,Vulnerability Scanning,Problem Solving,UX Writing,TensorFlow,Flask,Scikit‑learn,96
+Solutions Architect,IAM,Critical Thinking,Express,Raspberry Pi,Kafka,SEO,CSS,Flask,91
+Solutions Architect,TensorFlow,Vulnerability Scanning,Express,Cloud,UX Writing,Architecture,Problem Solving,Scikit‑learn,84
+Solutions Architect,Critical Thinking,Cloud,TensorFlow,Architecture,Scala,REST API,Cost,UX Writing,84
+Solutions Architect,Scala,Cloud,Flask,Critical Thinking,Kafka,Raspberry Pi,Security,Express,55
+Solutions Architect,Cloud,Cost,Security,Scikit‑learn,Time Management,IAM,Scala,UX Writing,66
+Solutions Architect,Scala,Problem Solving,Kafka,CSS,Time Management,Security,Critical Thinking,TensorFlow,93
+Solutions Architect,UX Writing,Architecture,Critical Thinking,Cloud,Cost,Raspberry Pi,Scala,REST API,72
+Solutions Architect,Express,UX Writing,IAM,Architecture,Cloud,Flask,Problem Solving,SEO,74
+Solutions Architect,Problem Solving,Critical Thinking,REST API,Security,SEO,Cloud,Raspberry Pi,TensorFlow,84
+Solutions Architect,IAM,Flask,Time Management,Raspberry Pi,Critical Thinking,Scikit‑learn,Scala,Kafka,59
+Scrum Master,Zero Trust,Go,Python,Azure,SwiftUI,Figma,Impediments,Vue,62
+Scrum Master,Figma,Azure,Facilitation,Scrum,Flask,Python,React Native,Vue,66
+Scrum Master,Figma,Hadoop,Coaching,React Native,Design Systems,Flask,Go,Zero Trust,65
+Scrum Master,Figma,Impediments,Flask,Hadoop,React Native,Scikit‑learn,Scrum,Azure,89
+Scrum Master,Impediments,SwiftUI,Python,Design Systems,React Native,Hadoop,Flask,R,70
+Scrum Master,Scikit‑learn,Penetration Testing,Zero Trust,Pandas,Design Systems,Flask,React Native,Coaching,71
+Scrum Master,Coaching,Scrum,SwiftUI,Design Systems,Impediments,Scikit‑learn,Pandas,Facilitation,61
+Scrum Master,Penetration Testing,Flask,Pandas,Python,Hadoop,Go,Design Systems,React Native,54
+Scrum Master,Flask,R,Go,SwiftUI,Jetpack Compose,Coaching,Impediments,Figma,52
+Scrum Master,Vue,Pandas,Penetration Testing,Coaching,Python,Azure,Hadoop,Figma,99
+Scrum Master,SwiftUI,Impediments,Python,Scrum,Flask,Hadoop,Azure,Pandas,50
+Scrum Master,Scikit‑learn,Azure,Go,Python,Scrum,Flask,Coaching,Impediments,86
+CRM Specialist,Agile,PHP,Copywriting,Flutter,SwiftUI,PyTorch,PostgreSQL,Critical Thinking,52
+CRM Specialist,Go,TensorFlow,PHP,Automation,GraphQL,Excel,SwiftUI,PyTorch,61
+CRM Specialist,Flutter,Recommendation Systems,Copywriting,FastAPI,Automation,Agile,TensorFlow,SwiftUI,75
+CRM Specialist,Copywriting,Recommendation Systems,SwiftUI,GraphQL,Critical Thinking,Automation,FastAPI,PostgreSQL,60
+CRM Specialist,PostgreSQL,FastAPI,PHP,Automation,Agile,Salesforce,PyTorch,APIs,73
+CRM Specialist,Recommendation Systems,TensorFlow,PostgreSQL,APIs,Go,Copywriting,Reporting,GraphQL,93
+CRM Specialist,SwiftUI,Recommendation Systems,Agile,Leadership,APIs,Critical Thinking,TensorFlow,PyTorch,58
+CRM Specialist,Salesforce,Recommendation Systems,Leadership,Redis,Reporting,PyTorch,Excel,FastAPI,53
+CRM Specialist,Leadership,Automation,Recommendation Systems,PHP,Flutter,Excel,PyTorch,Go,51
+CRM Specialist,Excel,FastAPI,Agile,PyTorch,SwiftUI,APIs,PostgreSQL,Salesforce,64
+CRM Specialist,APIs,Redis,Leadership,PHP,Automation,FastAPI,Copywriting,Go,71
+CRM Specialist,PyTorch,Salesforce,FastAPI,PostgreSQL,Flutter,Agile,GraphQL,Reporting,51
+Salesforce Developer,Accessibility,Spark,Swift,Kubernetes,APIs,Scrum,Apex,Raspberry Pi,84
+Salesforce Developer,Threat Modeling,C#,Spark,Apex,User Research,Accessibility,IDS/IPS,APIs,83
+Salesforce Developer,C#,Salesforce,APIs,Data Cleaning,User Research,Raspberry Pi,Spark,Accessibility,98
+Salesforce Developer,Apex,Swift,C#,No‑Code,Design Systems,Salesforce,Data Cleaning,IDS/IPS,55
+Salesforce Developer,Raspberry Pi,Accessibility,C#,Design Systems,LWC,Threat Modeling,User Research,Apex,50
+Salesforce Developer,Apex,Spark,Swift,IDS/IPS,Threat Modeling,LWC,Scrum,Accessibility,94
+Salesforce Developer,Scrum,C#,User Research,Swift,No‑Code,LWC,IDS/IPS,Raspberry Pi,66
+Salesforce Developer,Design Systems,Accessibility,C#,User Research,IDS/IPS,Scrum,LWC,Data Cleaning,63
+Salesforce Developer,C#,Accessibility,Apex,APIs,Leadership,Spark,Design Systems,IDS/IPS,80
+Salesforce Developer,Design Systems,Raspberry Pi,User Research,Data Cleaning,No‑Code,C#,Kafka,Scrum,57
+Salesforce Developer,Salesforce,Kafka,Leadership,Swift,LWC,Design Systems,APIs,Data Cleaning,71
+Salesforce Developer,Accessibility,Power BI,Leadership,Data Cleaning,Threat Modeling,Spark,Apex,Kubernetes,80
+No‑Code Developer,Problem Solving,TensorFlow,React Native,GCP,PHP,R,Logic,Scala,83
+No‑Code Developer,Problem Solving,Design Systems,TensorFlow,Accessibility,AWS,Recommendation Systems,Airtable,Scala,52
+No‑Code Developer,C#,AWS,R,React Native,Airtable,CI/CD,Webflow,Design Systems,72
+No‑Code Developer,Webflow,Recommendation Systems,Design Systems,Accessibility,R,C#,PHP,TensorFlow,55
+No‑Code Developer,GraphQL,Problem Solving,Recommendation Systems,C#,Accessibility,Zapier,CI/CD,Logic,88
+No‑Code Developer,Design Systems,PHP,Webflow,R,User Research,Airtable,Recommendation Systems,GCP,56
+No‑Code Developer,GraphQL,Airtable,Accessibility,Problem Solving,Scala,TensorFlow,Webflow,User Research,66
+No‑Code Developer,GraphQL,IDS/IPS,User Research,PHP,Webflow,Problem Solving,AWS,GCP,65
+No‑Code Developer,Scala,PHP,IDS/IPS,R,GCP,TensorFlow,CI/CD,GraphQL,74
+No‑Code Developer,AWS,Recommendation Systems,Scala,Zapier,C#,User Research,PHP,R,94
+No‑Code Developer,User Research,AWS,Problem Solving,Airtable,Webflow,Scala,C#,React Native,54
+No‑Code Developer,GraphQL,React Native,GCP,Scala,C#,Logic,Problem Solving,CI/CD,61
+Growth Engineer,Communication,UX Writing,Teamwork,Coding,SwiftUI,NLP,MongoDB,Experimentation,84
+Growth Engineer,XGBoost,SwiftUI,Jetpack Compose,Product,Teamwork,PyTorch,NLP,Communication,81
+Growth Engineer,FastAPI,Spark,BigQuery,Experimentation,Agile,Teamwork,NLP,Coding,53
+Growth Engineer,Spark,Scrum,SwiftUI,XGBoost,Jetpack Compose,Hadoop,Teamwork,Product,99
+Growth Engineer,FastAPI,PyTorch,UX Writing,Spark,Teamwork,Recommendation Systems,Jetpack Compose,MongoDB,50
+Growth Engineer,Hadoop,Experimentation,UX Writing,Product,Jetpack Compose,NLP,Scrum,Communication,61
+Growth Engineer,Analytics,BigQuery,Agile,Teamwork,SwiftUI,NLP,FastAPI,Scrum,61
+Growth Engineer,SwiftUI,Scrum,Hadoop,Teamwork,Jetpack Compose,FastAPI,Spark,Analytics,67
+Growth Engineer,PyTorch,FastAPI,Communication,Agile,UX Writing,Jetpack Compose,Analytics,Experimentation,65
+Growth Engineer,Analytics,Scrum,Experimentation,Hadoop,Communication,Recommendation Systems,Jetpack Compose,Coding,80
+Growth Engineer,MongoDB,FastAPI,Scrum,SwiftUI,Communication,PyTorch,Analytics,Product,83
+Growth Engineer,Analytics,Product,SwiftUI,NLP,BigQuery,Recommendation Systems,Scrum,Spark,53
+MLOps Engineer,REST API,Teamwork,Time Management,Computer Vision,Recommendation Systems,Azure,Model Serving,Ruby,72
+MLOps Engineer,Recommendation Systems,Model Serving,Teamwork,Jetpack Compose,Tableau,Information Architecture,Arduino,Kafka,82
+MLOps Engineer,MLOps,Arduino,Swift,Express,Tableau,Bash,Kafka,Teamwork,60
+MLOps Engineer,Kafka,Monitoring,Express,Swift,Information Architecture,MLOps,Jetpack Compose,Scikit‑learn,70
+MLOps Engineer,Kafka,Tableau,Computer Vision,Express,Teamwork,Arduino,Bash,Information Architecture,73
+MLOps Engineer,Time Management,Information Architecture,Arduino,Monitoring,Jetpack Compose,Swift,Recommendation Systems,Azure,58
+MLOps Engineer,Bash,Computer Vision,Swift,Model Serving,Jetpack Compose,Information Architecture,Ruby,Monitoring,54
+MLOps Engineer,MLOps,Teamwork,Ruby,Azure,Express,Computer Vision,Recommendation Systems,Time Management,56
+MLOps Engineer,Computer Vision,CI/CD,Swift,Express,Tableau,Scikit‑learn,Arduino,REST API,68
+MLOps Engineer,Arduino,CI/CD,Time Management,Information Architecture,Jetpack Compose,Azure,Recommendation Systems,Kafka,72
+MLOps Engineer,Kafka,MLOps,Arduino,Computer Vision,Teamwork,Swift,REST API,Information Architecture,61
+MLOps Engineer,Time Management,Arduino,Monitoring,Information Architecture,Tableau,Recommendation Systems,Jetpack Compose,Bash,84
+AIOps Engineer,Linux,REST API,Anomaly Detection,Docker,Power BI,JavaScript,Scala,Vue,80
+AIOps Engineer,Anomaly Detection,Power BI,PyTorch,Recommendation Systems,Scala,Vue,JavaScript,Copywriting,73
+AIOps Engineer,Problem Solving,PyTorch,IDS/IPS,JavaScript,Vue,Robotics,Automation,REST API,97
+AIOps Engineer,Vue,Recommendation Systems,Scala,Copywriting,Automation,Problem Solving,React,Robotics,83
+AIOps Engineer,Recommendation Systems,Copywriting,Anomaly Detection,JavaScript,PyTorch,Robotics,Docker,Python,61
+AIOps Engineer,Linux,Anomaly Detection,Robotics,SRE,Arduino,Recommendation Systems,REST API,JavaScript,81
+AIOps Engineer,Problem Solving,React,Power BI,Linux,Python,Copywriting,IDS/IPS,Automation,56
+AIOps Engineer,Anomaly Detection,Copywriting,Linux,SRE,Power BI,Robotics,Python,Automation,50
+AIOps Engineer,Docker,Problem Solving,React,PyTorch,Anomaly Detection,Vue,SRE,Scala,73
+AIOps Engineer,SRE,Python,React,Automation,Linux,Power BI,Docker,Vue,75
+AIOps Engineer,Automation,IDS/IPS,Docker,Observability,Problem Solving,SRE,PyTorch,Linux,74
+AIOps Engineer,Power BI,Robotics,Scala,Vue,SRE,JavaScript,REST API,Recommendation Systems,62
+Quant Analyst,SwiftUI,Time Series,Hadoop,Statistics,Vue,Git,Leadership,IDS/IPS,73
+Quant Analyst,Python,AWS,Hadoop,Scrum,Finance,Marketing Analytics,Node.js,Swift,67
+Quant Analyst,Information Architecture,Hadoop,Tableau,Scrum,Node.js,Vue,Go,SwiftUI,94
+Quant Analyst,Vue,Leadership,Kafka,Swift,Scrum,Time Series,IDS/IPS,Python,93
+Quant Analyst,IDS/IPS,Git,Python,SwiftUI,Kafka,Information Architecture,Swift,Vue,84
+Quant Analyst,Hadoop,Leadership,Vue,Scrum,Git,Statistics,Tableau,SwiftUI,98
+Quant Analyst,Kafka,Flutter,AWS,Node.js,Tableau,Marketing Analytics,IDS/IPS,Swift,66
+Quant Analyst,Python,Vue,Flutter,Go,Information Architecture,Hadoop,Time Series,Swift,84
+Quant Analyst,Kafka,Git,Flutter,Statistics,Marketing Analytics,Python,Time Series,Swift,78
+Quant Analyst,Go,Statistics,SwiftUI,Kafka,Flutter,Node.js,Tableau,Git,82
+Quant Analyst,Tableau,Marketing Analytics,Node.js,Kafka,Scrum,Information Architecture,Time Series,Python,92
+Quant Analyst,SwiftUI,Tableau,AWS,Time Series,Vue,Information Architecture,Statistics,Swift,89
+Financial Data Analyst,Docker,Agile,Communication,SQL,C#,Data Cleaning,Kotlin,NumPy,89
+Financial Data Analyst,Teamwork,NumPy,SQL,Go,Kotlin,Excel,PHP,HTML,50
+Financial Data Analyst,Agile,Docker,Node.js,Spark,SQL,Swift,NumPy,Go,76
+Financial Data Analyst,Go,SQL,NumPy,PHP,Teamwork,IDS/IPS,Docker,Power BI,54
+Financial Data Analyst,Agile,PHP,Communication,HTML,Kotlin,NumPy,IDS/IPS,Teamwork,62
+Financial Data Analyst,PHP,Kotlin,Swift,Finance,Communication,C#,Data Cleaning,Excel,72
+Financial Data Analyst,Spark,Finance,Communication,Swift,PHP,NumPy,Agile,IDS/IPS,71
+Financial Data Analyst,Swift,HTML,Spark,Go,Data Cleaning,NumPy,IDS/IPS,Finance,76
+Financial Data Analyst,Finance,Data Cleaning,Kotlin,Agile,C#,Docker,NumPy,Go,66
+Financial Data Analyst,Go,Spark,Teamwork,C#,Critical Thinking,IDS/IPS,Docker,Power BI,88
+Financial Data Analyst,Critical Thinking,PHP,Power BI,Excel,IDS/IPS,HTML,Communication,Finance,70
+Financial Data Analyst,Critical Thinking,NumPy,HTML,PHP,Power BI,SQL,IDS/IPS,Kotlin,72
+Bioinformatics Scientist,Power BI,Wireframing,REST API,SOC,GCP,Computer Vision,Statistics,React,86
+Bioinformatics Scientist,Pipelines,Scikit‑learn,Figma,Scala,Power BI,PyTorch,R,React,71
+Bioinformatics Scientist,Statistics,Computer Vision,Time Management,Pipelines,NLP,Recommendation Systems,Wireframing,Scikit‑learn,50
+Bioinformatics Scientist,Scala,Figma,Scikit‑learn,PyTorch,Time Management,SOC,Genomics,GCP,59
+Bioinformatics Scientist,Wireframing,PyTorch,NLP,Python,Figma,Recommendation Systems,Statistics,Robotics,78
+Bioinformatics Scientist,Recommendation Systems,Time Management,PyTorch,Power BI,NLP,Robotics,Python,Scala,75
+Bioinformatics Scientist,Python,Recommendation Systems,Wireframing,Power BI,REST API,Scikit‑learn,Statistics,R,85
+Bioinformatics Scientist,Scala,Genomics,Power BI,Recommendation Systems,Computer Vision,PyTorch,Statistics,GCP,98
+Bioinformatics Scientist,Python,REST API,GCP,Robotics,Time Management,PyTorch,Wireframing,Scikit‑learn,62
+Bioinformatics Scientist,GCP,PyTorch,NLP,Recommendation Systems,Power BI,Python,Scala,Robotics,70
+Bioinformatics Scientist,Time Management,Power BI,Pipelines,Computer Vision,PyTorch,SOC,React,GCP,70
+Bioinformatics Scientist,Statistics,R,Scikit‑learn,SOC,Recommendation Systems,GCP,Computer Vision,Scala,78
+Health Informatics Specialist,Rust,Healthcare Data,Scrum,Critical Thinking,Excel,Go,HL7/FHIR,R,69
+Health Informatics Specialist,PyTorch,SwiftUI,Critical Thinking,Excel,SEO,Go,Linux,SQL,63
+Health Informatics Specialist,Analytics,Spark,Linux,SwiftUI,Healthcare Data,Go,PyTorch,Excel,51
+Health Informatics Specialist,HL7/FHIR,Arduino,Spark,R,Linux,UX Writing,Critical Thinking,Healthcare Data,62
+Health Informatics Specialist,GraphQL,Linux,R,PyTorch,Critical Thinking,Analytics,SEO,Excel,67
+Health Informatics Specialist,Go,SQL,Critical Thinking,Scrum,HL7/FHIR,Arduino,SEO,Linux,95
+Health Informatics Specialist,SQL,Excel,SwiftUI,UX Writing,Power BI,GraphQL,Linux,Rust,85
+Health Informatics Specialist,Critical Thinking,R,Rust,Spark,Scrum,Power BI,Analytics,SEO,97
+Health Informatics Specialist,Power BI,Critical Thinking,Go,Analytics,Spark,Excel,Healthcare Data,SQL,82
+Health Informatics Specialist,Linux,R,GraphQL,HL7/FHIR,Critical Thinking,Analytics,Healthcare Data,SQL,59
+Health Informatics Specialist,Excel,HL7/FHIR,Healthcare Data,UX Writing,Arduino,Linux,GraphQL,Scrum,90
+Health Informatics Specialist,Rust,Flutter,GraphQL,Healthcare Data,Arduino,Spark,Scrum,Power BI,78
+EdTech Specialist,Cryptography,Analytics,Vulnerability Scanning,Scrum,Airtable,NumPy,LMS,Problem Solving,57
+EdTech Specialist,Vulnerability Scanning,Scrum,Cryptography,Hadoop,Analytics,LMS,CI/CD,Research,69
+EdTech Specialist,LMS,NumPy,Cryptography,CI/CD,Content,Airtable,Time Management,Hadoop,98
+EdTech Specialist,Time Management,NumPy,Marketing Analytics,Android,Spark,Scrum,Hadoop,Vulnerability Scanning,55
+EdTech Specialist,Vue,Cryptography,Spark,Time Management,Problem Solving,Airtable,Research,CI/CD,81
+EdTech Specialist,Vue,Cryptography,Vulnerability Scanning,CI/CD,Marketing Analytics,Hadoop,Spark,Statistics,50
+EdTech Specialist,NumPy,Research,Marketing Analytics,CI/CD,Spark,Leadership,Airtable,Android,89
+EdTech Specialist,Vue,Scrum,LMS,Marketing Analytics,Research,CI/CD,Statistics,Hadoop,88
+EdTech Specialist,Statistics,Scrum,Time Management,Spark,Leadership,NumPy,Vue,Marketing Analytics,79
+EdTech Specialist,Leadership,Marketing Analytics,Spark,Statistics,Time Management,NumPy,CI/CD,LMS,98
+EdTech Specialist,Leadership,CI/CD,Wireframing,LMS,Statistics,Spark,Cryptography,Vue,68
+EdTech Specialist,LMS,Vulnerability Scanning,Research,Wireframing,Leadership,Problem Solving,NumPy,Airtable,79
+AI Ethics Consultant,Ethics,AI/ML,Policy,Regulation,Bias Detection,Fairness,Governance,Communication,85
+AI Ethics Consultant,Machine Learning,Ethics,Python,Policy Analysis,Bias Mitigation,Data Privacy,Legal Compliance,Stakeholder Management,88
+AI Ethics Consultant,AI Governance,Ethics Frameworks,Risk Assessment,Regulatory Compliance,Bias Auditing,Transparency,Accountability,Communication,82
+Climate Tech Engineer,Python,Climate Science,Data Analysis,Renewable Energy,IoT,Machine Learning,Sustainability,GIS,87
+Climate Tech Engineer,Environmental Science,Data Science,Carbon Modeling,Renewable Systems,Python,Statistics,Remote Sensing,Sustainability,89
+Climate Tech Engineer,Climate Modeling,Big Data,AI/ML,Sustainability Analytics,Python,R,Geospatial Analysis,Environmental Policy,86
+Metaverse Developer,Unity,Unreal Engine,3D Modeling,WebXR,Blockchain,VR/AR,JavaScript,WebGL,88
+Metaverse Developer,Virtual Reality,Augmented Reality,3D Graphics,Web3,NFT,Game Development,C#,JavaScript,85
+Metaverse Developer,Spatial Computing,3D Design,WebXR,Blockchain,Cryptocurrency,Unity,Blender,TypeScript,87
+Quantum Computing Engineer,Quantum Mechanics,Qisk,Python,Linear Algebra,Physics,Algorithms,Mathematics,Circuit Design,92
+Quantum Computing Engineer,Quantum Algorithms,Qubit Manipulation,Python,Mathematics,Physics,Machine Learning,Optimization,Circuit Simulation,90
+Quantum Computing Engineer,Quantum Information,Cryptography,Python,Complex Analysis,Physics,Algorithms,Error Correction,Hardware Design,91
+Web3 Developer,Solidity,Ethereum,Smart Contracts,JavaScript,React,Web3.js,Blockchain,Cryptography,89
+Web3 Developer,Smart Contracts,DeFi,NFT,Solidity,TypeScript,Hardhat,IPFS,Cryptocurrency,87
+Web3 Developer,Blockchain,DApps,Ethereum,Solidity,JavaScript,Web3,Cryptography,Tokenomics,88
+Autonomous Vehicle Engineer,Computer Vision,Machine Learning,ROS,Python,C++,Sensor Fusion,Path Planning,Control Systems,91
+Autonomous Vehicle Engineer,LiDAR,Radar,Computer Vision,Deep Learning,Python,C++,Robotics,Real-time Systems,89
+Autonomous Vehicle Engineer,SLAM,Path Planning,Sensor Integration,Machine Learning,Python,MATLAB,Control Theory,Embedded Systems,90
+FinTech Developer,Python,Blockchain,API Development,Financial Modeling,Security,Cryptography,Database Design,Microservices,86
+FinTech Developer,Payment Systems,Blockchain,Python,JavaScript,Security,Regulatory Compliance,API Design,Database,84
+FinTech Developer,Trading Algorithms,Risk Management,Python,Machine Learning,Financial Analysis,API Development,Security,Database,87
+HealthTech Engineer,Python,Machine Learning,Healthcare Data,HIPAA Compliance,API Development,Database,Security,Medical Devices,85
+HealthTech Engineer,Telemedicine,Wearables,Data Analytics,Python,JavaScript,Regulatory Compliance,API Design,Security,83
+HealthTech Engineer,Medical Imaging,AI Diagnostics,Python,Deep Learning,Healthcare Standards,Database,Security,API Development,88
+EdTech Developer,Python,JavaScript,Learning Analytics,Gamification,API Development,Database,UX/UI,Content Management,82
+EdTech Developer,E-learning Platforms,Adaptive Learning,Python,Machine Learning,Database,API Design,JavaScript,UX Design,84
+EdTech Developer,Educational Technology,Data Analytics,Python,JavaScript,Database Design,API Development,UX Research,Content Strategy,81
+Sustainability Consultant,Environmental Science,Data Analysis,Sustainability Reporting,ESG,Stakeholder Engagement,Policy Analysis,Communication,Project Management,79
+Sustainability Consultant,Carbon Footprint,Life Cycle Assessment,Data Analytics,ESG Metrics,Regulatory Compliance,Communication,Project Management,Strategy,81
+Sustainability Consultant,Climate Risk,Sustainability Strategy,Data Visualization,ESG Reporting,Stakeholder Management,Communication,Policy,Analytics,80
+Biotech Engineer,Molecular Biology,Genetic Engineering,Python,Data Analysis,Bioinformatics,Laboratory Skills,Regulatory Compliance,Research,86
+Biotech Engineer,CRISPR,Gene Editing,Biochemistry,Python,Machine Learning,Lab Automation,Quality Control,Documentation,88
+Biotech Engineer,Synthetic Biology,Biotechnology,Python,Data Science,Bioinformatics,Lab Techniques,Regulatory Affairs,Project Management,85
+AgriTech Specialist,Precision Agriculture,IoT,Data Analytics,Python,GIS,Machine Learning,Sustainability,Farm Management,83
+AgriTech Specialist,Agricultural Technology,Remote Sensing,Data Science,Python,Drone Technology,AI/ML,Sustainability,Crop Monitoring,84
+AgriTech Specialist,Smart Farming,IoT Sensors,Data Analysis,Python,Geospatial Analysis,Machine Learning,Environmental Science,Supply Chain,82
+LegalTech Specialist,Legal Research,Contract Analysis,AI/ML,Python,Natural Language Processing,Data Privacy,Regulatory Compliance,Automation,81
+LegalTech Specialist,Legal Analytics,Document Automation,Machine Learning,Python,NLP,Compliance,Risk Assessment,Technology Integration,83
+LegalTech Specialist,eDiscovery,Contract Intelligence,AI,Python,Data Mining,Legal Databases,Compliance,Process Automation,80
+PropTech Analyst,Real Estate Technology,Data Analytics,Property Management,Python,GIS,Market Analysis,Investment Modeling,Digital Transformation,78
+PropTech Analyst,Real Estate Analytics,Data Science,Python,Machine Learning,Property Valuation,Market Research,Investment Analysis,Technology Trends,80
+PropTech Analyst,Property Technology,Data Visualization,Python,Statistical Analysis,Real Estate Markets,Investment Strategies,Digital Platforms,Market Intelligence,79
+InsurTech Developer,Insurance Technology,Risk Modeling,Python,Machine Learning,API Development,Blockchain,Data Analytics,Regulatory Compliance,84
+InsurTech Developer,Insurance Innovation,Underwriting Automation,Python,AI/ML,API Design,Data Security,Compliance,Product Development,85
+InsurTech Developer,Digital Insurance,Claims Processing,Python,Machine Learning,API Development,Blockchain,Data Analysis,Customer Experience,83
+RegTech Specialist,Regulatory Technology,Compliance Automation,Risk Management,Python,Machine Learning,Data Analytics,Legal Frameworks,Reporting,82
+RegTech Specialist,Financial Regulation,Compliance Monitoring,Python,AI/ML,Data Mining,Risk Assessment,Regulatory Reporting,Technology Integration,84
+RegTech Specialist,Regulatory Compliance,Automation,Python,Data Science,Risk Analytics,Legal Tech,Monitoring Systems,Reporting Tools,81
+Digital Twin Engineer,Simulation,IoT,3D Modeling,Python,Data Analytics,Machine Learning,Real-time Systems,Virtual Reality,87
+Digital Twin Engineer,Digital Modeling,Sensor Integration,Python,Data Science,AI/ML,Simulation Software,Real-time Processing,Visualization,89
+Digital Twin Engineer,Virtual Prototyping,IoT Platforms,Python,Machine Learning,Data Integration,3D Visualization,Simulation,Predictive Analytics,86
+Edge Computing Specialist,Edge Computing,IoT,Distributed Systems,Python,C++,Real-time Processing,Network Security,Embedded Systems,85
+Edge Computing Specialist,Edge AI,Fog Computing,Python,Machine Learning,Distributed Computing,Network Protocols,Security,Performance Optimization,87
+Edge Computing Specialist,Edge Analytics,IoT Architecture,Python,Data Processing,Machine Learning,Network Design,Security,Scalability,84
+Green Energy Analyst,Renewable Energy,Data Analytics,Energy Modeling,Python,Statistics,Sustainability,Policy Analysis,Market Research,80
+Green Energy Analyst,Clean Energy,Data Science,Python,Machine Learning,Energy Economics,Environmental Science,Policy,Market Analysis,82
+Green Energy Analyst,Sustainable Energy,Data Visualization,Python,Statistical Modeling,Energy Policy,Environmental Impact,Market Trends,Research,81
+Space Systems Engineer,Spacecraft Design,Orbital Mechanics,Python,C++,Systems Engineering,Satellite Technology,Aerospace,Mission Planning,90
+Space Systems Engineer,Space Technology,Aerospace Engineering,Python,MATLAB,Systems Integration,Satellite Systems,Mission Control,Propulsion,92
+Space Systems Engineer,Spacecraft Systems,Orbital Dynamics,Python,C++,Systems Architecture,Satellite Communications,Navigation,Thermal Control,89
