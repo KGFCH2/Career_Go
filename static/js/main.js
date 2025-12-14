@@ -79,6 +79,87 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // 🔐 Auth modal functionality
+    window.closeAuthModal = function () {
+        const modal = document.getElementById('auth-floating-modal');
+        if (modal) {
+            modal.style.animation = 'modalFadeOut 0.3s ease-out';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+    };
+    // 👤 Gender modal functionality
+    window.openGenderModal = function () {
+        const modal = document.getElementById('gender-floating-modal');
+        if (modal) {
+            modal.style.display = 'block';
+            modal.style.animation = 'modalFadeIn 0.3s ease-out';
+        }
+    };
+
+    window.closeGenderModal = function () {
+        const modal = document.getElementById('gender-floating-modal');
+        if (modal) {
+            modal.style.animation = 'modalFadeOut 0.3s ease-out';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+    };
+
+    // Attach click & keyboard handlers to the gender selector(s) (opens modal)
+    document.querySelectorAll('.gender-selector').forEach(el => {
+        el.addEventListener('click', function (e) {
+            // Prevent opening when clicking a form submit button
+            if (e.target.closest('button[type="submit"]')) return;
+            openGenderModal();
+        });
+        el.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openGenderModal();
+            }
+        });
+    });
+
+    window.selectGender = function (value, displayText) {
+        // Update the hidden input and display
+        const hiddenInput = document.getElementById('gender');
+        const displaySpan = document.getElementById('gender-display');
+
+        if (hiddenInput) {
+            hiddenInput.value = value;
+        } else {
+            // Create hidden input if it doesn't exist
+            const form = document.querySelector('form');
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.id = 'gender';
+            input.name = 'gender';
+            input.value = value;
+            form.appendChild(input);
+        }
+
+        if (displaySpan) {
+            displaySpan.textContent = displayText;
+        }
+
+        // Close the modal
+        closeGenderModal();
+    };
+
+    // Close gender modal when clicking outside
+    document.addEventListener('click', function (event) {
+        const modal = document.getElementById('gender-floating-modal');
+        const selectors = document.querySelectorAll('.gender-selector');
+        let clickedOnSelector = false;
+        selectors.forEach(s => { if (s.contains(event.target)) clickedOnSelector = true; });
+
+        if (modal && modal.style.display === 'block' && !modal.contains(event.target) && !clickedOnSelector) {
+            closeGenderModal();
+        }
+    });
     function showError(element, message) {
         const formGroup = element.closest('.form-group');
         formGroup.classList.add('error');
