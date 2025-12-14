@@ -1,121 +1,178 @@
-# Career Go
+# Career Go 🎓
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-2.0+-black.svg)](https://flask.palletsprojects.com/)
+[![Flask](https://img.shields.io/badge/Flask-3.0+-black.svg)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A polished **Personalized Career & Skills Advisor** you can run locally in VS Code. Pure **HTML/CSS/JS frontend + Python (Flask) backend**.
+A powerful **AI-Powered Personalized Career & Skills Advisor** web application. Get intelligent career recommendations based on your skills using advanced matching algorithms and AI integration.
 
-## Features
-- 🔐 **Secure Authentication**: User registration, login, and password reset with proper validation
-- 💬 **AI-Powered Chat**: Intelligent career counseling using Google Gemini API or local dataset
-- 🗺️ **Skill-to-Career Mapping**: Advanced algorithm matching skills to career paths (700+ entries across 73 careers)
-- 🌓 **Modern UI**: Dark/Light mode toggle with glassmorphism design
-- ✨ **Interactive Elements**: Flip cards, smooth animations, and responsive design
-- 🔗 **Learning Resources**: Curated links to 20+ learning platforms including Coursera, edX, Google Cloud Skills, and specialized platforms
-- 🌐 **Progressive Web App**: Fast, accessible, and mobile-friendly
-- 📊 **Data-Driven Insights**: Career recommendations based on comprehensive skill analysis
-- 📄 **Comprehensive Pages**: About, Privacy Policy, Terms of Service, and Contact pages
+## ✨ Key Features
 
-## Demo
-🚀 **Live Demo**: [View Screenshots](#) | [Try Locally](#quick-start)
+- 🔐 **Secure Authentication**: Registration, login, and password reset with SHA256 encryption
+- 🤖 **AI Career Advisor**: Groq API integration (Llama model) with intelligent fallback system
+- 🎯 **Smart Skill Matching**: Advanced algorithm matching user skills to 700+ career entries across 73 career paths
+- 📊 **Interactive Dashboard**: Visual skill-to-career recommendations with filtering
+- 🌓 **Dark/Light Theme**: Glassmorphism design with smooth theme transitions
+- 💬 **Real-time Chat**: Ask career questions and get personalized guidance
+- 📚 **Learning Resources**: Curated links to 20+ platforms (Coursera, edX, LinkedIn Learning, etc.)
+- 👥 **User Profiles**: Gender-based emoji profiles and personalized experiences
+- 📱 **Responsive Design**: Mobile-friendly with flip cards and smooth animations
+- 🔄 **Password Reset**: Secure reset code generation with optional email delivery
+- ⚡ **Progressive Web App**: Fast, smooth performance with optimized animations
 
-*Professional glassmorphism UI with smooth animations and comprehensive career guidance.*
+## 🚀 Quick Start
 
-## Quick start
-1. **Create a venv** (recommended) and install deps
-   ```bash
-   cd career-sage-pro
-   python -m venv .venv && . .venv/bin/activate  # Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-2. **Run**
-   ```bash
-   python app.py
-   ```
-   Visit http://localhost:5000
-
-> The app creates a local SQLite DB `career.db` automatically on first run.
-
-## Optional: plug in an AI model
-Set an environment variable before starting:
+### 1. Setup Environment
 ```bash
-export GEMINI_API_KEY=YOUR_KEY   # Windows PowerShell: $env:GEMINI_API_KEY="YOUR_KEY"
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
-Then open **Chat** and ask questions. Without a key, the chat uses the dataset for grounded guidance.
 
-## Career Database
-The application includes a comprehensive database of **73 unique careers** with **700+ skill combinations** covering:
+### 2. Configure Environment Variables
+```bash
+# Copy template
+cp .env.example .env
 
-### Traditional Tech Careers
-- Data Scientist, ML Engineer, DevOps Engineer, Full-Stack Developer
-- Cybersecurity Analyst, Cloud Engineer, Mobile Developer, QA Engineer
-
-### Emerging 2025 Careers
-- **AI Ethics Consultant**: AI governance, bias detection, regulatory compliance
-- **Climate Tech Engineer**: Renewable energy, carbon modeling, sustainability analytics
-- **Metaverse Developer**: VR/AR, WebXR, 3D modeling, blockchain integration
-- **Quantum Computing Engineer**: Qisk, quantum algorithms, qubit manipulation
-- **Web3 Developer**: Smart contracts, DeFi, NFT development, blockchain
-- **Autonomous Vehicle Engineer**: Computer vision, ROS, sensor fusion, path planning
-- **FinTech Developer**: Payment systems, trading algorithms, regulatory compliance
-- **HealthTech Engineer**: Medical imaging, telemedicine, healthcare data analytics
-- **EdTech Developer**: Learning analytics, gamification, adaptive learning platforms
-- **Sustainability Consultant**: ESG reporting, carbon footprint analysis, environmental policy
-- **Biotech Engineer**: Genetic engineering, bioinformatics, synthetic biology
-- **AgriTech Specialist**: Precision agriculture, IoT farming, crop monitoring
-- **LegalTech Specialist**: Contract analysis, eDiscovery, regulatory automation
-- **PropTech Analyst**: Real estate analytics, property valuation, market intelligence
-- **InsurTech Developer**: Insurance innovation, risk modeling, claims automation
-- **RegTech Specialist**: Compliance monitoring, regulatory reporting, risk analytics
-- **Digital Twin Engineer**: Simulation, IoT integration, predictive analytics
-- **Edge Computing Specialist**: Distributed systems, real-time processing, IoT architecture
-- **Green Energy Analyst**: Renewable energy modeling, sustainability metrics, policy analysis
-- **Space Systems Engineer**: Spacecraft design, orbital mechanics, satellite technology
-
-## Architecture
+# Generate secure values
+python -c "import secrets; print(secrets.token_hex(16))"  # For APP_SECRET
+python -c "import secrets; print(secrets.token_hex(8))"   # For PW_SALT
 ```
-career-sage-pro/
-├── app.py                 # Flask backend with REST API
-├── requirements.txt       # Python dependencies
-├── LICENSE                # MIT License
+
+Edit `.env` with:
+- `APP_SECRET`: Your generated secret key
+- `PW_SALT`: Your generated salt
+- `GROQ_API_KEY`: Optional, get from https://console.groq.com
+- `MAIL_USERNAME` & `MAIL_PASSWORD`: Optional, for Gmail password reset
+## 📁 Project Structure
+
+```
+Career_Go/
+├── app.py                   # Main Flask application
+├── requirements.txt         # Python dependencies
+├── .env                    # Environment variables (not in git)
+├── .env.example            # Environment template
+├── README.md               # This file
+├── INSTRUCTIONS.md         # Technical documentation
+├── LICENSE                 # MIT License
 ├── data/
-│   ├── skills_careers.csv # Career mapping dataset
-│   └── learning_links.json # Educational resources
-├── templates/             # Jinja2 HTML templates
-├── static/                # Frontend assets
-│   ├── css/styles.css     # Modern CSS with CSS variables
-│   ├── js/
-│   │   ├── main.js        # Frontend logic & API calls
-│   │   └── theme.js       # Theme management
-│   └── assets/            # Icons, images, favicon
-└── README.md
+│   ├── skills_careers.csv      # Career & skills dataset (700+ entries)
+│   └── learning_links.json     # Curated learning resources
+├── templates/              # Jinja2 HTML templates
+│   ├── base.html, signup.html, login.html, forgot.html
+│   ├── profile.html, dashboard.html, chat.html
+│   ├── about.html, contact.html, privacy.html, terms.html
+│   └── 404.html, 500.html
+├── static/
+│   ├── css/styles.css      # Glassmorphism styling & themes
+│   └── js/
+│       ├── main.js         # Form handlers & interactivity
+│       └── theme.js        # Dark/light mode toggle
+└── career.db              # SQLite database (auto-created)
 ```
 
-## API Endpoints
-- `POST /api/signup` - User registration
-- `POST /api/login` - User authentication
-- `POST /api/forgot` - Password reset initiation
-- `POST /api/reset` - Password reset completion
-- `POST /api/suggest_careers` - Career recommendations
-- `POST /api/chat` - AI chat functionality
+## 🏗️ Architecture
 
-## Technology Stack
-- **Backend**: Python 3.8+, Flask 2.0+
-- **Database**: SQLite (local development)
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with glassmorphism effects
-- **Icons**: SVG icons with CSS animations
-- **Fonts**: Inter font family from Google Fonts
+- **Backend**: Flask 3.0.3 with REST API endpoints
+- **Database**: SQLite with `users` and `resets` tables
+- **Authentication**: Session-based with SHA256+salt password hashing
+- **AI Integration**: Groq API (llama-3.3-70b-versatile) with CSV fallback
+- **Frontend**: Vanilla JavaScript, responsive CSS with glassmorphism
+- **Data**: 700+ career-skill mappings across 73 unique careers
 
-## Contributing
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+## 🔌 API Endpoints
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Authentication
+- `POST /api/signup` - Register new account
+- `POST /api/login` - Login to account
+- `POST /api/forgot-email` - Request password reset code
+- `POST /api/reset` - Reset password with code
+- `POST /api/logout` - Logout and clear session
+
+### Features
+- `POST /api/suggest_careers` - Get career suggestions based on skills
+- `POST /api/chat` - Send message to AI or dataset
+- `GET /profile` - View user profile
+
+### Pages
+- `GET /` - Home
+- `GET /dashboard` - Career dashboard
+- `GET /chat` - Chat interface
+- `GET /about` - About page
+- `GET /contact` - FAQ/Contact
+- `GET /privacy` - Privacy policy
+- `GET /terms` - Terms of service
+
+## 🛠️ Technology Stack
+
+- **Backend**: Python 3.8+, Flask 3.0.3
+- **Database**: SQLite (local)
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **UI**: Glassmorphism design with dark/light theme
+- **Icons**: Emoji + SVG animations
+- **Fonts**: Inter (Google Fonts)
+
+## 🔒 Security Features
+
+- SHA256+salt password hashing
+- Session-based authentication
+- Email validation & reset codes
+- Environment variable management
+- HTTPS/TLS ready
+- CSRF protection via Flask sessions
+
+## 📊 Dataset
+
+**73 Unique Careers** with **700+ skill combinations** including:
+- Traditional: Data Scientist, Full-Stack Developer, DevOps Engineer
+- Emerging: AI Ethics Consultant, Climate Tech Engineer, Web3 Developer
+- Specialized: Quantum Engineer, Biotech, EdTech, FinTech, HealthTech
+- + 40+ more covering modern job market demands
+
+## 📚 Learning Resources
+
+20+ curated platforms including:
+- Coursera, edX, LinkedIn Learning, Udemy
+- Google Cloud Skills, AWS Training, Microsoft Learn
+- FreeCodeCamp, Codecademy, DataCamp, Kaggle
+- Specialized platforms for emerging fields
+
+## 🚀 Deployment
+
+### Development
+```bash
+python app.py  # Runs on http://localhost:5000
+```
+
+### Production
+```bash
+pip install gunicorn
+gunicorn app:app
+```
+
+## 🐛 Troubleshooting
+
+**Port in use**: Kill process on port 5000
+**Database errors**: Delete `career.db` and restart
+**Email not sending**: Verify MAIL_USERNAME and MAIL_PASSWORD in `.env`
+**AI not working**: Check GROQ_API_KEY; app will use CSV fallback
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) for details.
+
+## 🙏 Acknowledgments
+
+- Career data from industry sources
+- Learning resources from top platforms
+- Built with Flask, Python, and modern web technologies
+
+---
+
+**Start Your Career Journey Today! 🚀**
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
