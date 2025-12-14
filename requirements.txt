@@ -1,3 +1,20 @@
+# 🎓 Career Go - Python Dependencies
+# ====================================
+
+# 🌐 Web Framework
 flask==3.0.3
+
+# 🔌 HTTP & Requests
 requests>=2.31.0
+
+# 🤖 AI/ML Packages
 google-generativeai>=0.3.0
+
+# 📧 Email Support
+flask-mail>=0.9.1
+
+# 🤖 Groq API Integration
+groq>=0.4.1
+
+# 💾 Environment Variables
+python-dotenv>=1.0.0
