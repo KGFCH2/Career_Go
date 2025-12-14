@@ -174,16 +174,3 @@ MIT License - See [LICENSE](LICENSE) for details.
 ---
 
 **🚀 Start Your Career Journey Today! 🌟**
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-- 📧 **Email**: babinbid05@gmail.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/career-sage-pro/issues)
-- 📖 **Documentation**: [Wiki](https://github.com/yourusername/career-sage-pro/wiki)
-
-## Acknowledgments
-- Career data sourced from various professional development resources
-- UI inspiration from modern design systems
-- Special thanks to the open-source community
