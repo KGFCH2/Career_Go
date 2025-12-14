@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Career Go{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1><img src="https://cdn-icons-png.flaticon.com/128/12001/12001839.png" width="50" alt="Target icon"
+                class="inline-emoji"> Discover Your Perfect Career Path</h1>
+        </h1>
+        <p>AI-powered career guidance based on your skills and interests. Get personalized recommendations and learning
+            resources.</p>
+        <a href="/dashboard" class="cta-button">Get Started</a>
+    </div>
+    <div class="hero-image">
+        <div class="image-slider">
+            <!-- 10+ Career Related Images -->
+            <div class="slide active">
+                <img src="https://s39613.pcdn.co/wp-content/uploads/2025/10/iStock-478310428-scaled.jpg?utm_source=chatgpt.com"
+                    alt="career_Main">
+            </div>
+            <div class="slide">
+                <img src="https://www.aquinascollege.co.in/images/Clubs/career-1.png"
+                    alt="Career Guidance & Placement Cell">
+            </div>
+            <div class="slide">
+                <img src="https://brightchamps.com/blog/wp-content/uploads/2023/09/image-5-3.webp" 
+                    alt="Career_0">
+            </div>
+            <div class="slide">
+                <img src="https://media.licdn.com/dms/image/v2/C5612AQHJJeMhf9yNqg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1652166614735?e=2147483647&v=beta&t=0Lito51qbrgdDgXIovMxz18XDAXawl7zj3CefAQrtUA"
+                    alt="Strategy">
+            </div>
+            <div class="slide">
+                <img src="https://mantechpublications.com/wp-content/uploads/2024/11/1-7-1024x1024.jpg" 
+                    alt="Career_1">
+            </div>
+            <div class="slide">
+                <img src="https://media.licdn.com/dms/image/v2/D4D12AQEIavHQO6sOQg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1675146429075?e=2147483647&v=beta&t=AhRmETdCG1DcMffNrTs45QZ35c7MCbq4o_O-clZxRrw"
+                    alt="Skills">
+            </div>
+            <div class="slide">
+                <img src="https://ilead.net.in/wp-content/uploads/2017/10/career.jpg" 
+                    alt="Career_2">
+            </div>
+            <div class="slide">
+                <img src="https://media.licdn.com/dms/image/v2/D4E12AQFQkhQUys7zQQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1691959907767?e=2147483647&v=beta&t=6KQ9InCXJy0MkYNSfIZTl0LU9lqn2XSAxH1k6W4YQtY"
+                    alt="Success">
+            </div>
+            <div class="slide">
+                <img src="https://gradschool.umd.edu/sites/default/files/styles/optimized/public/2023-08/top-view-career-written-note-with-stickers-notepad-white-surface-job-office-school-copybook-salary-college-business-color.jpg?itok=w2lRrcNl" 
+                    alt="Career_3">
+            </div>
+            <div class="slide">
+                <img src="https://t3.ftcdn.net/jpg/02/26/34/18/360_F_226341850_7XM3ivXOQeMozdnbEbuWR7wCkIP4ca4a.jpg"
+                    alt="Creer_4">
+            </div>
+            <div class="slide">
+                <img src="https://myvistage.com/hub/wp-content/uploads/sites/4/2024/12/Inspirational-leadership-featured-image.jpg"
+                    alt="Leadership">
+            </div>
+            <div class="slide">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg" 
+                    alt="Career_5">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <h2>✅ Why Choose Career Go?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>🎯 Personalized Recommendations</h3>
+            <p>Based on your unique skills and interests, we suggest career paths that match you best.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🤖 AI Chat Support</h3>
+            <p>Ask questions and get instant advice from our AI career counselor.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📚 Learning Resources</h3>
+            <p>Curated links to courses on Coursera, edX, and more to help you get started.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🌓 Dark & Light Mode</h3>
+            <p>Comfortable viewing in any lighting with our beautiful theme toggle.</p>
+        </div>
+    </div>
+</section>
+
+<section class="sample-careers">
+    <div class="career-cards">
+        {% for item in sample %}
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>{{ item.career }}</h3>
+                    <p>Click to see required skills</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>{{ item.career }}</h3>
+                    <ul>
+                        {% for skill in item.skills %}
+                        <li>{{ skill }}</li>
+                        {% endfor %}
+                    </ul>
+                    <a href="{{ item.learn_link }}" target="_blank" class="learn-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
