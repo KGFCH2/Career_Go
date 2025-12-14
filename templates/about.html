@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Career Go{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="hero-content">
+        <div class="hero-icon">📖</div>
+        <h1>About Career Go</h1>
+        <p>Empowering your career journey with AI-driven insights and personalized guidance.</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-section">
+            <div class="section-header">
+                <span class="section-icon">🎯</span>
+                <h2>Our Mission</h2>
+            </div>
+            <p>Career Go is dedicated to helping individuals discover their ideal career paths through intelligent
+                analysis of their skills, interests, and goals. We combine advanced AI technology with comprehensive
+                career data to provide personalized recommendations that truly match each person's unique profile.</p>
+        </div>
+
+        <div class="about-section">
+            <div class="section-header">
+                <span class="section-icon">⚙️</span>
+                <h2>How It Works</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Skill Assessment</h3>
+                    <p>Input your skills and interests to receive tailored career suggestions based on real market data.
+                    </p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Chat</h3>
+                    <p>Engage with our intelligent chatbot for personalized career advice and guidance.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">📚</div>
+                    <h3>Learning Resources</h3>
+                    <p>Access curated learning materials from top platforms like Coursera, edX, and more.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Career Mapping</h3>
+                    <p>Explore detailed career paths with required skills and progression opportunities.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="section-header">
+                <span class="section-icon">💻</span>
+                <h2>Our Technology</h2>
+            </div>
+            <p>We leverage cutting-edge AI and machine learning algorithms to analyze thousands of career profiles and
+                skill combinations. Our dataset includes comprehensive information about various careers, required
+                competencies, and industry trends to ensure accurate and up-to-date recommendations.</p>
+        </div>
+
+        <div class="about-section">
+            <div class="section-header">
+                <span class="section-icon">🚀</span>
+                <h2>Get Started Today</h2>
+            </div>
+            <p>Join thousands of professionals who have discovered their ideal career paths with Career Go.
+                Whether you're a student exploring options or a professional considering a career change, we're here to
+                guide you every step of the way.</p>
+            <a href="/signup" class="cta-button pulse-effect">Start Your Journey</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
