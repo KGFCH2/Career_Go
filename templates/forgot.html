@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Career Go{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="auth-container">
+        <h1>Forgot Password</h1>
+        <form id="forgot-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="babinbid05@gmail.com" required>
+            </div>
+            <button type="submit" class="cta-button">Send Reset Code</button>
+        </form>
+        <form id="reset-form" style="display: none;">
+            <div class="form-group">
+                <label for="code">Reset Code</label>
+                <input type="text" id="code" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" required>
+            </div>
+            <button type="submit" class="cta-button">Reset Password</button>
+        </form>
+        <div id="message"></div>
+    </div>
+</section>
+{% endblock %}
