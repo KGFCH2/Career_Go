@@ -298,15 +298,18 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Emoji hover glow effects */
+/* Emoji hover glow effects (nav only) */
 @keyframes emojiGlowPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         text-shadow:
             0 0 6px rgba(74, 144, 226, 0.6),
             0 0 12px rgba(74, 144, 226, 0.4),
             0 0 18px rgba(74, 144, 226, 0.2);
         filter: drop-shadow(0 0 4px rgba(74, 144, 226, 0.4));
     }
+
     50% {
         text-shadow:
             0 0 10px rgba(56, 178, 172, 0.8),
@@ -337,23 +340,97 @@ header {
     animation: emojiGlowPulse 1.4s ease-in-out infinite;
 }
 
-/* Error page hover effects */
-.error-container:hover {
-    transform: translateY(-5px) scale(1.01);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+/* Section icons and emoji glow effects */
+@keyframes sectionIconGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 10px rgba(74, 144, 226, 0.8),
+            0 0 20px rgba(74, 144, 226, 0.5),
+            0 0 30px rgba(74, 144, 226, 0.3);
+        filter: drop-shadow(0 0 8px rgba(74, 144, 226, 0.6));
+    }
+    50% {
+        text-shadow:
+            0 0 15px rgba(56, 178, 172, 1),
+            0 0 30px rgba(56, 178, 172, 0.8),
+            0 0 45px rgba(56, 178, 172, 0.5);
+        filter: drop-shadow(0 0 12px rgba(56, 178, 172, 0.8));
+    }
 }
 
-.error-container:hover h1 {
+@keyframes iconBounce {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-5px) scale(1.1); }
+}
+
+.section-icon,
+.feature-icon,
+.hero-icon,
+.section-icon-fa {
+    display: inline-block;
+    font-size: 2.5rem;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+}
+
+.section-icon:hover,
+.feature-icon:hover,
+.hero-icon:hover,
+.section-icon-fa:hover {
+    animation: sectionIconGlow 1.5s ease-in-out infinite, iconBounce 0.6s ease-in-out;
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Font Awesome specific styling */
+.section-icon-fa {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+[data-theme="dark"] .section-icon-fa {
     color: var(--secondary-color);
-    text-shadow: 0 0 15px rgba(43, 108, 176, 0.5);
-    transition: all 0.3s ease;
 }
 
-/* About, Privacy, Terms, Contact pages hover effects */
-.section-icon:hover {
-    transform: scale(1.1) rotate(10deg);
-    transition: all 0.3s ease;
+/* AI Advisor header specific */
+.ai-advisor-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+}
+
+.ai-advisor-header .section-icon-fa {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+.ai-advisor-header .header-text h1 {
+    margin: 0;
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ai-advisor-header .header-subtitle {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Dark mode section icon glow */
+[data-theme="dark"] .section-icon:hover,
+[data-theme="dark"] .feature-icon:hover,
+[data-theme="dark"] .hero-icon:hover,
+[data-theme="dark"] .section-icon-fa:hover {
+    animation: sectionIconGlow 1.2s ease-in-out infinite, iconBounce 0.6s ease-in-out;
 }
 
 .hero-icon:hover {

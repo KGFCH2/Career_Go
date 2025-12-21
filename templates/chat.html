@@ -6,9 +6,12 @@
 <section class="chat-section">
     <div class="chat-container">
         {% if session.user_id %}
-        <div class="section-header">
-            <span class="section-icon">🤖</span>
-            <h1>AI Career Advisor</h1>
+        <div class="section-header ai-advisor-header">
+            <i class="fas fa-robot section-icon-fa"></i>
+            <div class="header-text">
+                <h1>AI Career Advisor</h1>
+                <p class="header-subtitle">Powered by Advanced AI Technology</p>
+            </div>
         </div>
 
         <div id="chat-messages" class="chat-messages">
