@@ -298,6 +298,45 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Emoji hover glow effects */
+@keyframes emojiGlowPulse {
+    0%, 100% {
+        text-shadow:
+            0 0 6px rgba(74, 144, 226, 0.6),
+            0 0 12px rgba(74, 144, 226, 0.4),
+            0 0 18px rgba(74, 144, 226, 0.2);
+        filter: drop-shadow(0 0 4px rgba(74, 144, 226, 0.4));
+    }
+    50% {
+        text-shadow:
+            0 0 10px rgba(56, 178, 172, 0.8),
+            0 0 20px rgba(56, 178, 172, 0.6),
+            0 0 30px rgba(56, 178, 172, 0.3);
+        filter: drop-shadow(0 0 6px rgba(56, 178, 172, 0.6));
+    }
+}
+
+.emoji,
+.logo-emoji,
+.footer-emoji {
+    display: inline-block;
+    transition: transform 0.25s ease, filter 0.25s ease, text-shadow 0.25s ease;
+}
+
+.emoji:hover,
+.logo-emoji:hover,
+.footer-emoji:hover {
+    transform: translateY(-2px) scale(1.15) rotate(5deg);
+    animation: emojiGlowPulse 1.8s ease-in-out infinite;
+}
+
+/* Dark mode stronger glow */
+[data-theme="dark"] .emoji:hover,
+[data-theme="dark"] .logo-emoji:hover,
+[data-theme="dark"] .footer-emoji:hover {
+    animation: emojiGlowPulse 1.4s ease-in-out infinite;
+}
+
 /* Error page hover effects */
 .error-container:hover {
     transform: translateY(-5px) scale(1.01);

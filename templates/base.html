@@ -23,18 +23,18 @@
             <div class="nav-container">
                 <a href="/" class="logo"><span class="logo-emoji">🎓</span> <span class="logo-text">Career Go</span></a>
                 <ul class="nav-links">
-                    <li><a href="/" class="nav-link" data-page="home">🏠 Home</a></li>
-                    <li><a href="/dashboard" class="nav-link" data-page="dashboard">📊 Dashboard</a></li>
-                    <li><a href="/chat" class="nav-link" data-page="chat">💬 Chat</a></li>
+                    <li><a href="/" class="nav-link" data-page="home"><span class="emoji">🏠</span> Home</a></li>
+                    <li><a href="/dashboard" class="nav-link" data-page="dashboard"><span class="emoji">📊</span> Dashboard</a></li>
+                    <li><a href="/chat" class="nav-link" data-page="chat"><span class="emoji">💬</span> Chat</a></li>
                     {% if session.user_id %}
                     <li class="nav-profile">
                         <button id="profile-btn" class="nav-link profile-btn" aria-haspopup="true"
-                            aria-expanded="false">👤 Profile</button>
+                            aria-expanded="false"><span class="emoji">👤</span> Profile</button>
                         <div id="profile-menu" class="profile-menu hidden" aria-hidden="true"></div>
                     </li>
                     {% else %}
-                    <li><a href="/login" class="nav-link" data-page="login">🔑 Login</a></li>
-                    <li><a href="/signup" class="nav-link" data-page="signup">✍️ Signup</a></li>
+                    <li><a href="/login" class="nav-link" data-page="login"><span class="emoji">🔑</span> Login</a></li>
+                    <li><a href="/signup" class="nav-link" data-page="signup"><span class="emoji">✍️</span> Signup</a></li>
                     {% endif %}
                 </ul>
                 <button id="theme-toggle" aria-label="Toggle between light and dark theme" class="theme-btn-crazy">
