@@ -12,7 +12,7 @@ A powerful **AI-Powered Personalized Career & Skills Advisor** web application. 
 - 🤖 **AI Career Advisor**: Groq API integration (Llama model) with intelligent fallback system
 - 🎯 **Smart Skill Matching**: Advanced algorithm matching user skills to 700+ career entries across 73 career paths
 - 📊 **Interactive Dashboard**: Visual skill-to-career recommendations with filtering
-- 🌓 **Dark/Light Theme**: Glassmorphism design with smooth theme transitions
+- 🌓 **Dark/Light Theme**: Glassmorphism design with smooth theme toggle button
 - 💬 **Real-time Chat**: Ask career questions and get personalized guidance
 - 📚 **Learning Resources**: Curated links to 20+ platforms (Coursera, edX, LinkedIn Learning, etc.)
 - 👥 **User Profiles**: Gender-based emoji profiles and personalized experiences
@@ -28,7 +28,7 @@ A powerful **AI-Powered Personalized Career & Skills Advisor** web application. 
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies ⬇️
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 # Copy template
 cp .env.example .env
 
-# Generate secure values 🔒
+# Generate secure values
 python -c "import secrets; print(secrets.token_hex(16))"  # For APP_SECRET
 python -c "import secrets; print(secrets.token_hex(8))"   # For PW_SALT
 ```
@@ -47,7 +47,13 @@ Edit `.env` with:
 - `PW_SALT`: Your generated salt 🧂
 - `GROQ_API_KEY`: Optional, get from https://console.groq.com 🤖
 - `MAIL_USERNAME`: your_mail@email.com 📧
-- `MAIL_PASSWORD`: Optional, for Gmail password reset 💬
+- `MAIL_PASSWORD`: Optional, for Gmail password reset 📬
+
+### 3. Run the Application 🎯
+```bash
+python app.py
+# Visit: http://localhost:5000 🌐
+```
 ## 📁 Project Structure 🗂️
 
 ```
@@ -65,7 +71,7 @@ Career_Go/
 ├── templates/              # 🎨 Jinja2 HTML templates
 │   ├── base.html, signup.html, login.html, forgot.html
 │   ├── profile.html, dashboard.html, chat.html
-│   ├── about.html, contact.html, privacy.html, terms.html
+│   ├── about.html, faq.html, privacy.html, terms.html
 │   └── 404.html, 500.html
 ├── static/
 │   ├── css/styles.css      # 🎨 Glassmorphism styling & themes
@@ -103,7 +109,7 @@ Career_Go/
 - `GET /dashboard` - 📊 Career dashboard
 - `GET /chat` - 💬 Chat interface
 - `GET /about` - ℹ️ About page
-- `GET /contact` - 📞 FAQ/Contact
+- `GET /faq` - 📞 FAQ
 - `GET /privacy` - 🔒 Privacy policy
 - `GET /terms` - ⚖️ Terms of service
 
@@ -143,16 +149,27 @@ Career_Go/
 
 ## 🚀 Deployment 🌍
 
-### 💻 Development
+### 💻 Local Development
 ```bash
 python app.py  # Runs on http://localhost:5000
 ```
 
-### 🏢 Production
+### ☁️ Cloud Deployment Options
+You can deploy on free platforms like Railway, Render, or Fly.io:
+
+- Railway (recommended): Add a PostgreSQL database, set `DATABASE_URL` and other env vars, and deploy from GitHub.
+- Render: Create a Web Service, set Build: `pip install -r requirements.txt`, Start: `gunicorn app:app`, add PostgreSQL and `DATABASE_URL`.
+- Fly.io: Use persistent volumes (optional) or an external PostgreSQL (e.g., Neon). Set `DATABASE_URL` accordingly.
+
+Environment variables to set on any platform:
+- `APP_SECRET`, `PW_SALT`, `GROQ_API_KEY` (optional), `MAIL_USERNAME` (optional), `MAIL_PASSWORD` (optional), `DATABASE_URL` (for PostgreSQL)
+
+### 🏢 Production (Unix/Linux)
 ```bash
 pip install gunicorn
 gunicorn app:app
 ```
+**Note**: Gunicorn is Unix/Linux only.
 
 ## 🐛 Troubleshooting 🔧
 
