@@ -342,13 +342,16 @@ header {
 
 /* Section icons and emoji glow effects */
 @keyframes sectionIconGlow {
-    0%, 100% {
+
+    0%,
+    100% {
         text-shadow:
             0 0 10px rgba(74, 144, 226, 0.8),
             0 0 20px rgba(74, 144, 226, 0.5),
             0 0 30px rgba(74, 144, 226, 0.3);
         filter: drop-shadow(0 0 8px rgba(74, 144, 226, 0.6));
     }
+
     50% {
         text-shadow:
             0 0 15px rgba(56, 178, 172, 1),
@@ -359,8 +362,15 @@ header {
 }
 
 @keyframes iconBounce {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-5px) scale(1.1); }
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.1);
+    }
 }
 
 .section-icon,
@@ -402,27 +412,59 @@ header {
     border-radius: 16px;
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow);
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .ai-advisor-header .section-icon-fa {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--primary-color);
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.ai-advisor-header .header-text {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .ai-advisor-header .header-text h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.75rem;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ai-advisor-header .header-subtitle {
     margin: 0.25rem 0 0 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .ai-advisor-header {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .ai-advisor-header .section-icon-fa {
+        font-size: 2.5rem;
+    }
+    .ai-advisor-header .header-text h1 {
+        font-size: 1.5rem;
+    }
+    .ai-advisor-header .header-subtitle {
+        font-size: 0.75rem;
+    }
 }
 
 /* Dark mode section icon glow */
