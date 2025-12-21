@@ -21,12 +21,14 @@
             </div>
             <div class="form-group">
                 <label for="gender">Gender (optional)</label>
-                <div class="gender-selector" role="button" tabindex="0">
-                    <button type="button" class="gender-select-btn" id="gender-select-btn">
-                        <span id="gender-display">-- keep saved --</span>
-                        <span class="dropdown-arrow">▼</span>
-                    </button>
-                </div>
+                <select id="gender" name="gender">
+                    <option value="">-- keep saved --</option>
+                    <option value="female">👩 Female</option>
+                    <option value="male">👨 Male</option>
+                    <option value="nonbinary">🧑 Non-binary</option>
+                    <option value="other">🏳️‍🌈 Other</option>
+                    <option value="unspecified">👤 Prefer not to say</option>
+                </select>
             </div>
             <button type="submit" class="cta-button">Login</button>
         </form>
@@ -44,44 +46,6 @@
             </a>
         </div>
         <div id="message"></div>
-
-        <!-- Gender Selection Modal -->
-        <div class="gender-floating-modal" id="gender-floating-modal">
-            <div class="gender-floating-content">
-                <div class="gender-floating-icon">👤</div>
-                <h3>Select Your Gender</h3>
-                <p>Choose how you identify (optional)</p>
-                <div class="gender-options">
-                    <button class="gender-option" data-value="" onclick="selectGender('', '-- keep saved --')">
-                        <span class="gender-emoji">🔄</span>
-                        <span class="gender-text">-- keep saved --</span>
-                    </button>
-                    <button class="gender-option" data-value="female" onclick="selectGender('female', 'Female 👩')">
-                        <span class="gender-emoji">👩</span>
-                        <span class="gender-text">Female</span>
-                    </button>
-                    <button class="gender-option" data-value="male" onclick="selectGender('male', 'Male 👨')">
-                        <span class="gender-emoji">👨</span>
-                        <span class="gender-text">Male</span>
-                    </button>
-                    <button class="gender-option" data-value="nonbinary"
-                        onclick="selectGender('nonbinary', 'Non-binary 🧑')">
-                        <span class="gender-emoji">🧑</span>
-                        <span class="gender-text">Non-binary</span>
-                    </button>
-                    <button class="gender-option" data-value="other" onclick="selectGender('other', 'Other 🏳️‍🌈')">
-                        <span class="gender-emoji">🏳️‍🌈</span>
-                        <span class="gender-text">Other</span>
-                    </button>
-                    <button class="gender-option" data-value="unspecified"
-                        onclick="selectGender('unspecified', 'Prefer not to say 👤')">
-                        <span class="gender-emoji">👤</span>
-                        <span class="gender-text">Prefer not to say</span>
-                    </button>
-                </div>
-                <button class="gender-close-btn" onclick="closeGenderModal()">×</button>
-            </div>
-        </div>
     </div>
 </section>
 {% endblock %}
