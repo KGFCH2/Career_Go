@@ -81,37 +81,44 @@ def get_db():
 
 def init_db():
     """Initialize database tables if they don't exist"""
-    conn = get_db()
-    cur = conn.cursor()
-    
-    if USE_POSTGRES:
-        # PostgreSQL table creation
-        cur.execute('''CREATE TABLE IF NOT EXISTS users (
-            id SERIAL PRIMARY KEY,
-            name TEXT,
-            email TEXT UNIQUE,
-            pw_hash TEXT,
-            gender TEXT,
-            created_at TEXT
-        )''')
-        cur.execute('''CREATE TABLE IF NOT EXISTS resets (
-            email TEXT, code TEXT, created_at TEXT
-        )''')
-    else:
-        # SQLite table creation
-        cur.execute('''CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT,
-            email TEXT UNIQUE,
-            pw_hash TEXT,
-            gender TEXT,
-            created_at TEXT
-        )''')
-        cur.execute('''CREATE TABLE IF NOT EXISTS resets (
-            email TEXT, code TEXT, created_at TEXT
-        )''')
-    conn.commit()
-    conn.close()
+    try:
+        conn = get_db()
+        cur = conn.cursor()
+        
+        if USE_POSTGRES:
+            # PostgreSQL table creation
+            cur.execute('''CREATE TABLE IF NOT EXISTS users (
+                id SERIAL PRIMARY KEY,
+                name TEXT,
+                email TEXT UNIQUE,
+                pw_hash TEXT,
+                gender TEXT,
+                created_at TEXT
+            )''')
+            cur.execute('''CREATE TABLE IF NOT EXISTS resets (
+                email TEXT, code TEXT, created_at TEXT
+            )''')
+        else:
+            # SQLite table creation
+            cur.execute('''CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT,
+                email TEXT UNIQUE,
+                pw_hash TEXT,
+                gender TEXT,
+                created_at TEXT
+            )''')
+            cur.execute('''CREATE TABLE IF NOT EXISTS resets (
+                email TEXT, code TEXT, created_at TEXT
+            )''')
+        conn.commit()
+        conn.close()
+        print("✅ Database initialized successfully", file=sys.stderr)
+    except Exception as e:
+        print(f"❌ Database initialization failed: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc(file=sys.stderr)
+        raise
 
 
 # 🔐 Password Security Functions
@@ -155,12 +162,7 @@ except Exception as e:
     DATA_ITEMS, LEARN_LINKS = [], []
 
 # Initialize database on module import (ensures tables exist at startup)
-try:
-    init_db()
-except Exception as e:
-    import traceback
-    traceback.print_exc(file=sys.stderr)
-    print(f"Database initialization warning: {e}", file=sys.stderr)
+init_db()
 
 
 
