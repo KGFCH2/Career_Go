@@ -500,7 +500,7 @@ We welcome contributions! Here's how you can help:
 
 ### 🚀 **Start Your Career Journey Today!** 🌟
 
-**Made with ❤️ by developers who care about your career success**
+**Made with ❤️ by <strong>Babin Bid</strong> who care about your career success**
 
 [![GitHub stars](https://img.shields.io/github/stars/KGFCH2/Career_Go?style=social)](https://github.com/KGFCH2/Career_Go)
 [![GitHub forks](https://img.shields.io/github/forks/KGFCH2/Career_Go?style=social)](https://github.com/KGFCH2/Career_Go)
