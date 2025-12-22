@@ -622,4 +622,6 @@ Blockchain Developer,Solidity,Ethereum,Smart Contracts,Cryptography,Web3,JavaScr
 
 ---
 
-📞 **Need Help?** Check [README.md](README.md) or review application logs for troubleshooting.
+📞 **Need Help?** Contact: babinbid05@gmail.com | GitHub: https://github.com/KGFCH2/Career_Go
+
+**Last Updated: 22nd December, 2025**

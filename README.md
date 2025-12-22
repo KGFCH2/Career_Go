@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.0+-black.svg)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yourusername/career-go)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/KGFCH2/Career_Go)
 
 > 🎯 **Discover Your Perfect Career Path with AI-Powered Intelligence**
 
@@ -502,7 +502,9 @@ We welcome contributions! Here's how you can help:
 
 **Made with ❤️ by developers who care about your career success**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/career-go?style=social)](https://github.com/yourusername/career-go)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/career-go?style=social)](https://github.com/yourusername/career-go)
+[![GitHub stars](https://img.shields.io/github/stars/KGFCH2/Career_Go?style=social)](https://github.com/KGFCH2/Career_Go)
+[![GitHub forks](https://img.shields.io/github/forks/KGFCH2/Career_Go?style=social)](https://github.com/KGFCH2/Career_Go)
+
+**Last Updated: 22nd December, 2025** | **Contact: babinbid05@gmail.com**
 
 </div>
