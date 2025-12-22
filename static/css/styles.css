@@ -456,6 +456,26 @@ header {
     text-overflow: ellipsis;
 }
 
+/* AI advisor header h1 hover effect */
+.ai-advisor-header .header-text h1:hover {
+    background: var(--secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--secondary-color);
+    background-clip: text;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+/* Dark mode AI advisor header h1 hover */
+[data-theme="dark"] .ai-advisor-header .header-text h1:hover {
+    background: var(--secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--secondary-color);
+    background-clip: text;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
 .ai-advisor-header .header-subtitle {
     margin: 0.25rem 0 0 0;
     font-size: 0.85rem;
