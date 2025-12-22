@@ -421,11 +421,6 @@ header {
     box-shadow: var(--shadow);
     max-width: 100%;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
-}
-
-.ai-advisor-header:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .ai-advisor-header .section-icon-fa {
