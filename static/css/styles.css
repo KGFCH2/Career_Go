@@ -395,11 +395,13 @@ header {
 /* Enhanced pop-up effect for emoji section icons */
 .section-icon:hover {
     transform: translateY(-3px) scale(1.2) rotate(8deg);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 /* Dark mode enhanced pop-up effect */
 [data-theme="dark"] .section-icon:hover {
     transform: translateY(-3px) scale(1.2) rotate(8deg);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 /* Allow AI advisor header icon to change color on hover only */
