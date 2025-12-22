@@ -2635,6 +2635,19 @@ footer {
 .inline-emoji {
     font-size: 1.2em;
     margin-right: 0.5rem;
+    display: inline-block;
+    transition: transform 0.25s ease, filter 0.25s ease, text-shadow 0.25s ease;
+}
+
+/* Inline emoji hover pop-up effect */
+.inline-emoji:hover {
+    transform: translateY(-3px) scale(1.2) rotate(8deg);
+    animation: emojiGlowPulse 1.8s ease-in-out infinite;
+}
+
+/* Dark mode inline emoji hover */
+[data-theme="dark"] .inline-emoji:hover {
+    animation: emojiGlowPulse 1.4s ease-in-out infinite;
 }
 
 .about-hero h1,
