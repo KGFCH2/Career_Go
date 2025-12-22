@@ -493,6 +493,23 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Dark mode heading text color changes */
+[data-theme="dark"] .section-header:hover h2 {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .about-section h2:hover,
+[data-theme="dark"] .policy-section h2:hover {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .about-hero h1:hover,
+[data-theme="dark"] .privacy-hero h1:hover,
+[data-theme="dark"] .terms-hero h1:hover,
+[data-theme="dark"] .contact-hero h1:hover {
+    color: var(--primary-color);
+}
+
 .hero-icon:hover {
     transform: translateY(-5px) scale(1.1);
     color: var(--secondary-color);
@@ -504,17 +521,13 @@ header {
 .terms-hero h1:hover,
 .contact-hero h1:hover {
     transform: scale(1.02);
-    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--secondary-color);
     transition: all 0.3s ease;
 }
 
 .section-header:hover {
     transform: translateX(5px);
     border-bottom-color: var(--secondary-color);
-    transition: all 0.3s ease;
 }
 
 /* Feature items enhanced hover */
@@ -2618,6 +2631,12 @@ footer {
     color: var(--text-color);
     margin-bottom: 1rem;
     font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.about-section h2:hover,
+.policy-section h2:hover {
+    color: var(--secondary-color);
 }
 
 .section-header {
@@ -2628,6 +2647,19 @@ footer {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--primary-color);
     animation: slideInLeft 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.section-header:hover {
+    border-bottom-color: var(--secondary-color);
+}
+
+.section-header h2 {
+    transition: color 0.3s ease;
+}
+
+.section-header:hover h2 {
+    color: var(--secondary-color);
 }
 
 .section-header .section-icon {
