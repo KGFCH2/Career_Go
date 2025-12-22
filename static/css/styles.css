@@ -531,6 +531,11 @@ header {
     border-bottom-color: var(--secondary-color);
 }
 
+/* AI advisor header should not move on hover - more specific rule */
+.ai-advisor-header:hover {
+    transform: none !important;
+}
+
 /* Feature items enhanced hover */
 .feature-item:hover {
     transform: translateY(-8px) scale(1.02);
