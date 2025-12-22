@@ -398,12 +398,6 @@ header {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-/* Dark mode enhanced pop-up effect */
-[data-theme="dark"] .section-icon:hover {
-    transform: translateY(-3px) scale(1.2) rotate(8deg);
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
 /* Allow AI advisor header icon to change color on hover only */
 .ai-advisor-header .section-icon-fa:hover {
     color: var(--secondary-color);
@@ -521,7 +515,8 @@ header {
 [data-theme="dark"] .section-icon:hover,
 [data-theme="dark"] .hero-icon:hover,
 [data-theme="dark"] .section-icon-fa:not(.ai-advisor-header .section-icon-fa):hover {
-    transform: translateY(-5px) scale(1.1);
+    transform: translateY(-3px) scale(1.2) rotate(8deg);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     color: var(--secondary-color);
     transition: all 0.3s ease;
 }
@@ -3093,49 +3088,68 @@ footer {
 
 .profile-card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.profile-left {
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .profile-avatar {
-    font-size: 5rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 0;
+    width: 120px;
+    height: 120px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.profile-info {
-    width: 100%;
+.profile-avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .profile-field {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--glass-border);
-}
-
-.profile-field:last-child {
-    border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+    border-bottom: none;
 }
 
 .profile-field label {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .profile-field p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-color);
     margin: 0;
+    font-weight: 500;
 }
 
 .profile-actions {
