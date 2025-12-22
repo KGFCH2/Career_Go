@@ -425,7 +425,6 @@ header {
 }
 
 .ai-advisor-header:hover {
-    transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-color: var(--primary-color);
 }
