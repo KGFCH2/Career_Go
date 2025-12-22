@@ -20,7 +20,8 @@
 14. [💻 Development Workflow](#development-workflow)
 15. [🎯 Career Recommendation Algorithm](#career-recommendation-algorithm)
 
-## 🌟 Overview {#overview}
+<a id="overview"></a>
+## 🌟 Overview
 
 Career Go is a Flask-based web application providing **AI-powered personalized career recommendations** based on user skills. This document covers technical implementation, setup, and configuration for developers.
 
@@ -31,7 +32,8 @@ Career Go is a Flask-based web application providing **AI-powered personalized c
 - 🎨 **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - 📧 **Email**: Flask-Mail with Gmail SMTP
 
-## 🛠️ Environment Setup {#environment-setup}
+<a id="environment-setup"></a>
+## 🛠️ Environment Setup
 
 ### ✅ Prerequisites
 - 🐍 Python 3.8 or higher
@@ -72,7 +74,8 @@ pip freeze > requirements.txt
 pip uninstall package_name
 ```
 
-## ⚙️ Configuration {#configuration}
+<a id="configuration"></a>
+## ⚙️ Configuration
 
 ### 🔐 Environment Variables (`.env`)
 
@@ -117,7 +120,8 @@ python -c "import secrets; print(secrets.token_hex(8))"
 python -c "import secrets; print(f'APP_SECRET={secrets.token_hex(16)}\\nPW_SALT={secrets.token_hex(8)}')"
 ```
 
-## 🚀 Running the Application {#running-the-application}
+<a id="running-the-application"></a>
+## 🚀 Running the Application
 
 ### 💻 Local Development
 ```bash
@@ -149,7 +153,8 @@ Deploy using Railway, Render, or Fly.io:
 
 For detailed deployment instructions, see [README.md](README.md#deployment-options).
 
-## 💾 Database {#database}
+<a id="database"></a>
+## 💾 Database
 
 ### 🗄️ Schema
 
@@ -209,7 +214,8 @@ sqlite3 career.db .dump > backup.sql
 sqlite3 career.db < backup.sql
 ```
 
-## 🔌 API Endpoints {#api-endpoints}
+<a id="api-endpoints"></a>
+## 🔌 API Endpoints
 
 ### 🔐 Authentication
 
@@ -345,7 +351,8 @@ Response (200):
 - 🔑 `GET /login` - Login page
 - 🔄 `GET /forgot` - Password reset page
 
-## 📊 Data Files {#data-files}
+<a id="data-files"></a>
+## 📊 Data Files
 
 ### 📋 Skills & Careers Dataset
 **File**: `data/skills_careers.csv`
@@ -372,7 +379,8 @@ Data Scientist,Python,SQL,Statistics,Machine Learning,Pandas,NumPy,Scikit-learn,
 ]
 ```
 
-## 🔒 Authentication & Security {#authentication--security}
+<a id="authentication--security"></a>
+## 🔒 Authentication & Security
 
 ### 🔐 Password Hashing
 
@@ -426,7 +434,8 @@ MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 ```
 
-## 🤖 AI Integration {#ai-integration}
+<a id="ai-integration"></a>
+## 🤖 AI Integration
 
 ### 🦙 Groq API (Llama Model)
 
@@ -449,7 +458,8 @@ response = client.chat.completions.create(
 
 If AI is unavailable (no API key ❌, rate limited ⏱️, network error 🌐), the system automatically falls back to CSV dataset matching with keyword-based skill analysis.
 
-## 🎨 Frontend Architecture {#frontend-architecture}
+<a id="frontend-architecture"></a>
+## 🎨 Frontend Architecture
 
 ### 📝 Template Inheritance
 
@@ -478,7 +488,8 @@ Supports light/dark themes with persistent storage:
 - Toggle button with animated transition
 - Glassmorphism effects adapt to theme
 
-## 🐛 Troubleshooting {#troubleshooting}
+<a id="troubleshooting"></a>
+## 🐛 Troubleshooting
 
 ### 🔴 Port Already in Use
 
@@ -521,7 +532,8 @@ python app.py
 - Check route is defined in `app.py`
 - Verify URL path matches route decorator
 
-## ⚡ Performance Optimization {#performance-optimization}
+<a id="performance-optimization"></a>
+## ⚡ Performance Optimization
 
 ### 💾 Database Queries
 ```python
@@ -548,7 +560,8 @@ def load_data():
 - 🖼️ Image optimization
 - 💾 Browser caching headers
 
-## 🚢 Deployment Checklist {#deployment-checklist}
+<a id="deployment-checklist"></a>
+## 🚢 Deployment Checklist
 
 - [ ] 🔑 Set strong `APP_SECRET` and `PW_SALT`
 - [ ] 🤖 Configure `GROQ_API_KEY` for AI features
@@ -561,7 +574,8 @@ def load_data():
 - [ ] ⚙️ Use environment-specific configuration
 - [ ] 📊 Monitor application health
 
-## 💻 Development Workflow {#development-workflow}
+<a id="development-workflow"></a>
+## 💻 Development Workflow
 
 ### 🧪 Testing Changes
 
@@ -591,7 +605,8 @@ git push origin main
 - 🏷️ Descriptive variable names
 - 💬 Comments for complex logic only
 
-## 🎯 Career Recommendation Algorithm {#career-recommendation-algorithm}
+<a id="career-recommendation-algorithm"></a>
+## 🎯 Career Recommendation Algorithm
 
 ### 🔍 How It Works
 
