@@ -417,16 +417,15 @@ header {
     padding: 1.5rem;
     background: var(--glass-bg);
     border-radius: 16px;
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--primary-color);
     box-shadow: var(--shadow);
     max-width: 100%;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .ai-advisor-header:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    border-color: var(--primary-color);
 }
 
 .ai-advisor-header .section-icon-fa {
