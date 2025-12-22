@@ -20,7 +20,7 @@
 14. [💻 Development Workflow](#development-workflow)
 15. [🎯 Career Recommendation Algorithm](#career-recommendation-algorithm)
 
-## 🌟 Overview
+## 🌟 Overview {#overview}
 
 Career Go is a Flask-based web application providing **AI-powered personalized career recommendations** based on user skills. This document covers technical implementation, setup, and configuration for developers.
 
@@ -31,7 +31,7 @@ Career Go is a Flask-based web application providing **AI-powered personalized c
 - 🎨 **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - 📧 **Email**: Flask-Mail with Gmail SMTP
 
-## 🛠️ Environment Setup
+## 🛠️ Environment Setup {#environment-setup}
 
 ### ✅ Prerequisites
 - 🐍 Python 3.8 or higher
@@ -72,7 +72,7 @@ pip freeze > requirements.txt
 pip uninstall package_name
 ```
 
-## ⚙️ Configuration
+## ⚙️ Configuration {#configuration}
 
 ### 🔐 Environment Variables (`.env`)
 
@@ -117,7 +117,7 @@ python -c "import secrets; print(secrets.token_hex(8))"
 python -c "import secrets; print(f'APP_SECRET={secrets.token_hex(16)}\\nPW_SALT={secrets.token_hex(8)}')"
 ```
 
-## 🚀 Running the Application
+## 🚀 Running the Application {#running-the-application}
 
 ### 💻 Local Development
 ```bash
@@ -149,7 +149,7 @@ Deploy using Railway, Render, or Fly.io:
 
 For detailed deployment instructions, see [README.md](README.md#deployment-options).
 
-## 💾 Database
+## 💾 Database {#database}
 
 ### 🗄️ Schema
 
@@ -209,7 +209,7 @@ sqlite3 career.db .dump > backup.sql
 sqlite3 career.db < backup.sql
 ```
 
-## 🔌 API Endpoints
+## 🔌 API Endpoints {#api-endpoints}
 
 ### 🔐 Authentication
 
@@ -345,7 +345,7 @@ Response (200):
 - 🔑 `GET /login` - Login page
 - 🔄 `GET /forgot` - Password reset page
 
-## 📊 Data Files
+## 📊 Data Files {#data-files}
 
 ### 📋 Skills & Careers Dataset
 **File**: `data/skills_careers.csv`
@@ -372,7 +372,7 @@ Data Scientist,Python,SQL,Statistics,Machine Learning,Pandas,NumPy,Scikit-learn,
 ]
 ```
 
-## 🔒 Authentication & Security
+## 🔒 Authentication & Security {#authentication--security}
 
 ### 🔐 Password Hashing
 
@@ -426,7 +426,7 @@ MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 ```
 
-## 🤖 AI Integration
+## 🤖 AI Integration {#ai-integration}
 
 ### 🦙 Groq API (Llama Model)
 
@@ -449,7 +449,7 @@ response = client.chat.completions.create(
 
 If AI is unavailable (no API key ❌, rate limited ⏱️, network error 🌐), the system automatically falls back to CSV dataset matching with keyword-based skill analysis.
 
-## 🎨 Frontend Architecture
+## 🎨 Frontend Architecture {#frontend-architecture}
 
 ### 📝 Template Inheritance
 
@@ -478,7 +478,7 @@ Supports light/dark themes with persistent storage:
 - Toggle button with animated transition
 - Glassmorphism effects adapt to theme
 
-## 🐛 Troubleshooting
+## 🐛 Troubleshooting {#troubleshooting}
 
 ### 🔴 Port Already in Use
 
@@ -521,7 +521,7 @@ python app.py
 - Check route is defined in `app.py`
 - Verify URL path matches route decorator
 
-## ⚡ Performance Optimization
+## ⚡ Performance Optimization {#performance-optimization}
 
 ### 💾 Database Queries
 ```python
@@ -548,7 +548,7 @@ def load_data():
 - 🖼️ Image optimization
 - 💾 Browser caching headers
 
-## 🚢 Deployment Checklist
+## 🚢 Deployment Checklist {#deployment-checklist}
 
 - [ ] 🔑 Set strong `APP_SECRET` and `PW_SALT`
 - [ ] 🤖 Configure `GROQ_API_KEY` for AI features
@@ -561,7 +561,7 @@ def load_data():
 - [ ] ⚙️ Use environment-specific configuration
 - [ ] 📊 Monitor application health
 
-## 💻 Development Workflow
+## 💻 Development Workflow {#development-workflow}
 
 ### 🧪 Testing Changes
 
@@ -591,7 +591,7 @@ git push origin main
 - 🏷️ Descriptive variable names
 - 💬 Comments for complex logic only
 
-## 🎯 Career Recommendation Algorithm
+## 🎯 Career Recommendation Algorithm {#career-recommendation-algorithm}
 
 ### 🔍 How It Works
 
