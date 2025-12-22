@@ -3068,6 +3068,18 @@ footer {
     min-height: calc(100vh - 200px);
 }
 
+/* Profile section h1 hover effect */
+.profile-section .section-header h1:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+/* Dark mode profile section h1 hover */
+[data-theme="dark"] .profile-section .section-header h1:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
 .profile-container {
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
