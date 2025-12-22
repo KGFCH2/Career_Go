@@ -1576,6 +1576,18 @@ main {
     padding: 1.5rem;
 }
 
+/* Dashboard h1 hover effect */
+.dashboard .section-header h1:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+/* Dark mode dashboard h1 hover */
+[data-theme="dark"] .dashboard .section-header h1:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
 .skill-input {
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
