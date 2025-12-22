@@ -345,23 +345,24 @@ Response (200):
 - 🔑 `GET /login` - Login page
 - 🔄 `GET /forgot` - Password reset page
 
-## Data Files
+## 📊 Data Files
 
-### Skills & Careers Dataset (`data/skills_careers.csv`)
+### 📋 Skills & Careers Dataset
+**File**: `data/skills_careers.csv`
 
-CSV structure:
 ```csv
 career,skill_1,skill_2,skill_3,skill_4,skill_5,skill_6,skill_7,skill_8,score
 Data Scientist,Python,SQL,Statistics,Machine Learning,Pandas,NumPy,Scikit-learn,Tableau,95
 ```
 
-- **career**: Job title
-- **skill_1** to **skill_8**: Required/relevant skills
-- **score**: Not currently used in matching algorithm
+**Structure**:
+- 💼 **career**: Job title
+- 🛠️ **skill_1 to skill_8**: Required/relevant skills
+- 📈 **score**: Not currently used in matching algorithm
 
-### Learning Resources (`data/learning_links.json`)
+### 📚 Learning Resources
+**File**: `data/learning_links.json`
 
-JSON structure:
 ```json
 [
     {
@@ -371,9 +372,9 @@ JSON structure:
 ]
 ```
 
-## Authentication & Security
+## 🔒 Authentication & Security
 
-### Password Hashing
+### 🔐 Password Hashing
 
 Uses SHA256 with salt:
 
@@ -391,12 +392,12 @@ def verify_pw(pw: str, pw_hash: str) -> bool:
     return hmac.compare_digest(hash_pw(pw), pw_hash)
 ```
 
-**Security Notes**:
-- Salt stored in `.env`, not hardcoded
-- HMAC used for timing-safe comparison
-- Passwords never stored in plain text
+**🛡️ Security Notes**:
+- 🔑 Salt stored in `.env`, not hardcoded
+- ⏱️ HMAC used for timing-safe comparison
+- 🚫 Passwords never stored in plain text
 
-### Session Management
+### 🍪 Session Management
 
 ```python
 from flask import session
@@ -413,7 +414,7 @@ if 'user_id' not in session:
 session.clear()
 ```
 
-### Email Configuration
+### 📧 Email Configuration
 
 Uses Flask-Mail with Gmail SMTP:
 
@@ -425,9 +426,9 @@ MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 ```
 
-## AI Integration
+## 🤖 AI Integration
 
-### Groq API (Llama Model)
+### 🦙 Groq API (Llama Model)
 
 ```python
 from groq import Groq
@@ -444,13 +445,13 @@ response = client.chat.completions.create(
 )
 ```
 
-### Fallback System
+### 🔄 Fallback System
 
-If AI is unavailable (no API key, rate limited, network error), the system falls back to CSV dataset matching with keyword-based skill matching.
+If AI is unavailable (no API key ❌, rate limited ⏱️, network error 🌐), the system automatically falls back to CSV dataset matching with keyword-based skill analysis.
 
-## Frontend Architecture
+## 🎨 Frontend Architecture
 
-### Template Inheritance
+### 📝 Template Inheritance
 
 All templates extend `base.html`:
 
@@ -464,22 +465,22 @@ All templates extend `base.html`:
 {% endblock %}
 ```
 
-### Static Files
+### 🎨 Static Files
 
-- `css/styles.css`: Main stylesheet (glassmorphism, themes, animations)
-- `js/theme.js`: Dark/light mode toggle
-- `js/main.js`: Form handlers, API calls, interactivity
+- 💅 `css/styles.css`: Main stylesheet (glassmorphism, themes, animations)
+- 🌓 `js/theme.js`: Dark/light mode toggle
+- ⚡ `js/main.js`: Form handlers, API calls, interactivity
 
-### Theme System
+### 🌈 Theme System
 
 Supports light/dark themes with persistent storage:
 - Theme stored in `localStorage`
 - Toggle button with animated transition
 - Glassmorphism effects adapt to theme
 
-## Troubleshooting
+## 🐛 Troubleshooting
 
-### Port Already in Use
+### 🔴 Port Already in Use
 
 ```bash
 # Find process on port 5000
@@ -492,7 +493,7 @@ taskkill /PID <PID> /F
 kill -9 <PID>
 ```
 
-### Database Locked
+### 🔒 Database Locked
 
 ```bash
 # Close all connections, then delete
@@ -500,29 +501,29 @@ rm career.db
 python app.py
 ```
 
-### Email Not Sending
+### 📧 Email Not Sending
 
-- Verify MAIL_USERNAME and MAIL_PASSWORD in `.env`
-- Remove spaces from app password
-- Check Gmail account has SMTP enabled
-- Enable Flask-Mail debug: `app.config['MAIL_DEBUG'] = True`
+- ✅ Verify MAIL_USERNAME and MAIL_PASSWORD in `.env`
+- 🧹 Remove spaces from app password
+- 📬 Check Gmail account has SMTP enabled
+- 🐛 Enable Flask-Mail debug: `app.config['MAIL_DEBUG'] = True`
 
-### AI Not Responding
+### 🤖 AI Not Responding
 
-- Check GROQ_API_KEY is valid
-- Verify Groq API status at https://console.groq.com
-- Check internet connection
-- App automatically uses CSV fallback
+- 🔑 Check GROQ_API_KEY is valid
+- 🌐 Verify Groq API status at https://console.groq.com
+- 📡 Check internet connection
+- 🔄 App automatically uses CSV fallback
 
-### 404 Errors
+### ❌ 404 Errors
 
 - Verify template file exists in `templates/` directory
 - Check route is defined in `app.py`
 - Verify URL path matches route decorator
 
-## Performance Optimization
+## ⚡ Performance Optimization
 
-### Database Queries
+### 💾 Database Queries
 ```python
 # Use indexed lookups
 conn.execute('SELECT * FROM users WHERE email=?', (email,)).fetchone()
@@ -531,7 +532,7 @@ conn.execute('SELECT * FROM users WHERE email=?', (email,)).fetchone()
 users = conn.execute('SELECT * FROM users').fetchall()
 ```
 
-### Caching
+### 🗄️ Caching
 ```python
 from functools import lru_cache
 
@@ -541,28 +542,28 @@ def load_data():
     pass
 ```
 
-### Frontend Optimization
-- CSS minification for production
-- JavaScript lazy-loading
-- Image optimization
-- Browser caching headers
+### 🚀 Frontend Optimization
+- 📦 CSS minification for production
+- ⚡ JavaScript lazy-loading
+- 🖼️ Image optimization
+- 💾 Browser caching headers
 
-## Deployment Checklist
+## 🚢 Deployment Checklist
 
-- [ ] Set strong `APP_SECRET` and `PW_SALT`
-- [ ] Configure `GROQ_API_KEY` for AI features
-- [ ] Setup `MAIL_USERNAME` and `MAIL_PASSWORD` for emails
-- [ ] Use production WSGI server (Gunicorn for Unix/Linux)
-- [ ] Enable HTTPS/SSL certificates
-- [ ] Setup database backups (if using persistent database)
-- [ ] Configure error logging
-- [ ] Set `DEBUG=False` in production
-- [ ] Use environment-specific configuration
-- [ ] Monitor application health
+- [ ] 🔑 Set strong `APP_SECRET` and `PW_SALT`
+- [ ] 🤖 Configure `GROQ_API_KEY` for AI features
+- [ ] 📧 Setup `MAIL_USERNAME` and `MAIL_PASSWORD` for emails
+- [ ] 🚀 Use production WSGI server (Gunicorn for Unix/Linux)
+- [ ] 🔒 Enable HTTPS/SSL certificates
+- [ ] 💾 Setup database backups (if using persistent database)
+- [ ] 📝 Configure error logging
+- [ ] ⚠️ Set `DEBUG=False` in production
+- [ ] ⚙️ Use environment-specific configuration
+- [ ] 📊 Monitor application health
 
-## Development Workflow
+## 💻 Development Workflow
 
-### Testing Changes
+### 🧪 Testing Changes
 
 ```bash
 # Flask auto-reloads in debug mode
@@ -575,33 +576,33 @@ python app.py
 python -m py_compile app.py
 ```
 
-### Git Workflow
+### 📦 Git Workflow
 
 ```bash
 git add -A
-git commit -m "Feature: Add career suggestions API"
+git commit -m "✨ Feature: Add career suggestions API"
 git push origin main
 ```
 
-### Code Style
+### 📝 Code Style
 
-- PEP 8 for Python
-- Consistent indentation (4 spaces)
-- Descriptive variable names
-- Comments for complex logic only
+- 📏 PEP 8 for Python
+- 📐 Consistent indentation (4 spaces)
+- 🏷️ Descriptive variable names
+- 💬 Comments for complex logic only
 
-## Career Recommendation Algorithm
+## 🎯 Career Recommendation Algorithm
 
-### How It Works
+### 🔍 How It Works
 
 The system matches user skills against the CSV dataset:
 
-1. **Skill Matching**: For each user skill, find career entries with matching skills (case-insensitive, substring matching)
-2. **Scoring**: Count number of skill matches per career
-3. **Aggregation**: Aggregate scores across multiple entries for same career
-4. **Ranking**: Return top 12 careers by score
+1. 🔎 **Skill Matching**: For each user skill, find career entries with matching skills (case-insensitive, substring matching)
+2. 📊 **Scoring**: Count number of skill matches per career
+3. 📈 **Aggregation**: Aggregate scores across multiple entries for same career
+4. 🏆 **Ranking**: Return top 12 careers by score
 
-### Adding New Careers
+### ➕ Adding New Careers
 
 1. Open `data/skills_careers.csv`
 2. Add new rows with career name and 8 relevant skills
@@ -612,13 +613,13 @@ Example:
 Blockchain Developer,Solidity,Ethereum,Smart Contracts,Cryptography,Web3,JavaScript,Security,Testing,85
 ```
 
-## Support & Resources
+## 💡 Support & Resources
 
-- **Flask Documentation**: https://flask.palletsprojects.com/
-- **Groq API Docs**: https://console.groq.com/docs
-- **SQLite Guide**: https://www.sqlite.org/docs.html
-- **Python Docs**: https://docs.python.org/3/
+- 🌐 **Flask Documentation**: https://flask.palletsprojects.com/
+- 🤖 **Groq API Docs**: https://console.groq.com/docs
+- 💾 **SQLite Guide**: https://www.sqlite.org/docs.html
+- 🐍 **Python Docs**: https://docs.python.org/3/
 
 ---
 
-For issues or questions, check README.md or review application logs.
+📞 **Need Help?** Check [README.md](README.md) or review application logs for troubleshooting.
