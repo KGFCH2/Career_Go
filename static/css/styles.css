@@ -395,12 +395,11 @@ header {
 /* Enhanced pop-up effect for emoji section icons */
 .section-icon:hover {
     transform: translateY(-3px) scale(1.2) rotate(8deg);
-    animation: emojiGlowPulse 1.8s ease-in-out infinite;
 }
 
 /* Dark mode enhanced pop-up effect */
 [data-theme="dark"] .section-icon:hover {
-    animation: emojiGlowPulse 1.4s ease-in-out infinite;
+    transform: translateY(-3px) scale(1.2) rotate(8deg);
 }
 
 /* Allow AI advisor header icon to change color on hover only */
@@ -2653,12 +2652,11 @@ footer {
 /* Inline emoji hover pop-up effect */
 .inline-emoji:hover {
     transform: translateY(-3px) scale(1.2) rotate(8deg);
-    animation: emojiGlowPulse 1.8s ease-in-out infinite;
 }
 
 /* Dark mode inline emoji hover */
 [data-theme="dark"] .inline-emoji:hover {
-    animation: emojiGlowPulse 1.4s ease-in-out infinite;
+    transform: translateY(-3px) scale(1.2) rotate(8deg);
 }
 
 .about-hero h1,
