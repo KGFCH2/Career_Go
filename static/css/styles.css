@@ -399,6 +399,13 @@ header {
     transform: none;
 }
 
+/* Dark mode AI advisor icon hover - color only */
+[data-theme="dark"] .ai-advisor-header .section-icon-fa:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+    transform: none;
+}
+
 /* Font Awesome specific styling */
 .section-icon-fa {
     color: var(--primary-color);
@@ -481,7 +488,7 @@ header {
 /* Dark mode section icon effects */
 [data-theme="dark"] .section-icon:hover,
 [data-theme="dark"] .hero-icon:hover,
-[data-theme="dark"] .section-icon-fa:hover {
+[data-theme="dark"] .section-icon-fa:not(.ai-advisor-header .section-icon-fa):hover {
     transform: translateY(-5px) scale(1.1);
     color: var(--secondary-color);
     transition: all 0.3s ease;
