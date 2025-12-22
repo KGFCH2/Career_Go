@@ -1,101 +1,159 @@
-# Career Go - Technical Documentation
+# 📚 Career Go - Technical Documentation
 
-## Overview
+> 🔧 **Complete technical guide for developers**
 
-Career Go is a Flask-based web application providing AI-powered personalized career recommendations based on user skills. This document covers technical implementation, setup, and configuration.
+## 📑 Table of Contents
 
-## Environment Setup
+1. [🌟 Overview](#overview)
+2. [🛠️ Environment Setup](#environment-setup)
+3. [⚙️ Configuration](#configuration)
+4. [🚀 Running the Application](#running-the-application)
+5. [💾 Database](#database)
+6. [🔌 API Endpoints](#api-endpoints)
+7. [📊 Data Files](#data-files)
+8. [🔒 Authentication & Security](#authentication--security)
+9. [🤖 AI Integration](#ai-integration)
+10. [🎨 Frontend Architecture](#frontend-architecture)
+11. [🐛 Troubleshooting](#troubleshooting)
+12. [⚡ Performance Optimization](#performance-optimization)
+13. [🚢 Deployment Checklist](#deployment-checklist)
+14. [💻 Development Workflow](#development-workflow)
+15. [🎯 Career Recommendation Algorithm](#career-recommendation-algorithm)
 
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package manager)
-- Optional: Gmail account for password reset emails
+## 🌟 Overview
 
-### Installation
+Career Go is a Flask-based web application providing **AI-powered personalized career recommendations** based on user skills. This document covers technical implementation, setup, and configuration for developers.
+
+### 🎯 Key Technologies
+- 🐍 **Backend**: Flask 3.0.3, Python 3.8+
+- 💾 **Database**: SQLite (local) / PostgreSQL (production)
+- 🤖 **AI**: Groq API (Llama 3.3-70b-versatile)
+- 🎨 **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- 📧 **Email**: Flask-Mail with Gmail SMTP
+
+## 🛠️ Environment Setup
+
+### ✅ Prerequisites
+- 🐍 Python 3.8 or higher
+- 📦 pip (Python package manager)
+- 📧 Optional: Gmail account for password reset emails
+- 💾 Optional: PostgreSQL for production deployment
+
+### 📥 Installation
 
 ```bash
-# Navigate to repository
+# 📂 Navigate to repository
 cd Career_Go
 
-# Create virtual environment
+# 🔧 Create virtual environment
 python -m venv venv
 
-# Activate virtual environment
-source venv/bin/activate     # Linux/Mac
-venv\Scripts\activate        # Windows
+# ⚡ Activate virtual environment
+source venv/bin/activate     # 🐧 Linux/Mac
+venv\Scripts\activate        # 🪟 Windows
 
-# Install dependencies
+# 📦 Install dependencies
 pip install -r requirements.txt
 ```
 
-### Dependency Management
+### 📦 Dependency Management
 
 ```bash
-# View installed packages
+# 📋 View installed packages
 pip list
 
-# Update a package
+# ⬆️ Update a package
 pip install --upgrade flask
 
-# Export current environment
+# 💾 Export current environment
 pip freeze > requirements.txt
+
+# 🧹 Remove unused packages
+pip uninstall package_name
 ```
 
-## Configuration
+## ⚙️ Configuration
 
-### Environment Variables (`.env`)
+### 🔐 Environment Variables (`.env`)
 
 Copy `.env.example` to `.env` and set required values:
 
 ```env
-# Flask Secret Key (REQUIRED)
-# Generate: python -c "import secrets; print(secrets.token_hex(16))"
+# 🔑 Flask Secret Key (REQUIRED)
+# Generate with: python -c "import secrets; print(secrets.token_hex(16))"
 APP_SECRET=your_generated_secret_key_here
 
-# Password Salt (REQUIRED)
-# Generate: python -c "import secrets; print(secrets.token_hex(8))"
+# 🧂 Password Salt (REQUIRED)
+# Generate with: python -c "import secrets; print(secrets.token_hex(8))"
 PW_SALT=your_generated_salt_here
 
-# Groq API Key (OPTIONAL - for AI features)
+# 🤖 Groq API Key (OPTIONAL - for AI features)
 # Get from: https://console.groq.com/keys
 GROQ_API_KEY=gsk_xxxxxxxxxxxxx
 
-# Email Configuration (OPTIONAL - for password reset emails)
+# 📧 Email Configuration (OPTIONAL - for password reset emails)
 # Go to: https://myaccount.google.com/apppasswords
 # Create app password and use here (remove spaces)
 MAIL_USERNAME=your_email@gmail.com
 MAIL_PASSWORD=your_app_password_here
+
+# 💾 Database URL (OPTIONAL - for PostgreSQL)
+# Auto-set by cloud platforms (Railway, Render, Fly.io)
+DATABASE_URL=postgresql://user:pass@host:port/database
 ```
 
-**Important**: Never commit `.env` to version control.
+**⚠️ Important**: Never commit `.env` to version control. Always use `.env.example` as a template.
 
-## Running the Application
+### 🔒 Generating Secure Keys
 
-### Local Development
 ```bash
-# Development server with auto-reload
+# Generate APP_SECRET (32 characters)
+python -c "import secrets; print(secrets.token_hex(16))"
+
+# Generate PW_SALT (16 characters)
+python -c "import secrets; print(secrets.token_hex(8))"
+
+# Generate multiple keys at once
+python -c "import secrets; print(f'APP_SECRET={secrets.token_hex(16)}\\nPW_SALT={secrets.token_hex(8)}')"
+```
+
+## 🚀 Running the Application
+
+### 💻 Local Development
+```bash
+# 🎯 Development server with auto-reload
 python app.py
 
-# Visit: http://localhost:5000
+# 🌐 Visit: http://localhost:5000
 ```
 
-### Production (Unix/Linux Only)
+### 🏢 Production (Unix/Linux Only)
 ```bash
+# 📦 Install production server
 pip install gunicorn
+
+# 🚀 Run with 4 worker processes
 gunicorn -w 4 -b 0.0.0.0:5000 app:app
+
+# ⚙️ Or with more options
+gunicorn -w 4 --threads 2 --timeout 120 --access-logfile - app:app
 ```
 
-### Cloud Deployment
+**⚠️ Note**: Gunicorn is Unix/Linux only. For Windows, use `waitress` or deploy to cloud.
+
+### ☁️ Cloud Deployment
 Deploy using Railway, Render, or Fly.io:
-- Add a PostgreSQL database and set `DATABASE_URL`
-- Configure environment variables: `APP_SECRET`, `PW_SALT`, optional `GROQ_API_KEY`, `MAIL_USERNAME`, `MAIL_PASSWORD`
-- Start command for production (Linux/Unix): `gunicorn app:app`
+- 💾 Add a PostgreSQL database and set `DATABASE_URL`
+- 🔐 Configure environment variables: `APP_SECRET`, `PW_SALT`, optional `GROQ_API_KEY`, `MAIL_USERNAME`, `MAIL_PASSWORD`
+- 🚀 Start command for production: `gunicorn app:app`
 
-## Database
+For detailed deployment instructions, see [README.md](README.md#deployment-options).
 
-### Schema
+## 💾 Database
 
-**Users Table**
+### 🗄️ Schema
+
+**📋 Users Table**
 ```sql
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -107,7 +165,7 @@ CREATE TABLE IF NOT EXISTS users (
 )
 ```
 
-**Password Resets Table**
+**🔄 Password Resets Table**
 ```sql
 CREATE TABLE IF NOT EXISTS resets (
     email TEXT,
@@ -116,27 +174,46 @@ CREATE TABLE IF NOT EXISTS resets (
 )
 ```
 
-### Managing the Database
+### 🔧 Managing the Database
 
 ```bash
-# Reset database (delete and recreate)
+# 🗑️ Reset database (delete and recreate)
 rm career.db
 python app.py
 
-# Connect with sqlite3
+# 🔍 Connect with sqlite3
 sqlite3 career.db
 
-# Common queries
+# 📊 Common queries
 sqlite> SELECT * FROM users;
 sqlite> SELECT * FROM resets;
 sqlite> DELETE FROM users WHERE id=1;
+sqlite> .schema users
+sqlite> .tables
+sqlite> .exit
 ```
 
-## API Endpoints
+### 💾 Database Backup
 
-### Authentication
+```bash
+# 📦 Backup SQLite database
+cp career.db career.db.backup
 
-#### POST /api/signup
+# 🔄 Restore from backup
+cp career.db.backup career.db
+
+# 📤 Export to SQL file
+sqlite3 career.db .dump > backup.sql
+
+# 📥 Import from SQL file
+sqlite3 career.db < backup.sql
+```
+
+## 🔌 API Endpoints
+
+### 🔐 Authentication
+
+#### 📝 POST /api/signup
 Register a new user account.
 
 ```json
@@ -154,7 +231,7 @@ Response (200):
 }
 ```
 
-#### POST /api/login
+#### 🔑 POST /api/login
 Authenticate user and create session.
 
 ```json
@@ -171,7 +248,7 @@ Response (200):
 }
 ```
 
-#### POST /api/forgot-email
+#### 📧 POST /api/forgot-email
 Request password reset code.
 
 ```json
@@ -187,7 +264,7 @@ Response (200):
 }
 ```
 
-#### POST /api/reset
+#### 🔄 POST /api/reset
 Reset password with code.
 
 ```json
@@ -204,12 +281,19 @@ Response (200):
 }
 ```
 
-#### POST /api/logout
+#### 🚪 POST /api/logout
 Clear user session.
 
-### Career Features
+```json
+Response (200):
+{
+    "message": "Logged out"
+}
+```
 
-#### POST /api/suggest_careers
+### 💼 Career Features
+
+#### 🎯 POST /api/suggest_careers
 Get career recommendations based on skills.
 
 ```json
@@ -231,7 +315,7 @@ Response (200):
 }
 ```
 
-#### POST /api/chat
+#### 💬 POST /api/chat
 Chat with AI career advisor.
 
 ```json
@@ -246,6 +330,20 @@ Response (200):
     "source": "ai"
 }
 ```
+
+### 📄 Page Routes
+
+- 🏠 `GET /` - Home page
+- 📊 `GET /dashboard` - Career dashboard (requires login)
+- 💬 `GET /chat` - Chat interface (requires login)
+- 👤 `GET /profile` - User profile (requires login)
+- ℹ️ `GET /about` - About page
+- ❓ `GET /faq` - FAQ page
+- 🔒 `GET /privacy` - Privacy policy
+- ⚖️ `GET /terms` - Terms of service
+- 📝 `GET /signup` - Registration page
+- 🔑 `GET /login` - Login page
+- 🔄 `GET /forgot` - Password reset page
 
 ## Data Files
 
